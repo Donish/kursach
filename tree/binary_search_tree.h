@@ -1620,7 +1620,10 @@ binary_search_tree<tkey, tvalue, tkey_comparer>::binary_search_tree(
         _allocator(allocator),
         _logger(logger)
 {
-
+            logger_builder* builder = new logger_builder_concrete();
+            _logger = builder
+                    ->add_stream("..\\logfile.txt", logger::severity::trace)
+                    ->construct();
 }
 
 template<
@@ -1637,7 +1640,11 @@ binary_search_tree<tkey, tvalue, tkey_comparer>::binary_search_tree(
         _logger(logger),
         _root(nullptr)
 {
-    this->_logger->log("The tree has been created", logger::severity::trace);
+            logger_builder* builder = new logger_builder_concrete();
+            _logger = builder
+                    ->add_stream("../logfile.txt", logger::severity::trace)
+                    ->construct();
+            this->_logger->log("[BST] The tree has been created", logger::severity::trace);
     // this->trace_with_guard("The tree has been created.");
 }
 

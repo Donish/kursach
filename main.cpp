@@ -20,7 +20,6 @@ int main(int argc, char* argv[])
 
     std::string command;
 
-
     std::ifstream file(argv[1]);
 
     if (file.is_open())
