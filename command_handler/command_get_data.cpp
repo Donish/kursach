@@ -2,7 +2,7 @@
 
 bool command_get_data::can_execute(const std::string &request)noexcept
 {
-    if (request.rfind("GET_DATA", 0))
+    if (request.rfind("GET_DATA", 0) == 0)
     {
         auto argc = split(request, ' ');
 

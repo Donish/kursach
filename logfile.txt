@@ -1,2 +1,1 @@
-[trace][1/9/2023 16:24:22] [SPLAY TREE] The tree has been created
-[trace][1/9/2023 16:24:22] [BST] The tree has been deleted
+[trace][2/9/2023 17:23:48] [SPLAY TREE] The tree has been created

@@ -2,7 +2,7 @@
 
 bool command_update_data::can_execute(const std::string &request) noexcept
 {
-    if (request.rfind("UPDATE_DATA", 0))
+    if (request.rfind("UPDATE_DATA", 0) == 0)
     {
         auto argc = split(request, ' ');
 

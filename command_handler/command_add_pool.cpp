@@ -2,7 +2,7 @@
 
 bool command_add_pool::can_execute(const std::string &request) noexcept
 {
-    if (request.rfind("ADD_POOL", 0))
+    if (request.rfind("ADD_POOL", 0) == 0)
     {
         auto argc = split(request, ' ');
 

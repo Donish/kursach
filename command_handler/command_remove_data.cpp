@@ -2,7 +2,7 @@
 
 bool command_remove_data::can_execute(std::string const &request) noexcept
 {
-    if (request.rfind("REMOVE_DATA", 0))
+    if (request.rfind("REMOVE_DATA", 0) == 0)
     {
         auto argc = split(request, ' ');
 

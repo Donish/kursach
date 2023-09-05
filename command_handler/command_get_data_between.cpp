@@ -2,7 +2,7 @@
 
 bool command_get_data_between::can_execute(std::string const &request) noexcept
 {
-    if (request.rfind("GET_RANGE", 0))
+    if (request.rfind("GET_RANGE", 0) == 0)
     {
         auto argc = split(request, ' ');
 

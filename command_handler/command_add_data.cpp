@@ -3,7 +3,7 @@
 
 bool command_add_data::can_execute(const std::string &request) noexcept
 {
-    if(request.rfind("ADD_DATA", 0))
+    if(request.rfind("ADD_DATA", 0) == 0)
     {
         auto argc = split(request, ' ');
 

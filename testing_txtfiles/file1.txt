@@ -1,2 +1,2 @@
-ADD_POOL pool_1 sorted_list 1000000 first_match
+ADD_POOL pool_1 sorted_list 100000 first_match
 REMOVE_POOL pool_1

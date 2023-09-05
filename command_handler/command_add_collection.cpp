@@ -2,7 +2,7 @@
 
 bool command_add_collection::can_execute(const std::string &request) noexcept
 {
-    if (request.rfind("ADD_COLLECTION", 0))
+    if (request.rfind("ADD_COLLECTION", 0) == 0)
     {
         auto argc = split(request, ' ');
 
