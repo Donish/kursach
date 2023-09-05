@@ -77,24 +77,29 @@ void data_base::add_pool(std::string const &pool_name, allocator_types allocator
 {
     try
     {
+        logger_builder *_logger_builder = new logger_builder_concrete();
+        logger *_logger = _logger_builder
+                ->add_stream("memory_logs.txt", logger::severity::trace)
+                ->construct();
+
         memory *allocator = nullptr;
 
         switch (allocator_name) {
             case allocator_types::GLOBAL_HEAP:
-                allocator = new memory_simple();
+                allocator = new memory_simple(_logger);
                 break;
 
             case allocator_types::SORTED_LIST:
-                allocator = new sorted_list_memory(request_size, mode);
+                allocator = new sorted_list_memory(request_size, mode, _logger);
                 break;
 
             case allocator_types::BORDER_DESCRIPTORS:
-                allocator = new borders_descriptors_memory(request_size, mode);
+                allocator = new borders_descriptors_memory(request_size, mode, _logger);
                 break;
 
             case allocator_types::BUDDIES_SYSTEM:
                 request_size = static_cast<size_t>(log2(request_size)) + 1;
-                allocator = new buddy_system_memory(request_size, mode);
+                allocator = new buddy_system_memory(request_size, mode, _logger);
                 break;
         }
 

@@ -1,1 +1,2 @@
-[trace][2/9/2023 17:23:48] [SPLAY TREE] The tree has been created
+[trace][5/9/2023 20:17:11] [SPLAY TREE] The tree has been created
+[trace][5/9/2023 20:17:11] [SPLAY TREE] The tree has been created
