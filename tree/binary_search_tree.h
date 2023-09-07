@@ -105,7 +105,7 @@ public:
     class postfix_iterator final
     {
 
-        friend class binary_search_tree<tkey, tvalue, tkey_comparer>;//help: почему здесь нужен дружественный класс
+        friend class binary_search_tree<tkey, tvalue, tkey_comparer>;
 
     private:
 
@@ -901,7 +901,8 @@ void binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method:
     }
 
     // (*insert_node) = reinterpret_cast<node *>(allocate_with_guard(get_node_size()));
-    (*insert_node) = reinterpret_cast<node *>(get_outer_allocator()->allocate(get_node_size())); // ошибка здесь
+    (*insert_node) = reinterpret_cast<node*>(get_outer_allocator()->allocate(get_node_size()));
+//    (*insert_node) = reinterpret_cast<node *>(get_outer_allocator()->allocate(get_node_size())); // ошибка здесь
     initialize_memory_with_node((*insert_node));
     (*insert_node)->key_and_value._key = key;
     (*insert_node)->key_and_value._value = std::move(value);

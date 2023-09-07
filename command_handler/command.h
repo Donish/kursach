@@ -6,7 +6,6 @@
 #include <sstream>
 #include "../allocator/memory.h"
 #include "../owntype/own_type.h"
-// #include "../containers/data_base.h"
 #include "../validator/digit_validator.h"
 #include "../validator/date_validator.h"
 #include "../validator/time_validator.h"
