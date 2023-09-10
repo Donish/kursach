@@ -27,7 +27,7 @@ public:
 
     bool find_in(std::string const &scheme_data_name) const;
 
-    memory *get_outer_allocator() const;
+    memory *get_allocator() const;
 
 public:
 

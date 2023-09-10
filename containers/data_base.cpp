@@ -77,29 +77,24 @@ void data_base::add_pool(std::string const &pool_name, allocator_types allocator
 {
     try
     {
-        logger_builder *_logger_builder = new logger_builder_concrete();
-        logger *_logger = _logger_builder
-                ->add_stream("memory_logs.txt", logger::severity::trace)
-                ->construct();
-
         memory *allocator = nullptr;
 
         switch (allocator_name) {
             case allocator_types::GLOBAL_HEAP:
-                allocator = new memory_simple(_logger);
+                allocator = new memory_simple();
                 break;
 
             case allocator_types::SORTED_LIST:
-                allocator = new sorted_list_memory(request_size, mode, _logger);
+                allocator = new sorted_list_memory(request_size, mode);
                 break;
 
             case allocator_types::BORDER_DESCRIPTORS:
-                allocator = new borders_descriptors_memory(request_size, mode, _logger);
+                allocator = new borders_descriptors_memory(request_size, mode);
                 break;
 
             case allocator_types::BUDDIES_SYSTEM:
                 request_size = static_cast<size_t>(log2(request_size)) + 1;
-                allocator = new buddy_system_memory(request_size, mode, _logger);
+                allocator = new buddy_system_memory(request_size, mode);
                 break;
         }
 
@@ -141,7 +136,7 @@ void data_base::add_collection(std::string const &pool_name, std::string const &
         {
             pool_data const &current_pool = _data_base->find(pool_name);
 
-            memory *allocator = current_pool.get_outer_allocator();
+            memory *allocator = current_pool.get_allocator();
 
             if (current_pool.find_in(scheme_name))
             {
@@ -402,7 +397,7 @@ void data_base::get_data(
                         std::cout << "creator's patronymic: " << data->_creator_patronymic << std::endl;
                         std::cout << "date: " << data->_date << std::endl;
                         std::cout << "start time: " << data->_start_time << std::endl;
-                        std::cout << "minimal duartion: " << data->_min_duration << std::endl;
+                        std::cout << "minimal duration: " << data->_min_duration << std::endl;
                         std::cout << "invited people: " << data->_invited_people << std::endl << std::endl;
                     }
                     else

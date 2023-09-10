@@ -10,7 +10,8 @@
 #include "../tree/splay_tree.h"
 #include "../comparers/key_comparer.h"
 
-class collection_data final
+class collection_data final :
+        protected memory_holder
 {
 private:
 
@@ -42,7 +43,7 @@ public:
 
     value* get(key* const &data_key);
 
-    value remove(key* data_key);
+    value* remove(key* data_key);
 
     bool find_in(key* const &data_key) const;
 
@@ -74,7 +75,7 @@ public:
 
 private:
 
-    memory* get_outer_allocator() const;
+    memory* get_allocator() const override;
 
 };
 

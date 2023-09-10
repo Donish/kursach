@@ -1,2 +1,2 @@
-ADD_POOL pool_1 sorted_list 100000 first_match
+ADD_POOL pool_1 global_heap
 REMOVE_POOL pool_1

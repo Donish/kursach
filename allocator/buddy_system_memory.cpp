@@ -11,7 +11,7 @@ size_t buddy_system_memory::get_allocated_memory_size() const
     return *reinterpret_cast<size_t*>(_allocated_memory);
 }
 
-memory * buddy_system_memory::get_outer_allocator() const
+memory * buddy_system_memory::get_allocator() const
 {
     return *reinterpret_cast<memory**>(reinterpret_cast<unsigned char*>(_allocated_memory) + sizeof(size_t));
 }
@@ -150,18 +150,16 @@ buddy_system_memory::buddy_system_memory(
     auto * const next_available_block = reinterpret_cast<void**>(previous_available_block + 1);
     *next_available_block = nullptr;
 
-    get_logger()->log("[BUDDY SYSTEM ALLOCATOR] Allocator successfully created.", logger::severity::trace);
+    this->trace_with_guard("[BUDDY SYSTEM ALLOCATOR] Allocator created.");
 }
 
 void * const buddy_system_memory::allocate(size_t request_size) const
 {
     if (request_size < 2 * sizeof(void*))
     {
-        get_logger()->log("[BUDDY SYSTEM ALLOCATOR] Requested " + std::to_string(request_size) + " bytes, but will be allocated " + std::to_string(2 * sizeof(void *)) + " bytes for further stable operation of the allocator.", logger::severity::trace);
-
+        this->trace_with_guard("[BUDDY SYSTEM ALLOCATOR] Requested " + std::to_string(request_size) + " bytes, but will be allocated " + std::to_string(2 * sizeof(void *)) + " bytes for correct work of the allocator.");
         request_size = 2 * sizeof(void*);
     }
-
 
     void *target_block = nullptr;
     auto current_block = get_first_available_block();
@@ -197,7 +195,7 @@ void * const buddy_system_memory::allocate(size_t request_size) const
     {
         std::string message = "No available memory";
 
-        get_logger()->log("[BUDDY SYSTEM ALLOCATOR] " + message + ".", logger::severity::warning);
+        this->warning_with_guard("[BUDDY SYSTEM ALLOCATOR] " + message + ".");
 
         throw memory::memory_exception(message);
     }
@@ -256,7 +254,7 @@ void * const buddy_system_memory::allocate(size_t request_size) const
 
     auto allocated_block = reinterpret_cast<void*>(reinterpret_cast<unsigned char*>(target_block) + sizeof(unsigned char));
 
-    get_logger()->log("[BUDDY SYSTEM ALLOCATOR] Memory allocation at address: " + address_to_string(get_address_relative_to_allocator(allocated_block)) + " success.", logger::severity::trace);
+    this->trace_with_guard("[BUDDY SYSTEM ALLOCATOR] Memory allocated at address: " + address_to_string(get_address_relative_to_allocator(allocated_block)) + ".");
 
     return allocated_block;
 }
@@ -269,7 +267,7 @@ void buddy_system_memory::deallocate(void * target_to_dealloc) const
     {
         std::string message = "Block with address: " + address_to_string(target_to_dealloc) + " does not belong to the allocator";
 
-        get_logger()->log("[BUDDY SYSTEM ALLOCATOR] " + message + ".", logger::severity::warning);
+        this->warning_with_guard("[BUDDY SYSTEM ALLOCATOR] " + message + ".");
 
         throw memory::memory_exception(message);
     }
@@ -363,14 +361,14 @@ void buddy_system_memory::deallocate(void * target_to_dealloc) const
         }
     }
 
-    get_logger()->log("[BUDDY SYSTEM ALLOCATOR] Memory at address: " + address_to_string(get_address_relative_to_allocator(target_to_dealloc)) + " was deallocated.", logger::severity::trace);
+    this->trace_with_guard("[BUDDY SYSTEM ALLOCATOR] Memory deallocated at address: " + address_to_string(get_address_relative_to_allocator(target_to_dealloc)) + ".");
 }
 
 buddy_system_memory::~buddy_system_memory()
 {
-    const auto * const outer_allocator = get_outer_allocator();
+    const auto * const outer_allocator = get_allocator();
 
-    get_logger()->log("[BUDDY SYSTEM ALLOCATOR] Allocator success deleted.", logger::severity::trace);
+    this->trace_with_guard("[BUDDY SYSTEM ALLOCATOR] Allocator deleted.");
 
     if (outer_allocator == nullptr)
     {

@@ -42,4 +42,8 @@ add_executable(kursach
         owntype/own_type.h
         tree/associative_container.h
         tree/binary_search_tree.h
-        tree/splay_tree.h)
+        tree/splay_tree.h
+        allocator/memory_holder.cpp
+        allocator/memory_holder.h
+        logger/logger_holder.cpp
+        logger/logger_holder.h)

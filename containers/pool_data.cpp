@@ -25,7 +25,7 @@ bool pool_data::find_in(std::string const &scheme_data_name) const
     return _pool_data->find_in(scheme_data_name);
 }
 
-memory* pool_data::get_outer_allocator() const
+memory* pool_data::get_allocator() const
 {
     return _allocator;
 }

@@ -1,10 +1,10 @@
 ADD_POOL pool_1 buddies_system 50000 first_match
 ADD_SCHEME pool_1 scheme_1
 ADD_COLLECTION pool_1 scheme_1 collection_1
-ADD_DATA pool_1 scheme_1 collection_1 3 1 test economy ivanov ivan ivanich 12.03.2022 15:34 1
-GET_DATA pool_1 scheme_1 collection_1 3 1 test economy
-REMOVE_POOL pool1
-REMOVE_DATA pool_1 scheme_1 collection_1 3 1 test economy
+ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
+GET_DATA pool_1 scheme_1 collection_1 1
+REMOVE_POOL pool_2
+REMOVE_DATA pool_1 scheme_1 collection_1 1
 REMOVE_COLLECTION pool_1 scheme_1 collection_1
 REMOVE_SCHEME pool_1 scheme_1
 REMOVE_POOL pool_1

@@ -10,7 +10,7 @@ size_t borders_descriptors_memory::get_allocated_memory_size() const
     return *reinterpret_cast<size_t*>(_allocated_memory);
 }
 
-memory* borders_descriptors_memory::get_outer_allocator() const
+memory* borders_descriptors_memory::get_allocator() const
 {
     return *reinterpret_cast<memory**>(reinterpret_cast<unsigned char*>(_allocated_memory) + sizeof(size_t));
 }
@@ -131,7 +131,7 @@ borders_descriptors_memory::borders_descriptors_memory(
     auto * const first_occupied_block_ptr = reinterpret_cast<void**>(allocation_mode_ptr + 1);
     *first_occupied_block_ptr = nullptr;
 
-    get_logger()->log("[BORDER DESCRIPTORS ALLOCATOR] Allocator successfully created.", logger::severity::trace);
+    this->trace_with_guard("[BORDER DESCRIPTORS ALLOCATOR] Allocator created.");
 }
 
 void * const borders_descriptors_memory::allocate(size_t request_size) const
@@ -206,7 +206,7 @@ void * const borders_descriptors_memory::allocate(size_t request_size) const
     {
         std::string message = "No available memory";
 
-        get_logger()->log("[BORDER DESCRIPTORS ALLOCATOR] " + message + ".", logger::severity::warning);
+        this->warning_with_guard("[BORDER DESCRIPTORS ALLOCATOR] " + message + ".");
 
         throw memory::memory_exception(message);
     }
@@ -239,7 +239,7 @@ void * const borders_descriptors_memory::allocate(size_t request_size) const
 
     auto allocated_block = reinterpret_cast<void*>(reinterpret_cast<unsigned char*>(target_block) + occupied_block_service_block_size);
 
-    get_logger()->log("[BORDER DESCRIPTORS ALLOCATOR] Memory allocation at address: " + address_to_string(get_address_relative_to_allocator(allocated_block)) + " success.", logger::severity::trace);
+    this->trace_with_guard("[BORDER DESCRIPTORS ALLOCATOR] Memory allocated at address: " + address_to_string(get_address_relative_to_allocator(allocated_block)) + ".");
 
     return allocated_block;
 }
@@ -252,7 +252,7 @@ void borders_descriptors_memory::deallocate(void * target_to_dealloc) const
     {
         std::string message = "Block with address: " + address_to_string(target_to_dealloc) + " does not belong to the allocator";
 
-        get_logger()->log("[BORDER DESCRIPTORS ALLOCATOR] " + message + ".", logger::severity::trace);
+        this->trace_with_guard("[BORDER DESCRIPTORS ALLOCATOR] " + message + ".");
 
         throw memory::memory_exception(message);
     }
@@ -279,12 +279,12 @@ void borders_descriptors_memory::deallocate(void * target_to_dealloc) const
         *first_occupied_block_ptr = next_block_to_target_block;
     }
 
-    get_logger()->log("[BORDER DESCRIPTORS ALLOCATOR] Memory at address: " + address_to_string(get_address_relative_to_allocator(target_to_dealloc)) + " was deallocated.", logger::severity::trace);
+    this->trace_with_guard("[BORDER DESCRIPTORS ALLOCATOR] Memory deallocated at address: " + address_to_string(get_address_relative_to_allocator(target_to_dealloc)) + ".");
 }
 
 borders_descriptors_memory::~borders_descriptors_memory()
 {
-    const auto * const outer_allocator = get_outer_allocator();
+    const auto * const outer_allocator = get_allocator();
 
     if (outer_allocator == nullptr)
     {
@@ -295,5 +295,5 @@ borders_descriptors_memory::~borders_descriptors_memory()
         outer_allocator->deallocate(_allocated_memory);
     }
 
-    get_logger()->log("[BORDER DESCRIPTORS ALLOCATOR] Allocator success deleted.", logger::severity::trace);
+    this->trace_with_guard("[BORDER DESCRIPTORS ALLOCATOR] Allocator deleted.");
 }

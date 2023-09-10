@@ -91,10 +91,6 @@ protected:
 
 protected:
 
-    virtual memory *get_outer_allocator() const = 0;
-
-    virtual logger *get_logger() const = 0;
-
     static std::string address_to_string(void const * const address);
 
     void memory_state_before_deallocation(void * const target_block, logger * logger) const;

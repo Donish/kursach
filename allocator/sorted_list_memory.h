@@ -4,14 +4,13 @@
 #include "memory.h"
 #include "../logger/logger_builder_concrete.h"
 #include "../logger/logger_concrete.h"
-// #include "memory_holder.h"
-// #include "../logger/logger_implementation.h"
-// #include "../logger/builder_implementation.h"
-// #include "../logger/json_implementation.h"
-// #include "../logger/logger_holder.h"
+#include "memory_holder.h"
+#include "../logger/logger_holder.h"
 
 class sorted_list_memory final :
-        public memory
+        public memory,
+        public memory_holder,
+        public logger_holder
 {
 private:
 
@@ -67,7 +66,7 @@ protected:
 
     void * get_address_relative_to_allocator(void * current_block_address) const override;
 
-    memory* get_outer_allocator() const override;
+    memory* get_allocator() const override;
 
     logger * get_logger() const override;
 

@@ -166,18 +166,12 @@ splay_tree<tkey, tvalue, tkey_comparer>::splay_tree(splay_tree<tkey, tvalue, tke
 {
     move(std::move(other));
 
-    // this->trace_with_guard("The tree has been moved.");
-    // logger *logger = get_logger();
-    // if(logger != nullptr)
-    // {
-    //     logger->log("The tree has been moved", logger::severity::trace);
-    // }
-    this->_logger->log("The tree has been moved", logger::severity::trace);
+    this->trace_with_guard("The tree has been moved.");
 }
 
 template<typename tkey, typename tvalue, typename tkey_comparer>
 splay_tree<tkey, tvalue, tkey_comparer>::splay_tree(const splay_tree<tkey, tvalue, tkey_comparer> &other)
-    : splay_tree<tkey, tvalue, tkey_comparer>(other.get_outer_allocator(), other.get_logger())
+    : splay_tree<tkey, tvalue, tkey_comparer>(other.get_allocator(), other.get_logger())
 {
     this->_root = other.copy();
 }
@@ -213,7 +207,7 @@ splay_tree<tkey, tvalue, tkey_comparer>::copy_inner(typename binary_search_tree<
         return nullptr;
     }
     
-    auto * node_copy = reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node*>(_allocator->allocate(this->get_node_size()));
+    auto * node_copy = reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node*>(this->allocate_with_guard(this->get_node_size()));
 
     new (node_copy) typename binary_search_tree<tkey, tvalue, tkey_comparer>::node;
 
@@ -361,12 +355,7 @@ void splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_insertion_template_meth
 {
     _tree->splay(subtree_root_address, path_to_subtree_root_exclusive);
 
-    auto *logger1 = this->_tree->get_logger();
-
-    if(logger1 != nullptr)
-    {
-        logger1->log("[SPLAY TREE] Node inserted", logger::severity::trace);
-    }
+    this->trace_with_guard("[SPLAY TREE] Node inserted.");
 }
 
 template<
@@ -408,23 +397,16 @@ tvalue splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_removing_template_met
         typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
         std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
-    logger *logger1 = this->_tree->_logger;
-
     if (subtree_root_address == nullptr)
     {
         std::string message = "Tree is empty";
-        // this->warning_with_guard(message);
-        if(logger1 != nullptr)
-        {
-            logger1->log("[SPLAY TREE] Tree is empty", logger::severity::warning);
-        }
+        this->warning_with_guard(message);
 
         throw std::invalid_argument("[SPLAY TREE] " + message + ".");
     }
 
     std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> path;
     typename binary_search_tree<tkey, tvalue, tkey_comparer>::node ** current_node = &subtree_root_address;
-
 
     tkey_comparer comparator;
 
@@ -446,11 +428,7 @@ tvalue splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_removing_template_met
     if ((*current_node) == nullptr)
     {
         std::string message = "Key not found";
-        // this->warning_with_guard(message);
-        if(logger1 != nullptr)
-        {
-            logger1->log("[SPLAY TREE] Key not found", logger::severity::warning);
-        }
+        this->warning_with_guard(message);
 
         throw std::invalid_argument("[SPLAY TREE] " + message + ".");
     }
@@ -464,14 +442,9 @@ tvalue splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_removing_template_met
 
     subtree_root_address->~node();
 
-    // _tree->deallocate_with_guard(subtree_root_address);
-    _tree->get_outer_allocator()->deallocate(subtree_root_address);
+    _tree->deallocate_with_guard(subtree_root_address);
 
-    // this->trace_with_guard("[SPLAY TREE] Node has been deleted.");
-    if(logger1 != nullptr)
-    {
-        logger1->log("[SPLAY TREE] Node has been deleted", logger::severity::trace);
-    }
+    this->trace_with_guard("[SPLAY TREE] Node has been deleted.");
 
     _tree->_root = _tree->merge(left_subtree, right_subtree);
 
@@ -487,16 +460,12 @@ std::tuple<tkey, tvalue> splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_rem
     typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
     std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
-    logger *logger1 = this->_tree->_logger;
 
     if (subtree_root_address == nullptr)
     {
         std::string message = "Tree is empty";
-        // this->warning_with_guard(message);
-        if(logger1 != nullptr)
-        {
-            logger1->log("[SPLAY TREE] Tree is empty", logger::severity::warning);
-        }
+
+        this->warning_with_guard(message);
 
         throw std::invalid_argument("[SPLAY TREE] " + message + ".");
     }
@@ -525,11 +494,8 @@ std::tuple<tkey, tvalue> splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_rem
     if ((*current_node) == nullptr)
     {
         std::string message = "Key not found";
-        // this->warning_with_guard(message);
-        if(logger1 != nullptr)
-        {
-            logger1->log("[SPLAY TREE] Key not found", logger::severity::warning);
-        }
+
+        this->warning_with_guard(message);
 
         throw std::invalid_argument("[SPLAY TREE] " + message + ".");
     }
@@ -543,14 +509,9 @@ std::tuple<tkey, tvalue> splay_tree<tkey, tvalue, tkey_comparer>::splay_tree_rem
 
     subtree_root_address->~node();
 
-    // _tree->deallocate_with_guard(subtree_root_address);
-    _tree->get_outer_allocator()->deallocate(subtree_root_address);
+    _tree->deallocate_with_guard(subtree_root_address);
 
-    // this->trace_with_guard("[SPLAY TREE] Node has been deleted.");
-    if(logger1 != nullptr)
-    {
-        logger1->log("[SPLAY TREE] Node has been deleted", logger::severity::trace);
-    }
+    this->trace_with_guard("[SPLAY TREE] Node has been deleted.");
 
     _tree->_root = _tree->merge(left_subtree, right_subtree);
 
@@ -605,10 +566,7 @@ splay_tree<tkey, tvalue, tkey_comparer>::splay_tree(memory *allocator, logger *l
         allocator,
         logger)
 {
-    _allocator = allocator;
-    _logger = logger;
-    binary_search_tree<tkey, tvalue, tkey_comparer>::get_logger()->log("[SPLAY TREE] The tree has been created", logger::severity::trace);
-    // this->trace_with_guard("[SPLAY TREE] The tree has been created.");
+        this->trace_with_guard("[SPLAY TREE] The tree has been created.");
 }
 
 #endif

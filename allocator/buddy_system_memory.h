@@ -1,11 +1,16 @@
 #ifndef BUDDY_SYSTEM_MEMORY_H
 #define BUDDY_SYSTEM_MEMORY_H
+
 #include "memory.h"
+#include "memory_holder.h"
 #include "../logger/logger_concrete.h"
 #include "../logger/logger_builder_concrete.h"
+#include "../logger/logger_holder.h"
 
 class buddy_system_memory :
-        public memory
+        public memory,
+        public memory_holder,
+        public logger_holder
 {
 private:
 
@@ -60,7 +65,7 @@ protected:
 
     void * get_next_available_block(void * current_block) const override;
 
-    memory * get_outer_allocator() const override;
+    memory * get_allocator() const override;
 
     logger * get_logger() const override;
 

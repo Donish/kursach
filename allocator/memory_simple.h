@@ -4,9 +4,13 @@
 #include "memory.h"
 #include "../logger/logger_concrete.h"
 #include "../logger/logger_builder_concrete.h"
+#include "../logger/logger_holder.h"
+#include "memory_holder.h"
 
 class memory_simple final :
-    public memory
+        public memory,
+        public memory_holder,
+        public logger_holder
 {
 private:
 
@@ -38,7 +42,7 @@ protected:
 
     logger *get_logger() const override;
 
-    memory *get_outer_allocator() const override;
+    memory *get_allocator() const override;
 };
 
 #endif //MEMORY_SIMPLE_H

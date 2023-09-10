@@ -14,7 +14,6 @@ int main(int argc, char* argv[])
         std::cout << "Enter the filepath!\n";
         return -1;
     }
-    std::cout << argv[1] << "\n";
 
     auto *db = new data_base();
 
@@ -36,7 +35,7 @@ int main(int argc, char* argv[])
 
     delete db;
 
-    getchar();
+//    getchar();
 
     return 0;
 }

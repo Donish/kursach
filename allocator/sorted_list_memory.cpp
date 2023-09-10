@@ -10,7 +10,7 @@ size_t sorted_list_memory::get_allocated_memory_size() const
     return *reinterpret_cast<size_t *>(_allocated_memory);
 }
 
-memory* sorted_list_memory::get_outer_allocator() const
+memory* sorted_list_memory::get_allocator() const
 {
     return *reinterpret_cast<memory**>(reinterpret_cast<size_t *>(_allocated_memory) + 1);
 }
@@ -118,15 +118,14 @@ sorted_list_memory::sorted_list_memory(
     auto * const next_available_block_ptr = reinterpret_cast<void**>(first_available_block_size + 1);
     *next_available_block_ptr = nullptr;
     
-    get_logger()->log("[SORTED LIST ALLOCATOR] Allocator successfully created.", logger::severity::trace);
+    this->trace_with_guard("[SORTED LIST ALLOCATOR] Allocator created");
 }
 
 void * const sorted_list_memory::allocate(size_t request_size) const
 {
     if (request_size < sizeof(void*))
     {
-        get_logger()->log("[SORTED LIST ALLOCATOR] Requested " + std::to_string(request_size) + " bytes, but will be allocated " + std::to_string(sizeof(void *)) + " bytes for further stable operation of the allocator.", logger::severity::trace);
-
+        this->trace_with_guard("[SORTED LIST ALLOCATOR] Requested " + std::to_string(request_size) + " bytes, but will be allocated " + std::to_string(sizeof(void *)) + " bytes for further stable operation of the allocator.");
         request_size = sizeof(void*);
     }
 
@@ -170,7 +169,7 @@ void * const sorted_list_memory::allocate(size_t request_size) const
     if (target_block == nullptr)
     {
         std::string message = "No available memory";
-        get_logger()->log("[SORTED LIST ALLOCATOR] " + message + ".", logger::severity::warning);
+        this->warning_with_guard("[SORTED LIST ALLOCATOR] " + message + ".");
 
         throw memory::memory_exception(message);
     }
@@ -183,8 +182,7 @@ void * const sorted_list_memory::allocate(size_t request_size) const
     {
         auto new_request_size = target_block_size - occupied_block_service_block_size;
 
-        get_logger()->log("[SORTED LIST ALLOCATOR] Requested " + std::to_string(request_size) + " bytes, but for correct operation " + std::to_string(new_request_size) + " will be allocated.", logger::severity::trace);
-
+        this->trace_with_guard("[SORTED LIST ALLOCATOR] Requested " + std::to_string(request_size) + " bytes, but for correct operation " + std::to_string(new_request_size) + " will be allocated.");
         request_size = new_request_size;
     }
 
@@ -220,7 +218,7 @@ void * const sorted_list_memory::allocate(size_t request_size) const
 
     auto allocated_block = reinterpret_cast<void*>(target_block_size_space + 1);
 
-    get_logger()->log("[SORTED LIST ALLOCATOR] Memory allocation at address: " + address_to_string(get_address_relative_to_allocator(allocated_block)) + " success.", logger::severity::trace);
+    this->trace_with_guard("[SORTED LIST ALLOCATOR] Memory allocated at address: " + address_to_string(get_address_relative_to_allocator(allocated_block)));
 
     return reinterpret_cast<void*>(allocated_block);
 }
@@ -233,7 +231,7 @@ void sorted_list_memory::deallocate(void * target_to_dealloc) const
     {
         std::string message = "Block with address: " + address_to_string(target_to_dealloc) + " does not belong to the allocator";
 
-        get_logger()->log("[SORTED LIST ALLOCATOR] " + message + ".", logger::severity::warning);
+        this->warning_with_guard("[SORTED LIST ALLOCATOR] " + message + ".");
 
         throw memory::memory_exception(message);
     }
@@ -291,16 +289,16 @@ void sorted_list_memory::deallocate(void * target_to_dealloc) const
         *first_available_block = target_block;
     }
 
-    get_logger()->log("[SORTED LIST ALLOCATOR] Memory at address: " + address_to_string(get_address_relative_to_allocator(target_to_dealloc)) + " was deallocated.", logger::severity::trace);
+    this->trace_with_guard("[SORTED LIST ALLOCATOR] Memory deallocated at address: " + address_to_string(get_address_relative_to_allocator(target_to_dealloc)));
 }
 
 
 
 sorted_list_memory::~sorted_list_memory()
 {
-    const auto * const outer_allocator = get_outer_allocator();
+    const auto * const outer_allocator = get_allocator();
 
-    get_logger()->log("[SORTED LIST ALLOCATOR] Allocator success deleted.", logger::severity::trace);
+    this->trace_with_guard("[SORTED LIST ALLOCATOR] Allocator deleted.");
 
     if (outer_allocator == nullptr)
     {

@@ -47,9 +47,9 @@ value* collection_data::get(key* const &data_key)
     return _data->get_value(data_key);
 }
 
-value collection_data::remove(key* data_key)
+value* collection_data::remove(key* data_key)
 {
-    // ?
+    return _data->remove(data_key);
 }
 
 bool collection_data::find_in(key* const &data_key) const
@@ -146,7 +146,7 @@ collection_data& collection_data::operator=(collection_data &&other) noexcept
     return *this;
 }
 
-memory* collection_data::get_outer_allocator() const
+memory* collection_data::get_allocator() const
 {
     return _allocator;
 }
