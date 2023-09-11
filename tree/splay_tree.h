@@ -569,4 +569,4 @@ splay_tree<tkey, tvalue, tkey_comparer>::splay_tree(memory *allocator, logger *l
         this->trace_with_guard("[SPLAY TREE] The tree has been created.");
 }
 
-#endif
+#endif //SPLAY_TREE_H
