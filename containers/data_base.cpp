@@ -128,7 +128,7 @@ void data_base::add_scheme(std::string const &pool_name, std::string const &sche
     }
 }
 
-void data_base::add_collection(std::string const &pool_name, std::string const &scheme_name, std::string const &collection_name)
+void data_base::add_collection(std::string const &pool_name, std::string const &scheme_name, std::string const &collection_name, tree_types outer_tree_type)
 {
     try
     {
@@ -142,7 +142,7 @@ void data_base::add_collection(std::string const &pool_name, std::string const &
             {
                 scheme_data const &current_scheme = current_pool.find(scheme_name);
 
-                const_cast<scheme_data&>(current_scheme).add(collection_name, std::move(collection_data(allocator)));
+                const_cast<scheme_data&>(current_scheme).add(collection_name, std::move(collection_data(allocator, outer_tree_type)));
 
                 std::cout << "[DATA BASE] collection with name:" << collection_name << " added to " << pool_name << " " << scheme_name << std::endl << std::endl;
             }

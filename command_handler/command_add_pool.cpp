@@ -6,17 +6,34 @@ bool command_add_pool::can_execute(const std::string &request) noexcept
     {
         auto argc = split(request, ' ');
 
-        if (argc.size() == 3 && argc[2] == "global_heap")
+        if (argc.size() == 4 && argc[2] == "global_heap")
         {
             _pool_name = argc[1];
             _pool_allocator_type = allocator_types::GLOBAL_HEAP;
             _pool_allocator_size = 0;
             _pool_allocator_allocation_mode = memory::allocation_mode::first_match;
 
+            if(argc[3] == "splay_tree")
+            {
+                _tree_type = tree_types::SPLAY_TREE;
+            }
+            else if(argc[3] == "avl_tree")
+            {
+                _tree_type = tree_types::AVL_TREE;
+            }
+            else if(argc[3] == "black_red_tree")
+            {
+                _tree_type = tree_types::RED_BLACK_TREE;
+            }
+            else
+            {
+                return false;
+            }
+
             return true;
         }
 
-        if (argc.size() == 5)
+        if (argc.size() == 6)
         {
             _pool_name = argc[1];
 
@@ -58,6 +75,23 @@ bool command_add_pool::can_execute(const std::string &request) noexcept
             else if (argc[4] == "the_worst_match")
             {
                 _pool_allocator_allocation_mode = memory::allocation_mode::the_worst_match;
+            }
+            else
+            {
+                return false;
+            }
+
+            if(argc[5] == "splay_tree")
+            {
+                _tree_type = tree_types::SPLAY_TREE;
+            }
+            else if(argc[5] == "avl_tree")
+            {
+                _tree_type = tree_types::AVL_TREE;
+            }
+            else if(argc[5] == "black_red_tree")
+            {
+                _tree_type = tree_types::RED_BLACK_TREE;
             }
             else
             {

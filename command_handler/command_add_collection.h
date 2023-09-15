@@ -11,6 +11,7 @@ private:
     std::string _pool_name;
     std::string _scheme_name;
     std::string _collection_name;
+    tree_types _tree_type;
 
 public:
 

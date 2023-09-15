@@ -48,5 +48,5 @@ add_executable(kursach
         logger/logger_holder.cpp
         logger/logger_holder.h
         tree/avl_tree.h
-        tree/red_black_tree.h
+#        tree/red_black_tree.h
         tree/tree_types.h)

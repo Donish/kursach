@@ -1,9 +1,23 @@
 #include "collection_data.h"
 
-collection_data::collection_data(memory *allocator): 
-    _data(new splay_tree<key*, value*, key_comparer>(allocator, nullptr)),
+collection_data::collection_data(memory *allocator, tree_types outer_tree_type):
+//    _data(new splay_tree<key*, value*, key_comparer>(allocator, nullptr)),
+    _tree_type(outer_tree_type),
     _allocator(allocator)
-{}
+{
+    if(_tree_type == tree_types::SPLAY_TREE)
+    {
+        _data = new splay_tree<key*, value*, key_comparer>(allocator, nullptr);
+    }
+    else if(_tree_type == tree_types::AVL_TREE)
+    {
+        _data = new avl_tree<key*, value*, key_comparer>(allocator, nullptr);
+    }
+    else if(_tree_type == tree_types::RED_BLACK_TREE)
+    {
+//        _data = new red_black_tree<key*, value*, key_comparer>(allocator, nullptr);
+    }
+}
 
 void collection_data::add(
     unsigned int id_meeting,

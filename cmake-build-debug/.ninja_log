@@ -34,5 +34,10 @@
 5083	5731	7156356384531870	CMakeFiles/kursach.dir/validator/digit_validator.cpp.obj	b25041be8d625159
 5027	6467	7160778129731135	kursach.exe	9bf7bdc4d969b8a3
 6176	6847	7156356395709987	CMakeFiles/kursach.dir/validator/time_validator.cpp.obj	b8771cb5c19393d
-0	172	7161227169813125	build.ninja	b100c3073d0a8d23
+0	172	7165063676116207	build.ninja	b100c3073d0a8d23
 2678	3176	7160502734805522	CMakeFiles/kursach.dir/logger/logger_holder.cpp.obj	c4f2e93d1dcf1b6c
+4	1469	7165063851931490	CMakeFiles/kursach.dir/main.cpp.obj	a3525fc432b4ffea
+26	1478	7165063852025457	CMakeFiles/kursach.dir/command_handler/command_get_data_between.cpp.obj	f771b19a0bbaf5f8
+14	1481	7165063852055373	CMakeFiles/kursach.dir/command_handler/command.cpp.obj	814701fbf23193e6
+19	1484	7165063852085309	CMakeFiles/kursach.dir/command_handler/command_add_collection.cpp.obj	93590b57d7ff4c3e
+44	1485	7165063852105265	CMakeFiles/kursach.dir/command_handler/command_add_data.cpp.obj	a1cf1eaa6c861435

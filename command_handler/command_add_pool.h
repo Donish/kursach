@@ -16,6 +16,7 @@ private:
     allocator_types _pool_allocator_type;
     size_t _pool_allocator_size;
     memory::allocation_mode _pool_allocator_allocation_mode;
+    tree_types _tree_type;
 
 public:
 

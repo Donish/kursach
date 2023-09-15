@@ -9,6 +9,7 @@
 #include "../validator/digit_validator.h"
 #include "../validator/date_validator.h"
 #include "../validator/time_validator.h"
+#include "../tree/tree_types.h"
 
 class command
 {

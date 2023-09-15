@@ -8,7 +8,10 @@
 #include "../allocator/buddy_system_memory.h"
 #include "../tree/binary_search_tree.h"
 #include "../tree/splay_tree.h"
+#include "../tree/avl_tree.h"
+//#include "../tree/red_black_tree.h"
 #include "../comparers/key_comparer.h"
+#include "../tree/tree_types.h"
 
 class collection_data final :
         protected memory_holder
@@ -19,9 +22,11 @@ private:
 
     associative_container<key*, value*> *_data;
 
+    tree_types _tree_type;
+
 public:
 
-    collection_data(memory *allocator = nullptr);
+    collection_data(memory *allocator = nullptr, tree_types outer_tree_type = tree_types::SPLAY_TREE);
 
     ~collection_data();
 

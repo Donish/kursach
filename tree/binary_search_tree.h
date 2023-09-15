@@ -31,10 +31,6 @@ protected:
 
         node * right_subtree_address;
 
-//    public:
-//
-//        virtual ~node() = default;
-
     };
 
 public:
@@ -1020,10 +1016,6 @@ bool binary_search_tree<tkey, tvalue, tkey_comparer>::reading_template_method::r
     if (subtree_root_address == nullptr)
     {
         return false;
-//        std::string message = "Key not found";
-//        this->warning_with_guard(message);
-//
-//        throw std::invalid_argument(message + ".");
     }
 
     tkey_comparer comparator;
