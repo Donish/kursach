@@ -11,9 +11,11 @@ private:
 
     associative_container<std::string, scheme_data> *_pool_data;
 
+    tree_types _tree_type;
+
 public:
 
-    pool_data(memory *allocator = nullptr);
+    pool_data(memory *allocator = nullptr, tree_types outer_tree_type = tree_types::SPLAY_TREE);
 
     ~pool_data();
 
