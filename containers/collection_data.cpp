@@ -109,9 +109,23 @@ void collection_data::update(
 }
 
 collection_data::collection_data(collection_data const &other):
-    _data(new splay_tree<key*, value*, key_comparer>(*reinterpret_cast<splay_tree<key*, value*, key_comparer>*>(other._data))),
-    _allocator(other._allocator)
-{}
+//    _data(new splay_tree<key*, value*, key_comparer>(*reinterpret_cast<splay_tree<key*, value*, key_comparer>*>(other._data))),
+    _allocator(other._allocator),
+    _tree_type(other._tree_type)
+{
+    if(other._tree_type == tree_types::SPLAY_TREE)
+    {
+        _data = new splay_tree<key*, value*, key_comparer>(*reinterpret_cast<splay_tree<key*, value*, key_comparer>*>(other._data));
+    }
+    else if(other._tree_type == tree_types::AVL_TREE)
+    {
+        _data = new avl_tree<key*, value*, key_comparer>(*reinterpret_cast<avl_tree<key*, value*, key_comparer>*>(other._data));
+    }
+    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+    {
+//        _data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
+    }
+}
 
 collection_data& collection_data::operator=(collection_data const &other)
 {
@@ -128,7 +142,19 @@ collection_data& collection_data::operator=(collection_data const &other)
         this->_allocator = other._allocator;
     }
 
-    this->_data = new splay_tree<key*, value*, key_comparer>(*reinterpret_cast<splay_tree<key*, value*, key_comparer>*>(other._data));
+    if(other._tree_type == tree_types::SPLAY_TREE)
+    {
+        this->_data = new splay_tree<key *, value *, key_comparer>(*reinterpret_cast<splay_tree<key *, value *, key_comparer>*>(other._data));
+    }
+    else if(other._tree_type == tree_types::AVL_TREE)
+    {
+        this->_data = new avl_tree<key*, value*, key_comparer>(*reinterpret_cast<avl_tree<key*, value*, key_comparer>*>(other._data));
+    }
+    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+    {
+//        this->_data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
+    }
+    this->_tree_type = other._tree_type;
 
     return *this;
 }
@@ -137,6 +163,7 @@ collection_data::collection_data(collection_data &&other) noexcept
 {
     this->_data = other._data;
     this->_allocator = other._allocator;
+    this->_tree_type = other._tree_type;
     other._data = nullptr;
     other._allocator = nullptr;
 }
@@ -153,6 +180,7 @@ collection_data& collection_data::operator=(collection_data &&other) noexcept
 
     this->_data = other._data;
     this->_allocator = other._allocator;
+    this->_tree_type = other._tree_type;
 
     other._data = nullptr;
     other._allocator = nullptr;

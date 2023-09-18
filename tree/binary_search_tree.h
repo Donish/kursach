@@ -25,6 +25,7 @@ protected:
 
     struct node
     {
+
         typename associative_container<tkey, tvalue>::key_value_pair key_and_value;
 
         node * left_subtree_address;
@@ -815,7 +816,6 @@ void binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method:
 {
     new (node_address) binary_search_tree<tkey, tvalue, tkey_comparer>::node;
 }
-
 
 template<
         typename tkey,

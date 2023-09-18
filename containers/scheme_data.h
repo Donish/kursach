@@ -9,9 +9,11 @@ private:
 
     associative_container<std::string, collection_data> *_scheme_data;
 
+    tree_types _tree_type;
+
 public:
 
-    scheme_data();
+    scheme_data(tree_types outer_tree_type);
 
     ~scheme_data();
 

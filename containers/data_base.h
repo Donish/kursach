@@ -38,11 +38,11 @@ public:
 
 public:
 
-    void add_pool(std::string const &name_pool, allocator_types allocator_name, size_t request_size, memory::allocation_mode mode);
+    void add_pool(std::string const &name_pool, allocator_types allocator_name, size_t request_size, memory::allocation_mode mode, tree_types outer_tree_type);
 
-    void add_scheme(std::string const &pool_name, std::string const &scheme_name);
+    void add_scheme(std::string const &pool_name, std::string const &scheme_name, tree_types outer_tree_type);
 
-    void add_collection(std::string const &pool_name, std::string const &scheme_name, std::string const &collection_name);
+    void add_collection(std::string const &pool_name, std::string const &scheme_name, std::string const &collection_name, tree_types outer_tree_type);
 
     void add_data(std::string const &pool_name,
         std::string const &scheme_name,

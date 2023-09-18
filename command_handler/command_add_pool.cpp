@@ -106,5 +106,5 @@ bool command_add_pool::can_execute(const std::string &request) noexcept
 
 void command_add_pool::execute(const std::string &request) const noexcept
 {
-    data_base::get_instance()->add_pool(_pool_name, _pool_allocator_type, _pool_allocator_size, _pool_allocator_allocation_mode);
+    data_base::get_instance()->add_pool(_pool_name, _pool_allocator_type, _pool_allocator_size, _pool_allocator_allocation_mode, _tree_type);
 }

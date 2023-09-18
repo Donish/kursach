@@ -2,6 +2,7 @@
 #define RED_BLACK_TREE_H
 
 #include "binary_search_tree.h"
+#include <memory>
 
 template<
         typename tkey,
@@ -9,7 +10,20 @@ template<
         typename tkey_comparer>
 class red_black_tree final : public binary_search_tree<tkey, tvalue, tkey_comparer>
 {
-private:
+protected:
+
+    enum color_node
+    {
+        RED,
+        BLACK
+    };
+
+    struct red_black_node : public binary_search_tree<tkey, tvalue, tkey_comparer>::node
+    {
+        color_node _color;
+    };
+
+protected:
 
     class red_black_tree_insertion_template_method final : public binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method
     {
@@ -46,12 +60,6 @@ private:
 
         explicit red_black_tree_reading_template_method(red_black_tree<tkey, tvalue, tkey_comparer> * tree);
 
-    protected:
-
-        void after_read_inner(
-                typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
-                std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive) override;
-
     };
 
     class red_black_tree_removing_template_method final : public binary_search_tree<tkey, tvalue, tkey_comparer>::removing_template_method
@@ -60,33 +68,30 @@ private:
     private:
 
         red_black_tree<tkey, tvalue, tkey_comparer> * _tree;
+        std::unique_ptr<red_black_node> _info_deleted_node;
 
     public:
 
         explicit red_black_tree_removing_template_method(red_black_tree<tkey, tvalue, tkey_comparer> * tree);
 
+    private:
+
+        void get_info_deleted_node(
+                typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *deleted_node,
+                std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**> &path_to_subtree_root_exclusive);
+
     protected:
 
-        std::tuple<tkey, tvalue> remove_node_inner(
+        void after_remove_inner(
                 tkey const &key,
-                typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *& subtree_root_address,
-                std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive) override;
+                typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
+                std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**> &path_to_subtree_root_exclusive) override;
 
-        tvalue remove_inner(
-                tkey const &key,
-                typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *& subtree_root_address,
-                std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive) override;
+    public:
+
+        ~red_black_tree_removing_template_method();
+
     };
-
-protected:
-
-//    void splay(
-//            typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
-//            std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive) const;
-//
-//    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * merge(
-//            typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&left_subtree,
-//            typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&right_subtree);
 
 private:
 
@@ -98,17 +103,19 @@ private:
 
     void move(red_black_tree<tkey, tvalue, tkey_comparer> && other);
 
+    color_node get_color_node(red_black_node *current_node);
+
 public:
 
-    explicit red_black_tree(memory *allocator = nullptr, logger *logger = nullptr);
+    explicit red_black_tree(memory *allocator = nullptr, logger *logger_tree = nullptr);
 
-    red_black_tree(red_black_tree const & other);
+    red_black_tree(red_black_tree const &other);
 
-    red_black_tree(red_black_tree && other) noexcept;
+    red_black_tree(red_black_tree &&other) noexcept;
 
-    red_black_tree &operator=(red_black_tree const & other);
+    red_black_tree &operator=(red_black_tree const &other);
 
-    red_black_tree &operator=(red_black_tree && other) noexcept;
+    red_black_tree &operator=(red_black_tree &&other) noexcept;
 
     ~red_black_tree() final = default;
 
@@ -118,6 +125,25 @@ private:
     logger *_logger;
 
 };
+
+template<
+        typename tkey,
+        typename tvalue,
+        typename tkey_comparer>
+size_t red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_template_method::get_node_size() const
+{
+    return sizeof(red_black_node);
+}
+
+template<
+        typename tkey,
+        typename tvalue,
+        typename tkey_comparer>
+typename red_black_tree<tkey, tvalue, tkey_comparer>::color_node red_black_tree<tkey, tvalue, tkey_comparer>::get_color_node(
+        red_black_node *current_node)
+{
+    return current_node == nullptr ? color_node::BLACK : current_node->_color;
+}
 
 template<
         typename tkey,
@@ -241,11 +267,51 @@ template<
         typename tvalue,
         typename tkey_comparer>
 void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_template_method::after_insert_inner(
-        const tkey &key,
+        tkey const &key,
         typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
         std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
-    _tree->splay(subtree_root_address, path_to_subtree_root_exclusive);
+    if(path_to_subtree_root_exclusive.empty())
+    {
+        reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+
+        return;
+    }
+    else
+    {
+        if(subtree_root_address->left_subtree_address == nullptr &&
+            subtree_root_address->right_subtree_address == nullptr)
+        {
+            reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+        }
+    }
+
+    red_black_node **parent = nullptr;
+    red_black_node **uncle = nullptr;
+    red_black_node **grand_parent = nullptr;
+    red_black_node **great_grand_parent = nullptr;
+
+    if(!path_to_subtree_root_exclusive.empty())
+    {
+        parent = reinterpret_cast<red_black_node**>(path_to_subtree_root_exclusive.top());
+        path_to_subtree_root_exclusive.pop();
+
+        if(!path_to_subtree_root_exclusive.empty())
+        {
+            grand_parent = reinterpret_cast<red_black_node**>(path_to_subtree_root_exclusive.top());
+            path_to_subtree_root_exclusive.pop();
+
+            if((*grand_parent)->left_subtree_address == *parent)
+            {
+                uncle = reinterpret_cast<red_black_node**>(&((*grand_parent)->right_subtree_address));
+            }
+            else
+            {
+                //here
+            }
+        }
+    }
+//    _tree->splay(subtree_root_address, path_to_subtree_root_exclusive);
 
     this->trace_with_guard("[red_black TREE] Node inserted.");
 }

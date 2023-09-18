@@ -73,7 +73,7 @@ void data_base::print_format(value const &data) const
     }
 }
 
-void data_base::add_pool(std::string const &pool_name, allocator_types allocator_name, size_t request_size, memory::allocation_mode mode)
+void data_base::add_pool(std::string const &pool_name, allocator_types allocator_name, size_t request_size, memory::allocation_mode mode, tree_types outer_tree_type)
 {
     try
     {
@@ -98,7 +98,7 @@ void data_base::add_pool(std::string const &pool_name, allocator_types allocator
                 break;
         }
 
-        _data_base->insert(pool_name, std::move(pool_data(allocator)));
+        _data_base->insert(pool_name, std::move(pool_data(allocator, outer_tree_type)));
 
         std::cout << "[DATA BASE] pool with name:" << pool_name << " added to data base" << std::endl << std::endl;
     }
@@ -108,13 +108,13 @@ void data_base::add_pool(std::string const &pool_name, allocator_types allocator
     }
 }
 
-void data_base::add_scheme(std::string const &pool_name, std::string const &scheme_name)
+void data_base::add_scheme(std::string const &pool_name, std::string const &scheme_name, tree_types outer_tree_type)
 {
     try
     {
         if (_data_base->find_in(pool_name))
         {
-            const_cast<pool_data&>(_data_base->find(pool_name)).add(scheme_name, std::move(scheme_data()));
+            const_cast<pool_data&>(_data_base->find(pool_name)).add(scheme_name, std::move(scheme_data(outer_tree_type)));
             std::cout << "[DATA BASE] scheme with name:" << scheme_name << " added to " << pool_name << std::endl << std::endl;
         }
         else

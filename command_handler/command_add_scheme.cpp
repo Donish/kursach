@@ -37,5 +37,5 @@ bool command_add_scheme::can_execute(const std::string &request) noexcept
 
 void command_add_scheme::execute(const std::string &request) const noexcept
 {
-    data_base::get_instance()->add_scheme(_pool_name, _scheme_name);
+    data_base::get_instance()->add_scheme(_pool_name, _scheme_name, _tree_type);
 }
