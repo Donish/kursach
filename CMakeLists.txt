@@ -49,4 +49,11 @@ add_executable(kursach
         logger/logger_holder.h
         tree/avl_tree.h
 #        tree/red_black_tree.h
-        tree/tree_types.h)
+        tree/tree_types.h
+        flyweight/flyweight_string.cpp
+        flyweight/flyweight_string.h
+        flyweight/flyweight_factory.cpp
+        flyweight/flyweight_factory.h
+        owntype/meeting.cpp
+        owntype/meeting.h
+)
