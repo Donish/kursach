@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "../flyweight/flyweight_factory.h"
 
 enum meeting_type
 {
@@ -27,15 +28,15 @@ struct value
 {
     meeting_type _type;
     format _format;
-    std::string _description;
-    std::string _link;
-    std::string _creator_surname;
-    std::string _creator_name;
-    std::string _creator_patronymic;
-    std::string _date;
-    std::string _start_time;
-    std::string _min_duration;
-    std::string _invited_people;
+    std::shared_ptr<flyweight_string> _description;
+    std::shared_ptr<flyweight_string> _link;
+    std::shared_ptr<flyweight_string> _creator_surname;
+    std::shared_ptr<flyweight_string> _creator_name;
+    std::shared_ptr<flyweight_string> _creator_patronymic;
+    std::shared_ptr<flyweight_string> _date;
+    std::shared_ptr<flyweight_string> _start_time;
+    std::shared_ptr<flyweight_string> _min_duration;
+    std::shared_ptr<flyweight_string> _invited_people;
 };
 
 #endif //OWN_TYPE_H
