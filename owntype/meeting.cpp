@@ -1,5 +1,6 @@
-//
-// Created by zhura on 19.09.2023.
-//
-
 #include "meeting.h"
+
+unsigned int meeting::get_id() const
+{
+    return _id;
+}
