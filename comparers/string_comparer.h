@@ -1,7 +1,7 @@
 #ifndef STRING_COMPARER_H
 #define STRING_COMPARER_H
 
-#include "../owntype/own_type.h"
+#include "../owntype/meeting.h"
 
 class string_comparer final
 {

@@ -25,25 +25,19 @@ public:
 
 private:
 
-//    struct key
-//    {
-        unsigned int _id;
-//    };
+    unsigned int _id;
 
-    struct value
-    {
-        meeting_type _type;
-        format _format;
-        std::shared_ptr<flyweight_string> _description;
-        std::shared_ptr<flyweight_string> _link;
-        std::shared_ptr<flyweight_string> _creator_surname;
-        std::shared_ptr<flyweight_string> _creator_name;
-        std::shared_ptr<flyweight_string> _creator_patronymic;
-        std::shared_ptr<flyweight_string> _date;
-        std::shared_ptr<flyweight_string> _start_time;
-        std::shared_ptr<flyweight_string> _min_duration;
-        std::shared_ptr<flyweight_string> _invited_people;
-    };
+    meeting_type _type;
+    format _format;
+    std::shared_ptr<flyweight_string> _description;
+    std::shared_ptr<flyweight_string> _link;
+    std::shared_ptr<flyweight_string> _creator_surname;
+    std::shared_ptr<flyweight_string> _creator_name;
+    std::shared_ptr<flyweight_string> _creator_patronymic;
+    std::shared_ptr<flyweight_string> _date;
+    std::shared_ptr<flyweight_string> _start_time;
+    std::shared_ptr<flyweight_string> _min_duration;
+    std::shared_ptr<flyweight_string> _invited_people;
 
 public:
 
@@ -58,6 +52,9 @@ public:
 
     std::shared_ptr<flyweight_string> get_description() const;
     void set_description(std::string const &value);
+
+    std::shared_ptr<flyweight_string> get_link() const;
+    void set_link(std::string const &value);
 
     std::shared_ptr<flyweight_string> get_creator_surname() const;
     void set_creator_surname(std::string const &value);
