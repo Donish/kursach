@@ -386,8 +386,10 @@ void data_base::get_data(
 
                         std::cout << "\tData" << std::endl;
 
+                        std::cout << "meeting type: ";
                         print_meeting_type(*data);
                         std::cout << std::endl;
+                        std::cout << "meeting format: ";
                         print_format(*data);
                         std::cout << std::endl;
                         std::cout << "description: " << data->_description << std::endl;
@@ -397,7 +399,7 @@ void data_base::get_data(
                         std::cout << "creator's patronymic: " << data->_creator_patronymic << std::endl;
                         std::cout << "date: " << data->_date << std::endl;
                         std::cout << "start time: " << data->_start_time << std::endl;
-                        std::cout << "minimal duration: " << data->_min_duration << std::endl;
+                        std::cout << "minimal duration: " << data->_min_duration << " min" << std::endl;
                         std::cout << "invited people: " << data->_invited_people << std::endl << std::endl;
                     }
                     else
