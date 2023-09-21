@@ -407,7 +407,7 @@ template<
 void avl_tree<tkey, tvalue, tkey_comparer>::avl_tree_insertion_template_method::initialize_memory_with_node(
         typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * const node_address)
 {
-    new (node_address) avl_node; //TODO: check
+    new (node_address) avl_node;
 }
 
 template<
