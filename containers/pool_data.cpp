@@ -1,7 +1,6 @@
 #include "pool_data.h"
 
 pool_data::pool_data(memory *allocator, tree_types outer_tree_type):
-//    _pool_data(new splay_tree<std::string, scheme_data, string_comparer>()),
     _allocator(allocator),
     _tree_type(outer_tree_type)
 {
