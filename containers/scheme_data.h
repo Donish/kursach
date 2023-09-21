@@ -13,7 +13,7 @@ private:
 
 public:
 
-    scheme_data(tree_types outer_tree_type);
+    explicit scheme_data(tree_types outer_tree_type = tree_types::SPLAY_TREE);
 
     ~scheme_data();
 
