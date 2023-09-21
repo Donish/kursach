@@ -43,4 +43,4 @@ public:
 
 };
 
-#endif //POOL_DATA_
+#endif //POOL_DATA_H
