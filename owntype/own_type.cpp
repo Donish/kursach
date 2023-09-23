@@ -5,7 +5,7 @@ unsigned int key::get_id() const
     return _id_meeting;
 }
 
-void key::set_id(unsigned int &value)
+void key::set_id(unsigned int const &value)
 {
     _id_meeting = value;
 }
