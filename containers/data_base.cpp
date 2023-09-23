@@ -385,7 +385,7 @@ void data_base::get_data(
                         std::cout << "[DATA BASE] received value from " << pool_name << " " << scheme_name << " " << collection_name << std::endl << std::endl;
 
                         std::cout << "\tData" << std::endl;
-                        //TODO: check getting the strings
+                        //TODO: разыменовать указатели
                         std::cout << "meeting type: ";
                         print_meeting_type(*data);
                         std::cout << std::endl;
@@ -457,7 +457,7 @@ void data_base::get_data_between_keys(
                     {
                         std::cout << "\tData:" << index << std::endl;
 
-
+                        //TODO: разыменовать указатели
                         print_meeting_type(*data_value);
                         std::cout << std::endl;
                         print_format(*data_value);
