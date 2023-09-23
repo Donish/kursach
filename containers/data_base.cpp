@@ -392,15 +392,15 @@ void data_base::get_data(
                         std::cout << "meeting format: ";
                         print_format(*data);
                         std::cout << std::endl;
-                        std::cout << "description: " << data->get_description() << std::endl;
-                        std::cout << "link: " << data->get_link() << std::endl;
-                        std::cout << "creator's surname: " << data->get_creator_surname() << std::endl;
-                        std::cout << "creator's name: " << data->get_creator_name() << std::endl;
-                        std::cout << "creator's patronymic: " << data->get_creator_patronymic() << std::endl;
-                        std::cout << "date: " << data->get_date() << std::endl;
-                        std::cout << "start time: " << data->get_start_time() << std::endl;
-                        std::cout << "minimal duration: " << data->get_min_duration() << " min" << std::endl;
-                        std::cout << "invited people: " << data->get_invited_people() << std::endl << std::endl;
+                        std::cout << "description: " << data->get_description()->get_value() << std::endl;
+                        std::cout << "link: " << data->get_link()->get_value() << std::endl;
+                        std::cout << "creator's surname: " << data->get_creator_surname()->get_value() << std::endl;
+                        std::cout << "creator's name: " << data->get_creator_name()->get_value() << std::endl;
+                        std::cout << "creator's patronymic: " << data->get_creator_patronymic()->get_value() << std::endl;
+                        std::cout << "date: " << data->get_date()->get_value() << std::endl;
+                        std::cout << "start time: " << data->get_start_time()->get_value() << std::endl;
+                        std::cout << "minimal duration: " << data->get_min_duration()->get_value() << " min" << std::endl;
+                        std::cout << "invited people: " << data->get_invited_people()->get_value() << std::endl << std::endl;
                     }
                     else
                     {
@@ -462,15 +462,15 @@ void data_base::get_data_between_keys(
                         std::cout << std::endl;
                         print_format(*data_value);
                         std::cout << std::endl;
-                        std::cout << "description: " << data_value->get_description() << std::endl;
-                        std::cout << "link: " << data_value->get_link() << std::endl;
-                        std::cout << "creator's surname: " << data_value->get_creator_surname() << std::endl;
-                        std::cout << "creator's name: " << data_value->get_creator_name() << std::endl;
-                        std::cout << "creator's patronymic: " << data_value->get_creator_patronymic() << std::endl;
-                        std::cout << "date: " << data_value->get_date() << std::endl;
-                        std::cout << "start time: " << data_value->get_start_time() << std::endl;
-                        std::cout << "minimal duartion: " << data_value->get_min_duration() << std::endl;
-                        std::cout << "invited people: " << data_value->get_invited_people() << std::endl << std::endl;
+                        std::cout << "description: " << data_value->get_description()->get_value() << std::endl;
+                        std::cout << "link: " << data_value->get_link()->get_value() << std::endl;
+                        std::cout << "creator's surname: " << data_value->get_creator_surname()->get_value() << std::endl;
+                        std::cout << "creator's name: " << data_value->get_creator_name()->get_value() << std::endl;
+                        std::cout << "creator's patronymic: " << data_value->get_creator_patronymic()->get_value() << std::endl;
+                        std::cout << "date: " << data_value->get_date()->get_value() << std::endl;
+                        std::cout << "start time: " << data_value->get_start_time()->get_value() << std::endl;
+                        std::cout << "minimal duartion: " << data_value->get_min_duration()->get_value() << std::endl;
+                        std::cout << "invited people: " << data_value->get_invited_people()->get_value() << std::endl << std::endl;
 
                         index++;
                     }
