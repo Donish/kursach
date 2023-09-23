@@ -56,4 +56,5 @@ add_executable(kursach
         flyweight/flyweight_factory.h
         owntype/meeting.cpp
         owntype/meeting.h
+        owntype/own_type.cpp
 )

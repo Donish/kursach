@@ -21,11 +21,22 @@ enum format
 
 struct key
 {
+private:
+
     unsigned int _id_meeting;
+
+public:
+    
+    unsigned int get_id() const;
+
+    void set_id(unsigned int &value);
+
 };
 
 struct value
 {
+private:
+
     meeting_type _type;
     format _format;
     std::shared_ptr<flyweight_string> _description;
@@ -37,6 +48,13 @@ struct value
     std::shared_ptr<flyweight_string> _start_time;
     std::shared_ptr<flyweight_string> _min_duration;
     std::shared_ptr<flyweight_string> _invited_people;
+
+public:
+
+    unsigned int get_id();
+
 };
+
+
 
 #endif //OWN_TYPE_H
