@@ -102,7 +102,7 @@ void command_update_data::execute(const std::string &request) const noexcept
 {
     key * data_key = new key();
 
-    data_key->_id_meeting = _id_meeting;
+    data_key->set_id(_id_meeting);
 
     data_base::get_instance()->update_data(
         _pool_name,

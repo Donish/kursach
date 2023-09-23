@@ -32,7 +32,7 @@ bool command_remove_data::can_execute(std::string const &request) noexcept
 void command_remove_data::execute(std::string const &request) const noexcept
 {
     key *data_key = new key();
-    data_key->_id_meeting = _id_meeting;
+    data_key->set_id(_id_meeting);
 
     data_base::get_instance()->remove_data(_pool_name, _scheme_name, _collection_name, data_key);
 

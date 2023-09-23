@@ -33,7 +33,7 @@ void command_get_data::execute(const std::string &request) const noexcept
 {
     key * data_key = new key();
 
-    data_key->_id_meeting = _id_meeting;
+    data_key->set_id(_id_meeting);
 
     data_base::get_instance()->get_data(_pool_name, _scheme_name, _collection_name, data_key);
 

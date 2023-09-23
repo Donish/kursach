@@ -36,22 +36,22 @@ void collection_data::add(
     key *data_key = reinterpret_cast<key*>(_allocator->allocate(sizeof(key)));
     new (data_key) key;
 
-    data_key->_id_meeting = id_meeting;
+    data_key->set_id(id_meeting);
     
     value *data_value = reinterpret_cast<value*>(_allocator->allocate(sizeof(value)));
     new (data_value) value;
 
-    data_value->_type = type;
-    data_value->_format = form;
-    data_value->_description = description;
-    data_value->_link = link;
-    data_value->_creator_surname = creator_surname;
-    data_value->_creator_name = creator_name;
-    data_value->_creator_patronymic = creator_patronymic;
-    data_value->_date = date;
-    data_value->_start_time = start_time;
-    data_value->_min_duration = min_duration;
-    data_value->_invited_people = invited_people;
+    data_value->set_meeting_type(type);
+    data_value->set_format(form);
+    data_value->set_description(description);
+    data_value->set_link(link);
+    data_value->set_creator_surname(creator_surname);
+    data_value->set_creator_name(creator_name);
+    data_value->set_creator_patronymic(creator_patronymic);
+    data_value->set_date(date);
+    data_value->set_start_time(start_time);
+    data_value->set_min_duration(min_duration);
+    data_value->set_invited_people(invited_people);
 
     _data->insert(data_key, std::move(data_value));
 }
@@ -93,17 +93,17 @@ void collection_data::update(
     value* data_value = reinterpret_cast<value*>(_allocator->allocate(sizeof(value)));
     new (data_value) value;
 
-    data_value->_type = type;
-    data_value->_format = form;
-    data_value->_description = description;
-    data_value->_link = link;
-    data_value->_creator_surname = creator_surname;
-    data_value->_creator_name = creator_name;
-    data_value->_creator_patronymic = creator_patronymic;
-    data_value->_date = date;
-    data_value->_start_time = start_time;
-    data_value->_min_duration = min_duration;
-    data_value->_invited_people = invited_people;
+    data_value->set_meeting_type(type);
+    data_value->set_format(form);
+    data_value->set_description(description);
+    data_value->set_link(link);
+    data_value->set_creator_surname(creator_surname);
+    data_value->set_creator_name(creator_name);
+    data_value->set_creator_patronymic(creator_patronymic);
+    data_value->set_date(date);
+    data_value->set_start_time(start_time);
+    data_value->set_min_duration(min_duration);
+    data_value->set_invited_people(invited_people);
 
     _data->update(data_key, std::move(data_value));
 }

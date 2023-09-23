@@ -42,10 +42,10 @@ bool command_get_data_between::can_execute(std::string const &request) noexcept
 void command_get_data_between::execute(std::string const &request) const noexcept
 {
     key *key_1 = new key();
-    key_1->_id_meeting = _id_meeting_first;
+    key_1->set_id(_id_meeting_first);
 
     key *key_2 = new key();
-    key_2->_id_meeting = _id_meeting_second;
+    key_2->set_id(_id_meeting_second);
 
     data_base::get_instance()->get_data_between_keys(_pool_name, _scheme_name, _collection_name, key_1, key_2);
 

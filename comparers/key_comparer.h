@@ -1,7 +1,7 @@
 #ifndef KEY_COMPARER_H
 #define KEY_COMPARER_H
 
-#include "../owntype/meeting.h"
+#include "../owntype/own_type.h"
 #include "string_comparer.h"
 
 class key_comparer final
@@ -12,7 +12,7 @@ private:
 
 public:
 
-    int operator()(meeting* key1, meeting* key2);
+    int operator()(key* key1, key* key2);
 
 };
 

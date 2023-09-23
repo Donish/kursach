@@ -43,19 +43,19 @@ data_base::~data_base()
 
 void data_base::print_meeting_type(value const &data) const
 {
-    if(data._type == meeting_type::DAILY)
+    if(data.get_meeting_type() == meeting_type::DAILY)
     {
         std::cout << "daily";
     }
-    else if(data._type == meeting_type::PERIOD)
+    else if(data.get_meeting_type() == meeting_type::PERIOD)
     {
         std::cout << "period";
     }
-    else if(data._type == meeting_type::INTERVIEW)
+    else if(data.get_meeting_type() == meeting_type::INTERVIEW)
     {
         std::cout << "interview";
     }
-    else if(data._type == meeting_type::CORPORATIVE)
+    else if(data.get_meeting_type() == meeting_type::CORPORATIVE)
     {
         std::cout << "corporative";
     }
@@ -63,11 +63,11 @@ void data_base::print_meeting_type(value const &data) const
 
 void data_base::print_format(value const &data) const
 {
-    if(data._format == format::ONLINE)
+    if(data.get_format() == format::ONLINE)
     {
         std::cout << "online";
     }
-    else if(data._format == format::OFFLINE)
+    else if(data.get_format() == format::OFFLINE)
     {
         std::cout << "offline";
     }
@@ -385,22 +385,22 @@ void data_base::get_data(
                         std::cout << "[DATA BASE] received value from " << pool_name << " " << scheme_name << " " << collection_name << std::endl << std::endl;
 
                         std::cout << "\tData" << std::endl;
-
+                        //TODO: check getting the strings
                         std::cout << "meeting type: ";
                         print_meeting_type(*data);
                         std::cout << std::endl;
                         std::cout << "meeting format: ";
                         print_format(*data);
                         std::cout << std::endl;
-                        std::cout << "description: " << data->_description << std::endl;
-                        std::cout << "link: " << data->_link << std::endl;
-                        std::cout << "creator's surname: " << data->_creator_surname << std::endl;
-                        std::cout << "creator's name: " << data->_creator_name << std::endl;
-                        std::cout << "creator's patronymic: " << data->_creator_patronymic << std::endl;
-                        std::cout << "date: " << data->_date << std::endl;
-                        std::cout << "start time: " << data->_start_time << std::endl;
-                        std::cout << "minimal duration: " << data->_min_duration << " min" << std::endl;
-                        std::cout << "invited people: " << data->_invited_people << std::endl << std::endl;
+                        std::cout << "description: " << data->get_description() << std::endl;
+                        std::cout << "link: " << data->get_link() << std::endl;
+                        std::cout << "creator's surname: " << data->get_creator_surname() << std::endl;
+                        std::cout << "creator's name: " << data->get_creator_name() << std::endl;
+                        std::cout << "creator's patronymic: " << data->get_creator_patronymic() << std::endl;
+                        std::cout << "date: " << data->get_date() << std::endl;
+                        std::cout << "start time: " << data->get_start_time() << std::endl;
+                        std::cout << "minimal duration: " << data->get_min_duration() << " min" << std::endl;
+                        std::cout << "invited people: " << data->get_invited_people() << std::endl << std::endl;
                     }
                     else
                     {
@@ -462,15 +462,15 @@ void data_base::get_data_between_keys(
                         std::cout << std::endl;
                         print_format(*data_value);
                         std::cout << std::endl;
-                        std::cout << "description: " << data_value->_description << std::endl;
-                        std::cout << "link: " << data_value->_link << std::endl;
-                        std::cout << "creator's surname: " << data_value->_creator_surname << std::endl;
-                        std::cout << "creator's name: " << data_value->_creator_name << std::endl;
-                        std::cout << "creator's patronymic: " << data_value->_creator_patronymic << std::endl;
-                        std::cout << "date: " << data_value->_date << std::endl;
-                        std::cout << "start time: " << data_value->_start_time << std::endl;
-                        std::cout << "minimal duartion: " << data_value->_min_duration << std::endl;
-                        std::cout << "invited people: " << data_value->_invited_people << std::endl << std::endl;
+                        std::cout << "description: " << data_value->get_description() << std::endl;
+                        std::cout << "link: " << data_value->get_link() << std::endl;
+                        std::cout << "creator's surname: " << data_value->get_creator_surname() << std::endl;
+                        std::cout << "creator's name: " << data_value->get_creator_name() << std::endl;
+                        std::cout << "creator's patronymic: " << data_value->get_creator_patronymic() << std::endl;
+                        std::cout << "date: " << data_value->get_date() << std::endl;
+                        std::cout << "start time: " << data_value->get_start_time() << std::endl;
+                        std::cout << "minimal duartion: " << data_value->get_min_duration() << std::endl;
+                        std::cout << "invited people: " << data_value->get_invited_people() << std::endl << std::endl;
 
                         index++;
                     }
@@ -529,7 +529,7 @@ void data_base::update_data(
 
                     if (current_collection.find_in(data_key))
                     {
-                        const_cast<collection_data&>(current_collection).update(data_key, type, form, description, link, creator_surname, creator_name, creator_name, date, start_time, min_duration, invited_people);
+                        const_cast<collection_data&>(current_collection).update(data_key, type, form, description, link, creator_surname, creator_name, creator_patronymic, date, start_time, min_duration, invited_people);
 
                         std::cout << "[DATA BASE] " << "data from " << pool_name << " " << scheme_name << " " << collection_name <<  " updated" << std::endl << std::endl;
                     }
