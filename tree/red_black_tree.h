@@ -12,7 +12,7 @@ class red_black_tree final : public binary_search_tree<tkey, tvalue, tkey_compar
 {
 protected:
 
-    enum color_node
+    enum class color_node
     {
         RED,
         BLACK
@@ -142,7 +142,7 @@ template<
 typename red_black_tree<tkey, tvalue, tkey_comparer>::color_node red_black_tree<tkey, tvalue, tkey_comparer>::get_color_node(
         red_black_node *current_node)
 {
-    return current_node == nullptr ? color_node::BLACK : current_node->_color;
+    return current_node == nullptr ? color_node::BLACK : current_node->_color; //TODO: почему не выдает подсказку
 }
 
 template<
@@ -272,7 +272,7 @@ void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_templ
         std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
     if(path_to_subtree_root_exclusive.empty())
-    {
+    {//TODO: цвет узла
         reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
 
         return;
@@ -281,7 +281,7 @@ void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_templ
     {
         if(subtree_root_address->left_subtree_address == nullptr &&
             subtree_root_address->right_subtree_address == nullptr)
-        {
+        {//TODO: цвет узла
             reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
         }
     }
@@ -301,17 +301,18 @@ void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_templ
             grand_parent = reinterpret_cast<red_black_node**>(path_to_subtree_root_exclusive.top());
             path_to_subtree_root_exclusive.pop();
 
-            if((*grand_parent)->left_subtree_address == *parent)
+            if((*grand_parent)->left_subtree_address == *parent) //TODO: no methods
             {
                 uncle = reinterpret_cast<red_black_node**>(&((*grand_parent)->right_subtree_address));
             }
             else
             {
-                //here
+                uncle = reinterpret_cast<red_black_node**>(&((*grand_parent)->left_subtree_address));
             }
         }
     }
 //    _tree->splay(subtree_root_address, path_to_subtree_root_exclusive);
+//STOP
 
     this->trace_with_guard("[red_black TREE] Node inserted.");
 }
