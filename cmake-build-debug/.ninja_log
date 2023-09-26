@@ -36,6 +36,6 @@
 5083	5731	7156356384531870	CMakeFiles/kursach.dir/validator/digit_validator.cpp.obj	b25041be8d625159
 10808	13342	7172752917498951	kursach.exe	e15bcc67c79ba766
 6176	6847	7156356395709987	CMakeFiles/kursach.dir/validator/time_validator.cpp.obj	b8771cb5c19393d
-0	172	7173765172515196	build.ninja	b100c3073d0a8d23
+0	172	7174456153508579	build.ninja	b100c3073d0a8d23
 2678	3176	7160502734805522	CMakeFiles/kursach.dir/logger/logger_holder.cpp.obj	c4f2e93d1dcf1b6c
 8240	10062	7172752884756727	CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.obj	8c51adea76fbc7d2
