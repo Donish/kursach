@@ -54,5 +54,7 @@ add_executable(kursach
         flyweight/flyweight_factory.cpp
         flyweight/flyweight_factory.h
         owntype/own_type.cpp
-#        tree/red_black_tree.h
+        dialogue/dialogue.cpp
+        dialogue/dialogue.h
+        #        tree/red_black_tree.h
 )

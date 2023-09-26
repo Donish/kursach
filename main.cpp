@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "containers/data_base.h"
+#include "dialogue/dialogue.h"
 
 int main(int argc, char* argv[])
 {
@@ -31,6 +32,8 @@ int main(int argc, char* argv[])
     {
         std::cout << "File with name:" << argv[1] << " can't be opened" << std::endl;
     }
+
+
 
 
     delete db;
