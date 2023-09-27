@@ -6,19 +6,35 @@ void dialogue_with_user(data_base *&outer_data_base)
     std::ifstream file;
     std::string filename;
     std::string choice;
+    std::fstream fout_for_reboot("../file_system_recover/file_for_recover.txt");
+    if(!fout_for_reboot.is_open())
+    {
+        std::cout << "Could't open file for recover!";
+        return;
+    }
+
     while(choice != "3")
     {
         std::cout << std::endl << "1)Command" << std::endl;
         std::cout << "2)File" << std::endl;
         std::cout << "3)Exit" << std::endl;
-        std::cout << "4)Help" << std::endl;
+        std::cout << "4)Recover" << std::endl;
+        std::cout << "5)Help" << std::endl;
         std::getline(std::cin, choice);
         if(choice == "1")
         {
             std::cout << "Enter the command:" << std::endl;
             std::getline(std::cin, command);
 
-            outer_data_base->handle_request(command);
+            try
+            {
+                outer_data_base->handle_request(command);
+                fout_for_reboot << command << std::endl;
+            }
+            catch(std::exception &ex)
+            {
+                //TODO: cout log
+            }
         }
         else if(choice == "2")
         {
@@ -29,7 +45,15 @@ void dialogue_with_user(data_base *&outer_data_base)
             {
                 while(std::getline(file, command))
                 {
-                    outer_data_base->handle_request(command);
+                    try
+                    {
+                        outer_data_base->handle_request(command);
+                        fout_for_reboot << command << std::endl;
+                    }
+                    catch(std::exception &ex)
+                    {
+                        //TODO: cout log
+                    }
                 }
             }
             else
@@ -44,8 +68,24 @@ void dialogue_with_user(data_base *&outer_data_base)
         }
         else if(choice == "4")
         {
-            std::cout << "Enter 1 to enter your command" << std::endl << "Enter 2 to send the file with commands" << std::endl
-            << "Enter 3 to exit" << std::endl;
+            while(std::getline(fout_for_reboot, command))
+            {
+                try
+                {
+                    outer_data_base->handle_request(command);
+                }
+                catch(std::exception &ex)
+                {
+                    //TODO: cout log
+                }
+            }
+        }
+        else if(choice == "5")
+        {
+            std::cout << "Enter 1 to enter your command" << std::endl;
+            std::cout << "Enter 2 to send the file with commands" << std::endl;
+            std::cout << "Enter 3 to exit" << std::endl;
+            std::cout << "Enter 4 to recover data from file (You can recover only when starting programm!)" << std::endl;
         }
         else
         {

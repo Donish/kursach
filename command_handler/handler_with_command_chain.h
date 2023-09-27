@@ -6,6 +6,8 @@
 class handler_with_command_chain final
 {
 
+
+
 private:
 
     handler * _first_handler;
@@ -23,7 +25,7 @@ public:
 
 public:
 
-    bool handle(std::string const &request) const noexcept;
+    bool handle(std::string const &request) const;
 
 public:
 

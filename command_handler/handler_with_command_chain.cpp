@@ -13,11 +13,11 @@ handler_with_command_chain::~handler_with_command_chain()
     }
 }
 
-bool handler_with_command_chain::handle(const std::string &request) const noexcept
+bool handler_with_command_chain::handle(const std::string &request) const
 {
     if (_first_handler == nullptr)
     {
-        return false;
+        throw std::invalid_argument("Invalid command!");
     }
 
     return _first_handler->handle(request);
