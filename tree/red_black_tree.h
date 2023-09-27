@@ -142,7 +142,8 @@ template<
 typename red_black_tree<tkey, tvalue, tkey_comparer>::color_node red_black_tree<tkey, tvalue, tkey_comparer>::get_color_node(
         red_black_node *current_node)
 {
-    return current_node == nullptr ? color_node::BLACK : current_node->_color; //TODO: почему не выдает подсказку
+    return current_node == nullptr ? red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK : current_node->_color;
+    //TODO: почему не выдает подсказку
 }
 
 template<

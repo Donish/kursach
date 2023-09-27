@@ -1,5 +1,5 @@
 # ninja log v5
-11	2780	7172752811851766	CMakeFiles/kursach.dir/main.cpp.obj	a3525fc432b4ffea
+4	770	7174461137653869	CMakeFiles/kursach.dir/main.cpp.obj	a3525fc432b4ffea
 4870	7478	7172752858785401	CMakeFiles/kursach.dir/command_handler/command_remove_scheme.cpp.obj	81455f7a396a5819
 18	2755	7172752811685288	CMakeFiles/kursach.dir/comparers/key_comparer.cpp.obj	257c212a610358c2
 6003	8239	7172752866466820	CMakeFiles/kursach.dir/command_handler/command_update_data.cpp.obj	5f51131212a71435
@@ -35,11 +35,8 @@
 7324	10478	7172752888913393	CMakeFiles/kursach.dir/containers/scheme_data.cpp.obj	329bf259a85fb146
 5083	5731	7156356384531870	CMakeFiles/kursach.dir/validator/digit_validator.cpp.obj	b25041be8d625159
 6176	6847	7156356395709987	CMakeFiles/kursach.dir/validator/time_validator.cpp.obj	b8771cb5c19393d
-10808	13342	7172752917498951	kursach.exe	e15bcc67c79ba766
-0	172	7174461129752749	build.ninja	b100c3073d0a8d23
+770	2092	7174461150818099	kursach.exe	f43b9bd32235988a
+1	115	7174469472626848	build.ninja	b100c3073d0a8d23
 2678	3176	7160502734805522	CMakeFiles/kursach.dir/logger/logger_holder.cpp.obj	c4f2e93d1dcf1b6c
 8240	10062	7172752884756727	CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.obj	8c51adea76fbc7d2
-1	115	7174461129752749	build.ninja	b100c3073d0a8d23
 7	753	7174461137483465	CMakeFiles/kursach.dir/dialogue/dialogue.cpp.obj	6774e6f75ac2e4d8
-4	770	7174461137653869	CMakeFiles/kursach.dir/main.cpp.obj	a3525fc432b4ffea
-770	2092	7174461150818099	kursach.exe	f43b9bd32235988a
