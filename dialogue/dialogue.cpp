@@ -66,6 +66,12 @@ void dialogue_with_user(data_base *&outer_data_base)
     }
 
     fout_for_recover.open(filepath_recover, std::ios::app);
+    if(fout_for_recover.is_open())
+    {
+        std::cout << "Recover file can't be opened!" << std::endl;
+        return;
+    }
+
     while(choice != "3")
     {
         std::cout << std::endl << "1)Command" << std::endl;
