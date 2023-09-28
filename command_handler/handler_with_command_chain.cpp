@@ -17,7 +17,7 @@ bool handler_with_command_chain::handle(const std::string &request) const
 {
     if (_first_handler == nullptr)
     {
-        throw std::invalid_argument("Invalid command!");
+        return false;
     }
 
     return _first_handler->handle(request);

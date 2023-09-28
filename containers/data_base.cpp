@@ -572,17 +572,19 @@ data_base *data_base::get_instance()
 void data_base::handle_request(
         std::string const &request)
 {
-    try
-    {
-        _chain.handle(request);
-    }
-    catch(std::exception &ex)
-    {
-        std::cout << "[DATA BASE]" << ex.what() << std::endl;
-        throw std::invalid_argument(ex.what());
-    }
-//    if (!_chain.handle(request))
+//    try
 //    {
-//        std::cout << "[DATA BASE] command can't be executed" << std::endl << std::endl;
+//        _chain.handle(request);
 //    }
+//    catch(std::exception &ex)
+//    {
+//        std::cout << "[DATA BASE]" << ex.what() << std::endl;
+//        throw std::invalid_argument(ex.what());
+//    }
+    if (!_chain.handle(request))
+    {
+        std::cout << "[DATA BASE] command can't be executed" << std::endl << std::endl;
+        throw std::invalid_argument("invalid command!");
+    }
+
 }
