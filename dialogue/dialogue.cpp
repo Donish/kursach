@@ -39,7 +39,7 @@ void dialogue_with_user(data_base *&outer_data_base)
                 }
                 catch(std::exception &ex)
                 {
-                    //TODO: cout log
+                    //TODO: cout
                 }
             }
 
@@ -85,7 +85,7 @@ void dialogue_with_user(data_base *&outer_data_base)
             }
             catch(std::exception &ex)
             {
-                //TODO: cout log
+                //TODO: cout
             }
         }
         else if(choice == "2")
@@ -104,7 +104,7 @@ void dialogue_with_user(data_base *&outer_data_base)
                     }
                     catch(std::exception &ex)
                     {
-                        //TODO: cout log
+                        //TODO: cout
                     }
                 }
             }
