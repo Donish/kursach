@@ -385,7 +385,6 @@ void data_base::get_data(
                         std::cout << "[DATA BASE] received value from " << pool_name << " " << scheme_name << " " << collection_name << std::endl << std::endl;
 
                         std::cout << "\tData" << std::endl;
-                        //TODO: разыменовать указатели
                         std::cout << "meeting type: ";
                         print_meeting_type(*data);
                         std::cout << std::endl;
@@ -573,7 +572,7 @@ void data_base::handle_request(
         std::string const &request)
 {
 
-    if (!_chain.handle(request))
+    if(!_chain.handle(request))
     {
         std::cout << "[DATA BASE] command can't be executed" << std::endl << std::endl;
         throw std::invalid_argument("invalid command!");
