@@ -89,7 +89,7 @@ void dialogue_with_user(data_base *&outer_data_base)
             }
             catch(std::exception &ex)
             {
-                std::cout << "exception\n";
+//                std::cout << "exception\n";
             }
         }
         else if(choice == "2")
@@ -111,7 +111,7 @@ void dialogue_with_user(data_base *&outer_data_base)
                     }
                     catch(std::exception &ex)
                     {
-                        std::cout << "exception\n";
+//                        std::cout << "exception\n";
                     }
                 }
             }
