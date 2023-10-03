@@ -342,14 +342,14 @@ void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_templ
         {
             if((*parent)->right_subtree_address == subtree_root_address && *parent == (*grand_parent)->left_subtree_address)
             {
-                _tree->left_rotation(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(parent));
+                _tree->left_rotation(*(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(parent)));
                 subtree_root_address = (*parent)->left_subtree_address;
             }
             else
             {
                 if(subtree_root_address == (*parent)->left_subtree_address && *parent == (*grand_parent)->right_subtree_address)
                 {
-                    _tree->right_rotation(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(parent));
+                    _tree->right_rotation(*(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(parent)));
                     subtree_root_address = (*parent)->right_subtree_address;
                 }
             }
@@ -362,12 +362,12 @@ void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_templ
                 if(subtree_root_address == (*parent)->left_subtree_address &&
                     *parent == (*grand_parent)->left_subtree_address)
                 {
-                    _tree->right_rotation(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(grand_parent));
+                    _tree->right_rotation(*(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(grand_parent)));
                     *parent = reinterpret_cast<red_black_node*>((*grand_parent)->right_subtree_address);
                 }
                 else
                 {
-                    _tree->left_rotation(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(grand_parent));
+                    _tree->left_rotation(*(reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node**>(grand_parent)));
                     *parent = reinterpret_cast<red_black_node*>((*grand_parent)->left_subtree_address);
                 }
 
@@ -411,136 +411,281 @@ void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_insertion_templ
     new (node_address) red_black_node;
 }
 
-//STOP
-
 template<
         typename tkey,
         typename tvalue,
         typename tkey_comparer>
-tvalue red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_removing_template_method::remove_inner(
-        const tkey &key,
-        typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
+void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_removing_template_method::after_remove_inner(
+        const tkey &key, typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
         std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
-    if (subtree_root_address == nullptr)
+    if(subtree_root_address == nullptr)
     {
-        std::string message = "Tree is empty";
-        this->warning_with_guard(message);
-
-        throw std::invalid_argument("[red_black TREE] " + message + ".");
+        return;
     }
 
-    std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> path;
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node ** current_node = &subtree_root_address;
-
-    tkey_comparer comparator;
-
-    while (*current_node != nullptr)
+    if((_info_deleted_node->_color == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED ||
+        _info_deleted_node->_color == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK) &&
+        (_info_deleted_node->left_subtree_address != nullptr &&
+        _info_deleted_node->right_subtree_address != nullptr))
     {
-        int compare_result = comparator(key, (*current_node)->key_and_value._key);
+        return;
+    }
 
-        if (compare_result == 0)
+    if(_info_deleted_node->_color == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK &&
+        ((_info_deleted_node->left_subtree_address == nullptr && _info_deleted_node->right_subtree_address != nullptr) ||
+        (_info_deleted_node->left_subtree_address != nullptr && _info_deleted_node->right_subtree_address == nullptr)))
+    {
+        if(_info_deleted_node->is_right_child == true)
         {
-            break;
+            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+        }
+
+        if(_info_deleted_node->is_left_child == true)
+        {
+            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+        }
+
+        if(_info_deleted_node->is_left_child == false && _info_deleted_node->is_right_child == false)
+        {
+            reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+        }
+
+        return;
+    }
+
+    if(_info_deleted_node->_color == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK &&
+        _info_deleted_node->left_subtree_address == nullptr &&
+        _info_deleted_node->right_subtree_address == nullptr)
+    {
+        typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **parent = nullptr;
+
+        if(!path_to_subtree_root_exclusive.empty())
+        {
+            parent = path_to_subtree_root_exclusive.back();
+            path_to_subtree_root_exclusive.pop_back();
+        }
+
+        if(_info_deleted_node->is_left_child == true)
+        {
+            if(subtree_root_address->right_subtree_address != nullptr)
+            {
+                color_node color_subtree = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address));
+                color_node color_sibling = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address));
+                color_node color_child_right = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address->right_subtree_address));
+                color_node color_child_left = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address->left_subtree_address));
+
+                if(color_sibling == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                {
+                    if(color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED ||
+                        color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED)
+                    {
+                        if(color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED)
+                        {
+                            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address)->_color = color_subtree;
+                            reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address->right_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            _tree->left_rotation(subtree_root_address);
+                        }
+
+                        if(color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED &&
+                            color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                        {
+                            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+                            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address->left_subtree_address)->_color = color_sibling;
+                            _tree->right_rotation(subtree_root_address->right_subtree_address);
+
+                            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address)->_color = color_subtree;
+                            reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address->right_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            _tree->left_rotation(subtree_root_address);
+                        }
+                    }
+
+                    if(color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK &&
+                        color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                    {
+                        reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+                        reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+
+                        if(color_subtree == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                        {
+                            _info_deleted_node->_color = reinterpret_cast<red_black_node*>(subtree_root_address)->_color;
+                            _info_deleted_node->key_and_value._key = subtree_root_address->key_and_value._key;
+                            _info_deleted_node->key_and_value._value = subtree_root_address->key_and_value._value;
+                            _info_deleted_node->left_subtree_address = subtree_root_address->left_subtree_address;
+                            _info_deleted_node->right_subtree_address = subtree_root_address->right_subtree_address;
+
+                            if(parent != nullptr)
+                            {
+                                if((*parent)->left_subtree_address == subtree_root_address)
+                                {
+                                    _info_deleted_node->is_left_child = true;
+                                    _info_deleted_node->is_right_child = false;
+                                }
+                                if((*parent)->right_subtree_address == subtree_root_address)
+                                {
+                                    _info_deleted_node->is_left_child = false;
+                                    _info_deleted_node->is_right_child = true;
+                                }
+
+                                after_remove_inner(key, *parent, path_to_subtree_root_exclusive);
+                            }
+                            else
+                            {
+                                path_to_subtree_root_exclusive.push_back(parent);
+                                after_remove_inner(key, subtree_root_address, path_to_subtree_root_exclusive);
+                                path_to_subtree_root_exclusive.pop_back();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //STOP: line 462
+                    reinterpret_cast<red_black_node*>(subtree_root_address->right_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                    reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+                    _tree->left_rotation(subtree_root_address);
+
+                    path_to_subtree_root_exclusive.push_back(parent);
+                    path_to_subtree_root_exclusive.push_back(&subtree_root_address);
+                    after_remove_inner(key, subtree_root_address->left_subtree_address, path_to_subtree_root_exclusive);
+                    path_to_subtree_root_exclusive.pop_back();
+                    path_to_subtree_root_exclusive.pop_back();
+                }
+            }
         }
         else
         {
-            path.push(current_node);
-            current_node = &(compare_result > 0 ? (*current_node)->right_subtree_address : (*current_node)->left_subtree_address);
+            if(subtree_root_address->left_subtree_address != nullptr)
+            {
+                color_node color_subtree = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address));
+                color_node color_sibling = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address));
+                color_node color_child_right = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address->right_subtree_address));
+                color_node color_child_left = _tree->get_color_node(reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address->left_subtree_address));
+
+                if(color_sibling == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                {
+                    if(color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED ||
+                        color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED)
+                    {
+                        if(color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED)
+                        {
+                            //490
+                            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address)->_color = color_subtree;
+                            reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address->left_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            _tree->right_rotation(subtree_root_address);
+                        }
+
+                        if(color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED &&
+                            color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                        {
+                            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+                            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address->right_subtree_address)->_color = color_sibling;
+                            _tree->left_rotation(subtree_root_address->left_subtree_address);
+
+                            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address)->_color = color_subtree;
+                            reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address->left_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                            _tree->right_rotation(subtree_root_address);
+                        }
+                    }
+                    if(color_child_left == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK &&
+                        color_child_right == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                    {
+                        reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+                        reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+
+                        if(color_subtree == red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK)
+                        {
+                            _info_deleted_node->_color = reinterpret_cast<red_black_node*>(subtree_root_address)->_color;
+                            _info_deleted_node->key_and_value._key = subtree_root_address->key_and_value._key;
+                            _info_deleted_node->key_and_value._value = subtree_root_address->key_and_value._value;
+                            _info_deleted_node->left_subtree_address = subtree_root_address->left_subtree_address;
+                            _info_deleted_node->right_subtree_address = subtree_root_address->right_subtree_address;
+
+                            if(parent != nullptr)
+                            {
+                                if((*parent)->left_subtree_address == subtree_root_address)
+                                {
+                                    _info_deleted_node->is_left_child = true;
+                                    _info_deleted_node->is_right_child = false;
+                                }
+                                if((*parent)->right_subtree_address == subtree_root_address)
+                                {
+                                    _info_deleted_node->is_left_child = false;
+                                    _info_deleted_node->is_right_child = true;
+                                }
+
+                                after_remove_inner(key, *parent, path_to_subtree_root_exclusive);
+                            }
+                            else
+                            {
+                                path_to_subtree_root_exclusive.push_back(parent);
+                                after_remove_inner(key, subtree_root_address, path_to_subtree_root_exclusive);
+                                path_to_subtree_root_exclusive.pop_back();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    //550
+                    reinterpret_cast<red_black_node*>(subtree_root_address->left_subtree_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::BLACK;
+                    reinterpret_cast<red_black_node*>(subtree_root_address)->_color = red_black_tree<tkey, tvalue, tkey_comparer>::color_node::RED;
+                    _tree->right_rotation(subtree_root_address);
+
+                    path_to_subtree_root_exclusive.push_back(parent);
+                    path_to_subtree_root_exclusive.push_back(&subtree_root_address);
+                    after_remove_inner(key, subtree_root_address->right_subtree_address, path_to_subtree_root_exclusive);
+                    path_to_subtree_root_exclusive.pop_back();
+                    path_to_subtree_root_exclusive.pop_back();
+                }
+            }
+        }
+        if(parent != nullptr)
+        {
+            path_to_subtree_root_exclusive.push_back(parent);
         }
     }
-
-    if ((*current_node) == nullptr)
-    {
-        std::string message = "Key not found";
-        this->warning_with_guard(message);
-
-        throw std::invalid_argument("[red_black TREE] " + message + ".");
-    }
-
-    tvalue removed_value = (*current_node)->key_and_value._value;
-
-    _tree->splay(*current_node, path);
-
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * left_subtree = subtree_root_address->left_subtree_address;
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * right_subtree = subtree_root_address->right_subtree_address;
-
-    subtree_root_address->~node();
-
-    _tree->deallocate_with_guard(subtree_root_address);
-
-    this->trace_with_guard("[red_black TREE] Node has been deleted.");
-
-    _tree->_root = _tree->merge(left_subtree, right_subtree);
-
-    return removed_value;
 }
 
 template<
         typename tkey,
         typename tvalue,
         typename tkey_comparer>
-std::tuple<tkey, tvalue> red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_removing_template_method::remove_node_inner(
-        const tkey &key,
-        typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
+void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_tree_removing_template_method::get_info_deleted_node(
+        typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *deleted_node,
         std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
+    _info_deleted_node = std::make_unique<red_black_node>();
 
-    if (subtree_root_address == nullptr)
+    if(path_to_subtree_root_exclusive.empty())
     {
-        std::string message = "Tree is empty";
-
-        this->warning_with_guard(message);
-
-        throw std::invalid_argument("[red_black TREE] " + message + ".");
+        _info_deleted_node->is_left_child = false;
+        _info_deleted_node->is_right_child = false;
     }
-
-    std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> path;
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node ** current_node = &subtree_root_address;
-
-
-    tkey_comparer comparator;
-
-    while (*current_node != nullptr)
+    else
     {
-        int compare_result = comparator(key, (*current_node)->key_and_value._key);
-
-        if (compare_result == 0)
+        if((*path_to_subtree_root_exclusive.back())->right_subtree_address == deleted_node)
         {
-            break;
+            _info_deleted_node->is_left_child = false;
+            _info_deleted_node->is_right_child = true;
         }
-        else
+
+        if((*path_to_subtree_root_exclusive.back())->left_subtree_address == deleted_node)
         {
-            path.push(current_node);
-            current_node = &(compare_result > 0 ? (*current_node)->right_subtree_address : (*current_node)->left_subtree_address);
+            _info_deleted_node->is_left_child = true;
+            _info_deleted_node->is_right_child = false;
         }
     }
 
-    if ((*current_node) == nullptr)
-    {
-        std::string message = "Key not found";
-
-        this->warning_with_guard(message);
-
-        throw std::invalid_argument("[red_black TREE] " + message + ".");
-    }
-
-    std::tuple<tkey, tvalue> removed_value((*current_node)->key_and_value._key, (*current_node)->key_and_value._value);
-
-    _tree->splay(*current_node, path);
-
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * left_subtree = subtree_root_address->left_subtree_address;
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * right_subtree = subtree_root_address->right_subtree_address;
-
-    subtree_root_address->~node();
-
-    _tree->deallocate_with_guard(subtree_root_address);
-
-    this->trace_with_guard("[red_black TREE] Node has been deleted.");
-
-    _tree->_root = _tree->merge(left_subtree, right_subtree);
-
-    return removed_value;
+    _info_deleted_node->key_and_value._key = deleted_node->key_and_value._key;
+    _info_deleted_node->key_and_value._value = deleted_node->key_and_value._value;
+    _info_deleted_node->left_subtree_address = deleted_node->left_subtree_address;
+    _info_deleted_node->right_subtree_address = deleted_node->right_subtree_address;
+    _info_deleted_node->_color = reinterpret_cast<red_black_node*>(deleted_node)->_color;
 }
 
 template<

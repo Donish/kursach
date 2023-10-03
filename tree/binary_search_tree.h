@@ -32,6 +32,10 @@ protected:
 
         node * right_subtree_address;
 
+        bool is_left_child;
+
+        bool is_right_child;
+
     };
 
 public:
