@@ -205,7 +205,6 @@ void avl_tree<tkey, tvalue, tkey_comparer>::balance_with_list(
     }
 }
 
-//TODO: check rotations
 template<
         typename tkey,
         typename tvalue,
@@ -301,6 +300,7 @@ avl_tree<tkey, tvalue, tkey_comparer> &avl_tree<tkey, tvalue, tkey_comparer>::op
     return *this;
 }
 
+//TODO: переопределить конструкторы
 template<
         typename tkey,
         typename tvalue,
