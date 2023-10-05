@@ -15,7 +15,7 @@ pool_data::pool_data(memory *allocator, tree_types outer_tree_type):
     }
     else if(_tree_type == tree_types::RED_BLACK_TREE)
     {
-        _pool_data = new red_black_tree<std::string, scheme_data, string_comparer>();
+//        _pool_data = new red_black_tree<std::string, scheme_data, string_comparer>();
     }
 }
 
@@ -59,7 +59,7 @@ pool_data::pool_data(pool_data const &other):
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        _pool_data = new red_black_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
+//        _pool_data = new red_black_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
     }
 }
 
@@ -88,7 +88,7 @@ pool_data& pool_data::operator=(pool_data const &other)
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        this->_pool_data = new red_black_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
+//        this->_pool_data = new red_black_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
     }
     this->_tree_type = other._tree_type;
 

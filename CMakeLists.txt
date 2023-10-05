@@ -56,5 +56,4 @@ add_executable(kursach
         owntype/own_type.cpp
         dialogue/dialogue.cpp
         dialogue/dialogue.h
-        tree/red_black_tree.h
 )

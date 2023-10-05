@@ -14,7 +14,7 @@ scheme_data::scheme_data(tree_types outer_tree_type):
     }
     else if(_tree_type == tree_types::RED_BLACK_TREE)
     {
-        _scheme_data = new red_black_tree<std::string, collection_data, string_comparer>();
+//        _scheme_data = new red_black_tree<std::string, collection_data, string_comparer>();
     }
 }
 
@@ -52,7 +52,7 @@ scheme_data::scheme_data(scheme_data const &other):
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        _scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
+//        _scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
     }
 }
 
@@ -75,7 +75,7 @@ scheme_data& scheme_data::operator=(const scheme_data &other)
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        this->_scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
+//        this->_scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
     }
     this->_tree_type = other._tree_type;
 
@@ -108,7 +108,7 @@ scheme_data& scheme_data::operator=(scheme_data &&other) noexcept
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        this->_scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
+//        this->_scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
     }
     this->_tree_type = other._tree_type;
 

@@ -15,7 +15,7 @@ collection_data::collection_data(memory *allocator, tree_types outer_tree_type):
     }
     else if(_tree_type == tree_types::RED_BLACK_TREE)
     {
-        _data = new red_black_tree<key*, value*, key_comparer>(allocator, nullptr);
+//        _data = new red_black_tree<key*, value*, key_comparer>(allocator, nullptr);
     }
 }
 
@@ -123,7 +123,7 @@ collection_data::collection_data(collection_data const &other):
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        _data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
+//        _data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
     }
 }
 
@@ -152,7 +152,7 @@ collection_data& collection_data::operator=(collection_data const &other)
     }
     else if(other._tree_type == tree_types::RED_BLACK_TREE)
     {
-        this->_data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
+//        this->_data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
     }
     this->_tree_type = other._tree_type;
 
