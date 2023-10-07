@@ -11,3 +11,6 @@ void message_queues()
 }
 
 int main()
+{
+
+}
