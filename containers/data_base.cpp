@@ -572,6 +572,8 @@ void data_base::handle_request(
         std::string const &request)
 {
 
+    //TODO: проверка на /r: удалить /r если он есть в конце строки
+
     if(!_chain.handle(request))
     {
         std::cout << "[DATA BASE] command can't be executed" << std::endl << std::endl;
