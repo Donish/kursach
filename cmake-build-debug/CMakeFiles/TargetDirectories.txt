@@ -1,3 +1,3 @@
-C:/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/kursach.dir
-C:/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/kursach.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
