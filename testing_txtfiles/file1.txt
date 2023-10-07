@@ -1,2 +1,0 @@
-ADD_POOL pool_1 global_heap splay_tree
-REMOVE_POOL pool_1

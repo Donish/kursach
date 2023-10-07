@@ -56,4 +56,6 @@ add_executable(kursach
         owntype/own_type.cpp
         dialogue/dialogue.cpp
         dialogue/dialogue.h
+        string_methods/mystring.cpp
+        string_methods/mystring.h
 )

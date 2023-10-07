@@ -456,7 +456,6 @@ void data_base::get_data_between_keys(
                     {
                         std::cout << "\tData:" << index << std::endl;
 
-                        //TODO: разыменовать указатели
                         print_meeting_type(*data_value);
                         std::cout << std::endl;
                         print_format(*data_value);
@@ -573,6 +572,10 @@ void data_base::handle_request(
 {
 
     //TODO: добавить проверку на наличие /r: если есть, то удалить его
+    if(has_carriage_symbol(request))
+    {
+        delete_carriage_symbol(const_cast<std::string&>(request));
+    }
 
     if(!_chain.handle(request))
     {

@@ -4,6 +4,7 @@
 #include "pool_data.h"
 #include "../allocator/allocator_types.h"
 #include "../command_handler/handler_with_command_chain.h"
+#include "../string_methods/mystring.h"
 
 class data_base
 {
