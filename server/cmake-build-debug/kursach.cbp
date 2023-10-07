@@ -301,6 +301,12 @@
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/server/server.cpp">
 			<Option target="server"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/associative_container.h">
 			<Option target="server"/>
 		</Unit>

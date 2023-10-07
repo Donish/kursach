@@ -47,4 +47,5 @@ add_executable(server
         ../tree/binary_search_tree.h
         ../tree/splay_tree.h
         ../tree/tree_types.h
+        ../string_methods/mystring.cpp
 )

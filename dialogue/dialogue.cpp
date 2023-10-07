@@ -11,11 +11,6 @@ void dialogue_with_user(data_base *&outer_data_base)
     std::string recover_choice;
     std::ofstream fout_for_recover;
     std::ifstream fin_for_recover;
-//    if(!file_for_reboot.is_open())
-//    {
-//        std::cout << "Couldn't open file for recover!";
-//        return;
-//    }
 
     while(true)
     {

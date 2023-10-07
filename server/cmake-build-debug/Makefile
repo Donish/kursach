@@ -969,6 +969,30 @@ mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.s
 .PHONY : mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.s
 
+mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.o: mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.o
+
+# target to build an object file
+mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o
+
+mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.i: mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.i
+
+# target to preprocess a source file
+mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.i
+
+mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.s: mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.s
+
+# target to generate assembly for a file
+mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s
+
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -1107,6 +1131,9 @@ help:
 	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.o"
 	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.i"
 	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.s"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.o"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.i"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

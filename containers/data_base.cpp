@@ -572,7 +572,10 @@ void data_base::handle_request(
         std::string const &request)
 {
 
-    //TODO: проверка на /r: удалить /r если он есть в конце строки
+    if(has_carriage_symbol(request))
+    {
+        delete_carriage_symbol(const_cast<std::string&>(request));
+    }
 
     if(!_chain.handle(request))
     {
