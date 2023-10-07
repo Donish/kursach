@@ -2,11 +2,6 @@
 
 bool has_carriage_symbol(const std::string &command)
 {
-//    if(command.rfind('\r'))
-//    {
-//        return true;
-//    }
-
     if(command[command.size() - 1] == '\r')
     {
         return true;
