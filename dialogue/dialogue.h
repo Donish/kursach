@@ -2,7 +2,6 @@
 #define DIALOGUE_H
 
 #include "../containers/data_base.h"
-#include "../string_methods/mystring.h"
 #include <fstream>
 #include <iostream>
 
