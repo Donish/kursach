@@ -271,5 +271,4 @@ CMakeFiles/kursach.dir/dialogue/dialogue.cpp.o: \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/../string_methods/mystring.h
+ /usr/include/c++/11/bits/fstream.tcc

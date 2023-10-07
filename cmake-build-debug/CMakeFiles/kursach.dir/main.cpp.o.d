@@ -271,5 +271,4 @@ CMakeFiles/kursach.dir/main.cpp.o: \
  /mnt/c/Users/zhura/CLionProjects/kursach/containers/../command_handler/../tree/tree_types.h \
  /mnt/c/Users/zhura/CLionProjects/kursach/containers/../string_methods/mystring.h \
  /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.h \
- /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/../containers/data_base.h \
- /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/../string_methods/mystring.h
+ /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/../containers/data_base.h
