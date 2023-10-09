@@ -48,4 +48,7 @@ add_executable(server
         ../tree/splay_tree.h
         ../tree/tree_types.h
         ../string_methods/mystring.cpp
+        ../validator/digit_validator.h
+        ../validator/date_validator.h
+        ../validator/time_validator.h
 )

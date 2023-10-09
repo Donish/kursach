@@ -322,6 +322,15 @@
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/tree_types.h">
 			<Option target="server"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
