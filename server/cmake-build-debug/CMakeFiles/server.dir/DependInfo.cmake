@@ -44,6 +44,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp.o" "gcc" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.o" "gcc" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o" "gcc" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o.d"
+  "/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o" "gcc" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o.d"
+  "/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o" "gcc" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o.d"
+  "/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o" "gcc" "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/server/server.cpp" "CMakeFiles/server.dir/server.cpp.o" "gcc" "CMakeFiles/server.dir/server.cpp.o.d"
   )
 

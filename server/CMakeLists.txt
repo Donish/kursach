@@ -51,4 +51,7 @@ add_executable(server
         ../validator/digit_validator.h
         ../validator/date_validator.h
         ../validator/time_validator.h
+        ../validator/date_validator.cpp
+        ../validator/digit_validator.cpp
+        ../validator/time_validator.cpp
 )

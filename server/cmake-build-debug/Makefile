@@ -993,6 +993,78 @@ mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s
 .PHONY : mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s
 
+mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.o: mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.o
+
+# target to build an object file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.i: mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.i
+
+# target to preprocess a source file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.s: mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.s
+
+# target to generate assembly for a file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.o: mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.o
+
+# target to build an object file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.i: mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.i
+
+# target to preprocess a source file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.s: mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.s
+
+# target to generate assembly for a file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.o: mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.o
+
+# target to build an object file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.i: mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.i
+
+# target to preprocess a source file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i
+
+mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.s: mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.s
+
+# target to generate assembly for a file
+mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s
+.PHONY : mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s
+
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -1134,6 +1206,15 @@ help:
 	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.o"
 	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.i"
 	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.s"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.o"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.i"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.s"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.o"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.i"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.s"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.o"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.i"
+	@echo "... mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

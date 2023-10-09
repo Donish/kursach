@@ -587,6 +587,48 @@ CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mys
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.s
 
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o: /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp > CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.i
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.s
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o: /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp > CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.i
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.s
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o: /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp > CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.i
+
+CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp -o CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/server.cpp.o" \
@@ -625,7 +667,10 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp.o" \
 "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp.o" \
 "CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o"
+"CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -667,9 +712,12 @@ server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/logger/log
 server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp.o
 server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp.o
 server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
