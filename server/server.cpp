@@ -23,7 +23,8 @@
 struct message_text
 {
     int _qid;
-    char _buff[500];
+//    char _buff[500];
+    std::string _buff;
 };
 
 struct message
@@ -55,7 +56,31 @@ void message_queues()
 
     //TODO: recover data
 
+    while(true)
+    {
+        if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+        {
+            perror("msgrcv error!");
+            exit(1);
+        }
+        if(message._message_text._buff == "exit")
+        {
+            break;
+        }
 
+        try
+        {
+            db->handle_request(message._message_text._buff);
+            //TODO: recover
+        }
+        catch(std::exception &ex)
+        {
+            // TODO: cout
+        }
+
+        std::cout << "message received." << std::endl;
+
+    }
 
 }
 
