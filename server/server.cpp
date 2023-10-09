@@ -19,6 +19,7 @@
 
 #define SERVER_KEY_PATHNAME "/tmp/mqueue_server_key"
 #define PROJECTD_ID 'M'
+#define RECOVERFILE_PATH "../recoverfile.txt"
 
 struct message_text
 {
@@ -53,9 +54,63 @@ void message_queues()
 
     auto *db = new data_base();
     std::string command;
+    std::ifstream fin_recover;
+    std::string recover_choice;
 
-    //TODO: recover data
+    while(true)
+    {
+        std::cout << "Do you want to recover data?" << std::endl;
+        std::cout << "1)Yes" << std::endl << "2)No" << "3)Exit" << std::endl;
+        std::getline(std::cin, recover_choice);
 
+        if(recover_choice == "1")
+        {
+            fin_recover.open(RECOVERFILE_PATH);
+            if(!fin_recover.is_open())
+            {
+                std::cerr << "Recover file can't be opened!" << std::endl;
+                exit(1);
+            }
+
+            while(std::getline(fin_recover, command))
+            {
+                try
+                {
+                    db->handle_request(command);
+                }
+                catch(std::exception &ex)
+                {
+                    //TODO: cout
+                }
+            }
+
+            fin_recover.close();
+            break;
+        }
+        else if(recover_choice == "2")
+        {
+            if(!remove(RECOVERFILE_PATH))
+            {
+                std::cout << "Recover file has been cleared." << std::endl;
+            }
+            break;
+        }
+        else if(recover_choice == "3")
+        {
+            exit(0);
+        }
+        else
+        {
+            std::cout << "No such choice!" << std::endl;
+        }
+    }
+
+    std::ofstream fout_recover(RECOVERFILE_PATH, std::ios::app);
+    if(!fout_recover.is_open())
+    {
+        std::cerr << "Recover file can't be opened!" << std::endl;
+        exit(1);
+    }
     while(true)
     {
         if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
@@ -71,7 +126,10 @@ void message_queues()
         try
         {
             db->handle_request(message._message_text._buff);
-            //TODO: recover
+            if(message._message_text._buff.rfind("GET", 0))
+            {
+                fout_recover << message._message_text._buff << std::endl;
+            }
         }
         catch(std::exception &ex)
         {
@@ -79,9 +137,7 @@ void message_queues()
         }
 
         std::cout << "message received." << std::endl;
-
     }
-
 }
 
 int main(int argc, char* argv[])
