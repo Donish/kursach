@@ -124,6 +124,13 @@ void message_queues()
         }
     }
 
+    if(msgctl(myqid, IPC_RMID, NULL) == -1)
+    {
+        perror("msgctl error");
+        exit(1);
+    }
+
+    std::cout << "message queue is deleted." << std::endl;
 }
 
 int main(int argc, char* argv[])
