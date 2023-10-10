@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kursach.dir/allocator/memory_simple.cpp.o.d"
   "CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.o"
   "CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.o.d"
+  "CMakeFiles/kursach.dir/clients/client.cpp.o"
+  "CMakeFiles/kursach.dir/clients/client.cpp.o.d"
   "CMakeFiles/kursach.dir/command_handler/command.cpp.o"
   "CMakeFiles/kursach.dir/command_handler/command.cpp.o.d"
   "CMakeFiles/kursach.dir/command_handler/command_add_collection.cpp.o"
