@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp" "CMakeFiles/kursach.dir/allocator/memory_holder.cpp.o" "gcc" "CMakeFiles/kursach.dir/allocator/memory_holder.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp" "CMakeFiles/kursach.dir/allocator/memory_simple.cpp.o" "gcc" "CMakeFiles/kursach.dir/allocator/memory_simple.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp" "CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.o" "gcc" "CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.o.d"
+  "/mnt/c/Users/zhura/CLionProjects/kursach/clients/client.cpp" "CMakeFiles/kursach.dir/clients/client.cpp.o" "gcc" "CMakeFiles/kursach.dir/clients/client.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command.cpp" "CMakeFiles/kursach.dir/command_handler/command.cpp.o" "gcc" "CMakeFiles/kursach.dir/command_handler/command.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp" "CMakeFiles/kursach.dir/command_handler/command_add_collection.cpp.o" "gcc" "CMakeFiles/kursach.dir/command_handler/command_add_collection.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp" "CMakeFiles/kursach.dir/command_handler/command_add_data.cpp.o" "gcc" "CMakeFiles/kursach.dir/command_handler/command_add_data.cpp.o.d"

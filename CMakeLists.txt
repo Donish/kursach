@@ -58,5 +58,6 @@ add_executable(kursach
         dialogue/dialogue.h
         string_methods/mystring.cpp
         string_methods/mystring.h
+        clients/client.cpp
         #        tree/red_black_tree.h
 )

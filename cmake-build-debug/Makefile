@@ -273,6 +273,30 @@ allocator/sorted_list_memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.s
 .PHONY : allocator/sorted_list_memory.cpp.s
 
+clients/client.o: clients/client.cpp.o
+.PHONY : clients/client.o
+
+# target to build an object file
+clients/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/clients/client.cpp.o
+.PHONY : clients/client.cpp.o
+
+clients/client.i: clients/client.cpp.i
+.PHONY : clients/client.i
+
+# target to preprocess a source file
+clients/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/clients/client.cpp.i
+.PHONY : clients/client.cpp.i
+
+clients/client.s: clients/client.cpp.s
+.PHONY : clients/client.s
+
+# target to generate assembly for a file
+clients/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/clients/client.cpp.s
+.PHONY : clients/client.cpp.s
+
 command_handler/command.o: command_handler/command.cpp.o
 .PHONY : command_handler/command.o
 
@@ -1116,6 +1140,9 @@ help:
 	@echo "... allocator/sorted_list_memory.o"
 	@echo "... allocator/sorted_list_memory.i"
 	@echo "... allocator/sorted_list_memory.s"
+	@echo "... clients/client.o"
+	@echo "... clients/client.i"
+	@echo "... clients/client.s"
 	@echo "... command_handler/command.o"
 	@echo "... command_handler/command.i"
 	@echo "... command_handler/command.s"
