@@ -81,7 +81,7 @@ void message_queues()
         if(choice == "1")
         {
             std::cout << "Enter the command:" << std::endl;
-//            std::getline(std::cin, snd_message._message_text._buff);
+
             std::getline(std::cin, command);
             strcpy(snd_message._message_text._buff, command.c_str());
 
@@ -162,7 +162,6 @@ int main()
         exit(1);
     }
 
-
     std::cout << "Connected with server." << std::endl;
 
     snd_message._message_type = 1;
@@ -174,27 +173,6 @@ int main()
         perror("msgctl error");
         exit(1);
     }
-
-    //connect
-//    int status = connect(cliend_sd, (sockaddr*)&send_socket_addr, sizeof(send_socket_addr)); //help
-//    if(status < 0)
-//    {
-//        std::cerr << "Socket connectiong error!" << std::endl;
-//        return IPC_ERROR;
-//    }
-//    std::cout << "Connected to server!" << std::endl;
-//
-//    struct timeval start1, end1; //help
-//    gettimeofday(&start1, nullptr); //help
-//
-//    message_queues();
-//
-//    gettimeofday(&end1, nullptr); //help
-//
-//    close(cliend_sd);
-//    std::cout << "--------------------session--------------------" << std::endl;
-//    std::cout << "Elapsed time: " << (end1.tv_sec = start1.tv_sec) << " sec." << std::endl;
-//    std::cout << "Connection closed." << std::endl;
 
     return SUCCESS;
 }
