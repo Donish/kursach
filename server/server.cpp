@@ -14,6 +14,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <strings.h>
+#include <string.h>
 
 #include "../containers/data_base.h"
 
@@ -24,8 +25,8 @@
 struct message_text
 {
     int _qid;
-//    char _buff[500];
-    std::string _buff;
+    char _buff[500];
+//    std::string _buff;
 };
 
 struct message
@@ -111,25 +112,31 @@ void message_queues()
         std::cerr << "Recover file can't be opened!" << std::endl;
         exit(1);
     }
+    std::string command_todo;
     while(true)
     {
         if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
         {
-            perror("msgrcv error!");
+            perror("msgrcv error");
             exit(1);
         }
-        if(message._message_text._buff == "exit")
+//        std::cout << "cool\n";
+        if(strcmp(message._message_text._buff, "exit") == 0)
         {
             break;
         }
 
+        std::cout << message._message_text._buff << std::endl;
+
         try
         {
-            db->handle_request(message._message_text._buff);
-            if(message._message_text._buff.rfind("GET", 0))
+            command_todo = std::string(message._message_text._buff);
+            db->handle_request(command_todo);
+            if(command_todo.rfind("GET", 0))
             {
-                fout_recover << message._message_text._buff << std::endl;
+                fout_recover << command_todo << std::endl;
             }
+
         }
         catch(std::exception &ex)
         {

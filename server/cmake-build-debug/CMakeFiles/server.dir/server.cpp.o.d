@@ -227,7 +227,7 @@ CMakeFiles/server.dir/server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/strings.h \
+ /usr/include/strings.h /usr/include/string.h \
  /mnt/c/Users/zhura/CLionProjects/kursach/server/../containers/data_base.h \
  /mnt/c/Users/zhura/CLionProjects/kursach/server/../containers/pool_data.h \
  /mnt/c/Users/zhura/CLionProjects/kursach/server/../containers/scheme_data.h \
