@@ -17,7 +17,7 @@
 
 #include "../containers/data_base.h"
 
-#define SERVER_KEY_PATHNAME "/tmp/mqueue_server_key"
+#define SERVER_KEY_PATHNAME "../tmp/mqueue_server_key"
 #define PROJECTD_ID 'M'
 #define RECOVERFILE_PATH "../recoverfile.txt"
 
@@ -60,7 +60,7 @@ void message_queues()
     while(true)
     {
         std::cout << "Do you want to recover data?" << std::endl;
-        std::cout << "1)Yes" << std::endl << "2)No" << "3)Exit" << std::endl;
+        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Exit" << std::endl;
         std::getline(std::cin, recover_choice);
 
         if(recover_choice == "1")
@@ -140,66 +140,76 @@ void message_queues()
     }
 }
 
-int main(int argc, char* argv[])
+int main()
 {
-    if(argc != 2)
+    key_t msg_queue_key;
+    int qid;
+    struct message message;
+
+    if((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
     {
-        std::cerr << "Enter the port!" << std::endl;
-        exit(0);
+        perror("ftok error");
+        exit(1);
+    }
+    if((qid = msgget(msg_queue_key, IPC_CREAT | 0660)) == -1)
+    {
+        perror("msgget error");
+        exit(1);
     }
 
-    int port = std::stoi(argv[1]);
-    char msg[BUFSIZ];
-
-    //setup socket and tools
-    sockaddr_in server_addr;
-    bzero((char*)&server_addr, sizeof(server_addr)); //help
-    server_addr.sin_family = AF_INET;
-    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    server_addr.sin_port = htons(port);
-
-    int server_sd = socket(AF_INET, SOCK_STREAM, 0); //help
-    if(server_sd < 0)
-    {
-        std::cerr << "Socket creating error!" << std::endl;
-        exit(0);
-    }
-
-    int bind_status = bind(server_sd, (struct sockaddr*)&server_addr, sizeof(server_addr)); //help
-    if(bind_status < 0)
-    {
-        std::cerr << "Socket binding error!" << std::endl;
-        exit(0);
-    }
-
-    std::cout << "Waiting for a client..." << std::endl;
-    listen(server_sd, 5); //help
-
-    //new address to connect with client
-    sockaddr_in new_socket_address;
-    socklen_t new_socket_address_size = sizeof(new_socket_address); //help
-
-    int new_sd = accept(server_sd, (sockaddr*)&new_socket_address, &new_socket_address_size); //help
-    if(new_sd < 0)
-    {
-        std::cerr << "Accepting client request error!" << std::endl;
-        exit(1); //help
-    }
     std::cout << "Connected with client." << std::endl;
 
-    struct timeval start1, end1;
-    gettimeofday(&start1, nullptr); //help
-
-    //марафет
     message_queues();
-    //марафет
-
-    gettimeofday(&end1, nullptr);
-    close(new_sd);
-    close(server_sd);
-    std::cout << "--------------------session--------------------" << std::endl;
-    std::cout << "Elapsed time: " << (end1.tv_sec - start1.tv_sec) << " sec." << std::endl;
-    std::cout << "Connection closed." << std::endl;
+//
+//    //setup socket and tools
+//    sockaddr_in server_addr;
+//    bzero((char*)&server_addr, sizeof(server_addr)); //help
+//    server_addr.sin_family = AF_INET;
+//    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+//    server_addr.sin_port = htons(port);
+//
+//    int server_sd = socket(AF_INET, SOCK_STREAM, 0); //help
+//    if(server_sd < 0)
+//    {
+//        std::cerr << "Socket creating error!" << std::endl;
+//        exit(0);
+//    }
+//
+//    int bind_status = bind(server_sd, (struct sockaddr*)&server_addr, sizeof(server_addr)); //help
+//    if(bind_status < 0)
+//    {
+//        std::cerr << "Socket binding error!" << std::endl;
+//        exit(0);
+//    }
+//
+//    std::cout << "Waiting for a client..." << std::endl;
+//    listen(server_sd, 5); //help
+//
+//    //new address to connect with client
+//    sockaddr_in new_socket_address;
+//    socklen_t new_socket_address_size = sizeof(new_socket_address); //help
+//
+//    int new_sd = accept(server_sd, (sockaddr*)&new_socket_address, &new_socket_address_size); //help
+//    if(new_sd < 0)
+//    {
+//        std::cerr << "Accepting client request error!" << std::endl;
+//        exit(1); //help
+//    }
+//    std::cout << "Connected with client." << std::endl;
+//
+//    struct timeval start1, end1;
+//    gettimeofday(&start1, nullptr); //help
+//
+//    //марафет
+//    message_queues();
+//    //марафет
+//
+//    gettimeofday(&end1, nullptr);
+//    close(new_sd);
+//    close(server_sd);
+//    std::cout << "--------------------session--------------------" << std::endl;
+//    std::cout << "Elapsed time: " << (end1.tv_sec - start1.tv_sec) << " sec." << std::endl;
+//    std::cout << "Connection closed." << std::endl;
 
     return 0;
 }

@@ -174,4 +174,5 @@ int main(int argc, char* argv[])
     std::cout << "Elapsed time: " << (end1.tv_sec = start1.tv_sec) << " sec." << std::endl;
     std::cout << "Connection closed." << std::endl;
 
+    return SUCCESS;
 }
