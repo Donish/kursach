@@ -59,5 +59,7 @@ add_executable(kursach
         string_methods/mystring.cpp
         string_methods/mystring.h
         clients/client.cpp
+        backup_system/backup_system.cpp
+        backup_system/backup_system.h
         #        tree/red_black_tree.h
 )

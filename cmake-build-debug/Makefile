@@ -273,6 +273,30 @@ allocator/sorted_list_memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.s
 .PHONY : allocator/sorted_list_memory.cpp.s
 
+backup_system/backup_system.o: backup_system/backup_system.cpp.o
+.PHONY : backup_system/backup_system.o
+
+# target to build an object file
+backup_system/backup_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/backup_system/backup_system.cpp.o
+.PHONY : backup_system/backup_system.cpp.o
+
+backup_system/backup_system.i: backup_system/backup_system.cpp.i
+.PHONY : backup_system/backup_system.i
+
+# target to preprocess a source file
+backup_system/backup_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/backup_system/backup_system.cpp.i
+.PHONY : backup_system/backup_system.cpp.i
+
+backup_system/backup_system.s: backup_system/backup_system.cpp.s
+.PHONY : backup_system/backup_system.s
+
+# target to generate assembly for a file
+backup_system/backup_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/backup_system/backup_system.cpp.s
+.PHONY : backup_system/backup_system.cpp.s
+
 clients/client.o: clients/client.cpp.o
 .PHONY : clients/client.o
 
@@ -1140,6 +1164,9 @@ help:
 	@echo "... allocator/sorted_list_memory.o"
 	@echo "... allocator/sorted_list_memory.i"
 	@echo "... allocator/sorted_list_memory.s"
+	@echo "... backup_system/backup_system.o"
+	@echo "... backup_system/backup_system.i"
+	@echo "... backup_system/backup_system.s"
 	@echo "... clients/client.o"
 	@echo "... clients/client.i"
 	@echo "... clients/client.s"

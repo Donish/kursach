@@ -17,10 +17,12 @@
 #include <string.h>
 
 #include "../containers/data_base.h"
+#include "../backup_system/backup_system.h"
 
 #define SERVER_KEY_PATHNAME "../tmp/mqueue_server_key"
 #define PROJECTD_ID 'M'
 #define RECOVERFILE_PATH "../recoverfile.txt"
+#define RECOVER_FILENAMES_PATH "../recover_files/existing_recover_files.txt"
 
 struct message_text
 {
@@ -34,7 +36,7 @@ struct message
     struct message_text _message_text;
 };
 
-void message_queues()
+void message_queues(backup_system &bs)
 {
     key_t msq_key;
     int qid;
@@ -150,6 +152,14 @@ int main()
     key_t msg_queue_key;
     int qid;
     struct message message;
+    std::ifstream recover_filenames(RECOVER_FILENAMES_PATH);
+    if(!recover_filenames.is_open())
+    {
+        perror("file open: main error");
+        exit(1);
+    }
+    backup_system bs(recover_filenames);
+    recover_filenames.close();
 
     if((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
     {
@@ -164,7 +174,7 @@ int main()
 
     std::cout << "Connected with client." << std::endl;
 
-    message_queues();
+    message_queues(bs);
 
     return 0;
 }

@@ -10745,6 +10745,7 @@ CMakeFiles/server.dir/server.cpp.o: ../server.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
   /usr/include/strings.h \
+  /usr/include/string.h \
   /mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.h \
   /mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.h \
   /mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.h \
@@ -11656,6 +11657,8 @@ CMakeFiles/server.dir/server.cpp.o: ../server.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/stdexcept:
+
+/usr/include/string.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 

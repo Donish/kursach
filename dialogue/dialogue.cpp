@@ -1,6 +1,6 @@
 #include "dialogue.h"
 
-const std::string filepath_recover = "../file_system_recover/file_for_recover.txt";
+const std::string filepath_recover = "../files_to_recover/file_for_recover.txt";
 
 void dialogue_with_user(data_base *&outer_data_base)
 {
@@ -43,7 +43,7 @@ void dialogue_with_user(data_base *&outer_data_base)
         }
         else if(recover_choice == "2")
         {
-            if(!remove("../file_system_recover/file_for_recover.txt"))
+            if(!remove("../files_to_recover/file_for_recover.txt"))
             {
                 std::cout << "Recover file has been cleared" << std::endl;
             }

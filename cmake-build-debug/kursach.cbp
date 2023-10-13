@@ -121,6 +121,12 @@
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.h">
 			<Option target="kursach"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/backup_system/backup_system.cpp">
+			<Option target="kursach"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/backup_system/backup_system.h">
+			<Option target="kursach"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/clients/client.cpp">
 			<Option target="kursach"/>
 		</Unit>
