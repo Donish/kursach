@@ -23,6 +23,7 @@
 #define PROJECTD_ID 'M'
 #define RECOVERFILE_PATH "../recoverfile.txt"
 #define RECOVER_FILENAMES_PATH "../recover_files/existing_recover_files.txt"
+#define RECOVER_DIRECTORY "../recover_files/"
 
 struct message_text
 {
@@ -61,18 +62,19 @@ void message_queues(backup_system &bs)
 
     while(true)
     {
-        std::cout << "Do you want to recover data?" << std::endl;
+        std::cout << "Do you want to restore data?" << std::endl;
         std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Exit" << std::endl;
         std::getline(std::cin, recover_choice);
 
         if(recover_choice == "1")
         {
-            fin_recover.open(RECOVERFILE_PATH);
-            if(!fin_recover.is_open())
-            {
-                std::cerr << "Recover file can't be opened!" << std::endl;
-                exit(1);
-            }
+//            fin_recover.open(RECOVERFILE_PATH);
+//            if(!fin_recover.is_open())
+//            {
+//                std::cerr << "Recover file can't be opened!" << std::endl;
+//                exit(1);
+//            }
+            bs.restore_data(db);
 
             while(std::getline(fin_recover, command))
             {
@@ -158,7 +160,7 @@ int main()
         perror("file open: main error");
         exit(1);
     }
-    backup_system bs(recover_filenames);
+    backup_system bs(recover_filenames, RECOVER_FILENAMES_PATH);
     recover_filenames.close();
 
     if((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
