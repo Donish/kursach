@@ -873,6 +873,30 @@ flyweight/flyweight_string.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.s
 .PHONY : flyweight/flyweight_string.cpp.s
 
+ipc_connections/message_queue.o: ipc_connections/message_queue.cpp.o
+.PHONY : ipc_connections/message_queue.o
+
+# target to build an object file
+ipc_connections/message_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.o
+.PHONY : ipc_connections/message_queue.cpp.o
+
+ipc_connections/message_queue.i: ipc_connections/message_queue.cpp.i
+.PHONY : ipc_connections/message_queue.i
+
+# target to preprocess a source file
+ipc_connections/message_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.i
+.PHONY : ipc_connections/message_queue.cpp.i
+
+ipc_connections/message_queue.s: ipc_connections/message_queue.cpp.s
+.PHONY : ipc_connections/message_queue.s
+
+# target to generate assembly for a file
+ipc_connections/message_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.s
+.PHONY : ipc_connections/message_queue.cpp.s
+
 logger/logger.o: logger/logger.cpp.o
 .PHONY : logger/logger.o
 
@@ -1239,6 +1263,9 @@ help:
 	@echo "... flyweight/flyweight_string.o"
 	@echo "... flyweight/flyweight_string.i"
 	@echo "... flyweight/flyweight_string.s"
+	@echo "... ipc_connections/message_queue.o"
+	@echo "... ipc_connections/message_queue.i"
+	@echo "... ipc_connections/message_queue.s"
 	@echo "... logger/logger.o"
 	@echo "... logger/logger.i"
 	@echo "... logger/logger.s"

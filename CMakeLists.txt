@@ -61,5 +61,7 @@ add_executable(kursach
         clients/client.cpp
         backup_system/backup_system.cpp
         backup_system/backup_system.h
+        ipc_connections/message_queue.cpp
+        ipc_connections/message_queue.h
         #        tree/red_black_tree.h
 )

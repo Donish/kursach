@@ -271,6 +271,12 @@
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.h">
 			<Option target="kursach"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/message_queue.cpp">
+			<Option target="kursach"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/message_queue.h">
+			<Option target="kursach"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp">
 			<Option target="kursach"/>
 		</Unit>
