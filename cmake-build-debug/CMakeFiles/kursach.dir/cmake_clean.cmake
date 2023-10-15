@@ -61,6 +61,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.o.d"
   "CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.o"
   "CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.o.d"
+  "CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.o"
+  "CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.o.d"
   "CMakeFiles/kursach.dir/logger/logger.cpp.o"
   "CMakeFiles/kursach.dir/logger/logger.cpp.o.d"
   "CMakeFiles/kursach.dir/logger/logger_builder.cpp.o"

@@ -39,6 +39,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp" "CMakeFiles/kursach.dir/dialogue/dialogue.cpp.o" "gcc" "CMakeFiles/kursach.dir/dialogue/dialogue.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp" "CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.o" "gcc" "CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp" "CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.o" "gcc" "CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.o.d"
+  "/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/message_queue.cpp" "CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.o" "gcc" "CMakeFiles/kursach.dir/ipc_connections/message_queue.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp" "CMakeFiles/kursach.dir/logger/logger.cpp.o" "gcc" "CMakeFiles/kursach.dir/logger/logger.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp" "CMakeFiles/kursach.dir/logger/logger_builder.cpp.o" "gcc" "CMakeFiles/kursach.dir/logger/logger_builder.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp" "CMakeFiles/kursach.dir/logger/logger_builder_concrete.cpp.o" "gcc" "CMakeFiles/kursach.dir/logger/logger_builder_concrete.cpp.o.d"
