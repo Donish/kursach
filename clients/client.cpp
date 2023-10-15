@@ -73,8 +73,49 @@ void message_queues()
 
     while(true)
     {
+        std::cout << std::endl << "Do you want to restore data?" << std::endl;
+        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Delete recover file" << std::endl << "4)Exit" << std::endl;
+        std::getline(std::cin, choice);
+
+        if(choice == "1")
+        {
+            strcpy(snd_message._message_text._buff, "1");
+            if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
+            {
+                perror("msgsnd error");
+                exit(1);
+            }
+        }
+        else if(choice == "2")
+        {
+            break;
+        }
+        else if(choice == "3")
+        {
+            strcpy(snd_message._message_text._buff, "3");
+            if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
+            {
+                perror("msgsnd error");
+                exit(1);
+            }
+        }
+        else if(choice == "4")
+        {
+            exit(0);
+        }
+        else
+        {
+            std::cout << "No such choice!" << std::endl;
+        }
+    }
+
+    while(true)
+    {
+
         std::cout << std::endl << "1)Command" << std::endl;
         std::cout << "2)File" << std::endl;
+        std::cout << "3)Backup data" << std::endl;
+        std::cout << "4)Restore data" << std::endl;
         std::cout << "3)Exit" << std::endl;
         std::getline(std::cin, choice);
 

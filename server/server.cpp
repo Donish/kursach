@@ -24,6 +24,7 @@
 #define RECOVERFILE_PATH "../recoverfile.txt"
 #define RECOVER_FILENAMES_PATH "../recover_files/existing_recover_files.txt"
 #define RECOVER_DIRECTORY "../recover_files/"
+#define RECOVER_BROKER "../recover_files/broker.txt"
 
 struct message_text
 {
@@ -62,42 +63,55 @@ void message_queues(backup_system &bs)
 
     while(true)
     {
-        std::cout << "Do you want to restore data?" << std::endl;
-        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Exit" << std::endl;
-        std::getline(std::cin, recover_choice);
-
+//        std::cout << "Do you want to restore data?" << std::endl;
+//        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Delete recover file" << std::endl << "4)Exit" << std::endl;
+//        std::getline(std::cin, recover_choice);
+        if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+        {
+            perror("msgrcv error");
+            exit(1);
+        }
+        recover_choice = message._message_text._buff;
         if(recover_choice == "1")
         {
-//            fin_recover.open(RECOVERFILE_PATH);
-//            if(!fin_recover.is_open())
-//            {
-//                std::cerr << "Recover file can't be opened!" << std::endl;
-//                exit(1);
-//            }
-            bs.restore_data(db);
 
-            while(std::getline(fin_recover, command))
+            try
             {
-                try
-                {
-                    db->handle_request(command);
-                }
-                catch(std::exception &ex)
-                {
-                    //TODO: cout
-                }
+                bs.restore_data(db);
+            }
+            catch(std::exception &ex)
+            {
+                throw std::invalid_argument(ex.what());
             }
 
-            fin_recover.close();
             break;
+
         }
         else if(recover_choice == "2")
         {
-            if(!remove(RECOVERFILE_PATH))
-            {
-                std::cout << "Recover file has been cleared." << std::endl;
-            }
             break;
+        }
+        else if(recover_choice == "3")
+        {
+
+            while(true)
+            {
+                std::cout << "Do you want to delete recover file?(y/n):" << std::endl;
+                std::getline(std::cin, command);
+                if(command == "y" || command == "Y")
+                {
+                    bs.remove_file_from_system();
+                }
+                else if(command == "n" || command == "N")
+                {
+                    break;
+                }
+                else
+                {
+                    std::cout << "No such choice!" << std::endl;
+                }
+            }
+
         }
         else if(recover_choice == "3")
         {
@@ -109,12 +123,19 @@ void message_queues(backup_system &bs)
         }
     }
 
-    std::ofstream fout_recover(RECOVERFILE_PATH, std::ios::app);
-    if(!fout_recover.is_open())
+    //переделать рекавер тут
+    std::ofstream broker(RECOVER_BROKER, std::ios::app);
+    if(!broker.is_open())
     {
-        std::cerr << "Recover file can't be opened!" << std::endl;
+        std::cerr << "Broker file can't be opened!" << std::endl;
         exit(1);
     }
+//    std::ofstream fout_recover(RECOVERFILE_PATH, std::ios::app);
+//    if(!fout_recover.is_open())
+//    {
+//        std::cerr << "Recover file can't be opened!" << std::endl;
+//        exit(1);
+//    }
     std::string command_todo;
     while(true)
     {
@@ -132,11 +153,12 @@ void message_queues(backup_system &bs)
 
         try
         {
+
             command_todo = std::string(message._message_text._buff);
             db->handle_request(command_todo);
             if(command_todo.rfind("GET", 0))
             {
-                fout_recover << command_todo << std::endl;
+                broker << command_todo << std::endl;
             }
 
         }
@@ -160,7 +182,7 @@ int main()
         perror("file open: main error");
         exit(1);
     }
-    backup_system bs(recover_filenames, RECOVER_FILENAMES_PATH);
+    backup_system bs(recover_filenames, RECOVER_FILENAMES_PATH, RECOVER_DIRECTORY);
     recover_filenames.close();
 
     if((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
