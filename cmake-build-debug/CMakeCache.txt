@@ -227,13 +227,13 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Value Computed by CMake
-kursach_BINARY_DIR:STATIC=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug
+kursach_BINARY_DIR:STATIC=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients
 
 //Value Computed by CMake
-kursach_IS_TOP_LEVEL:STATIC=ON
+kursach_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kursach_SOURCE_DIR:STATIC=/mnt/c/Users/zhura/CLionProjects/kursach
+kursach_SOURCE_DIR:STATIC=/mnt/c/Users/zhura/CLionProjects/kursach/clients
 
 
 ########################
@@ -348,7 +348,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -6,7 +6,7 @@
 #include <fstream>
 #include <vector>
 #include "../string_methods/mystring.h"
-#include "../containers/data_base.h"
+//#include "../containers/data_base.h"
 
 class backup_system final
 {
@@ -22,7 +22,7 @@ public:
 
     void backup_data(std::ifstream &broker);
 
-    void restore_data(data_base *&db);
+    std::vector<std::string> restore_data();
 
 public:
 
@@ -35,8 +35,6 @@ private:
     void add_file_to_system(const std::string &file);
 
     bool is_valid_filename(const std::string &filename);
-
-    void check_txt_format(std::string &filename);
 
     bool file_exists(std::string &filename);
 

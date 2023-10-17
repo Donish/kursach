@@ -54,6 +54,6 @@ add_executable(server
         ../validator/date_validator.cpp
         ../validator/digit_validator.cpp
         ../validator/time_validator.cpp
-        ../backup_system/backup_system.cpp
         ../ipc_connections/message_queue.cpp
+        ../ipc_connections/ipc_type.h
 )

@@ -5,3 +5,5 @@
 bool has_carriage_symbol(const std::string &command);
 
 void delete_carriage_symbol(std::string &command);
+
+void delete_carriage_symbol_with_guard(std::string &command);

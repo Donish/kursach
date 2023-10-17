@@ -7,6 +7,7 @@ backup_system::backup_system(std::ifstream &file_with_filenames, const std::stri
     std::string filename;
     while(std::getline(file_with_filenames, filename))
     {
+        delete_carriage_symbol_with_guard(filename);
         _filenames.push_back(filename);
     }
 }
@@ -43,10 +44,10 @@ void backup_system::backup_data(std::ifstream &broker)
             std::getline(std::cin, input_filename);
             if(!is_valid_filename(input_filename))
             {
-                std::cout << "Required at least one letter!" << std::endl;
+                std::cout << "Filename must include letters or numbers only!" << std::endl;
                 continue;
             }
-            check_txt_format(input_filename);
+            input_filename += ".txt";
             input_filename = _recover_directory + input_filename;
             if(file_exists(input_filename))
             {
@@ -77,29 +78,25 @@ void backup_system::backup_data(std::ifstream &broker)
             break;
         }
 
-        backup_file.open(_filenames[file_idx - 1], std::ios::app);
-        if(!backup_file.is_open())
-        {
-            throw std::invalid_argument("Can't open the backup file!");
-        }
+        backup_file.open(_filenames[file_idx - 1]);
+        input_filename = _filenames[file_idx - 1];
 
     }
 
-    //заполнение бэкап файл из брокер файла
+    //заполнение бэкап файла из брокер файла
     while(std::getline(broker, command))
     {
-        if(has_carriage_symbol(command))
-        {
-            delete_carriage_symbol(command);
-        }
-
+        delete_carriage_symbol_with_guard(command);
         backup_file << command << std::endl;
     }
     backup_file.close();
+    std::cout << "Backup was made into file:" << input_filename << std::endl;
 }
 
-void backup_system::restore_data(data_base *&db)
+//TODO: сделать так, чтобы перед восстановлением данных удалялись существующие данные
+std::vector<std::string> backup_system::restore_data()
 {
+    std::vector<std::string> result_commands;
     std::cout << std::endl << "Select file to restore from: " << std::endl;
     for(int i = 0; i < _filenames.size(); ++i)
     {
@@ -128,37 +125,13 @@ void backup_system::restore_data(data_base *&db)
 
     while(std::getline(restore_file, command))
     {
-        try
-        {
-            db->handle_request(command);
-        }
-        catch(std::exception &ex)
-        {
-            throw std::invalid_argument(ex.what());
-        }
+        delete_carriage_symbol_with_guard(command);
+        result_commands.push_back(command);
     }
 
-    while(true)
-    {
-        std::cout << "Do you want to delete this recover file?(y/n): ";
-        std::getline(std::cin, command);
-        if(command == "y" || command == "Y")
-        {
-            restore_file.close();
-            remove_file(file_idx - 1);
-            break;
-        }
-        else if(command == "n" || command == "N")
-        {
-            restore_file.close();
-            break;
-        }
-        else
-        {
-            std::cout << "No such choice!" << std::endl;
-        }
-    }
-
+    restore_file.close();
+    std::cout << "Data restored from file: " << _filenames[file_idx - 1] << std::endl;
+    return result_commands;
 }
 
 void backup_system::add_file_to_system(const std::string &file)
@@ -195,18 +168,20 @@ void backup_system::remove_file_from_system()
     }
     file_idx--;
 
-
     if(!remove(_filenames[file_idx].c_str())) // удаляем сам файл из директории
     {
         throw std::invalid_argument("Can't delete the file!");
     }
     _filenames.erase(_filenames.begin() + file_idx); // удаляем файл из вектора
     std::ofstream list_of_files(_existing_recover_files_path);
-    for(const auto &filename : _filenames) // удаляем файл из файла со списком файлов
+    for(auto &filename : _filenames) // удаляем файл из файла со списком файлов
     {
+        delete_carriage_symbol_with_guard(filename);
         list_of_files << filename << std::endl;
     }
     list_of_files.close();
+
+    std::cout << "File was succesfully deleted." << std::endl;
 }
 
 void backup_system::remove_file(const int &index)
@@ -228,31 +203,11 @@ void backup_system::remove_file(const int &index)
 
 bool backup_system::is_valid_filename(const std::string &filename)
 {
-    if(filename == ".txt")
-    {
-        return false;
-    }
     for(const auto &symbol : filename)
     {
-        if(isalpha(symbol)) return true;
+        if(!isalnum(symbol)) return false;
     }
-    return false;
-}
-
-void backup_system::check_txt_format(std::string &filename)
-{
-    int length = (int)filename.length();
-    if(length < 5)
-    {
-        filename += ".txt";
-    }
-    else
-    {
-        if(filename.substr(length - 3) != ".txt")
-        {
-            filename += ".txt";
-        }
-    }
+    return true;
 }
 
 bool backup_system::file_exists(std::string &filename)

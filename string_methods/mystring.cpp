@@ -14,3 +14,11 @@ void delete_carriage_symbol(std::string &command)
 {
     command.pop_back();
 }
+
+void delete_carriage_symbol_with_guard(std::string &command)
+{
+    if(has_carriage_symbol(command))
+    {
+        delete_carriage_symbol(command);
+    }
+}

@@ -79,6 +79,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kursach.dir/owntype/own_type.cpp.o.d"
   "CMakeFiles/kursach.dir/string_methods/mystring.cpp.o"
   "CMakeFiles/kursach.dir/string_methods/mystring.cpp.o.d"
+  "CMakeFiles/kursach.dir/validator/command_validator.cpp.o"
+  "CMakeFiles/kursach.dir/validator/command_validator.cpp.o.d"
   "CMakeFiles/kursach.dir/validator/date_validator.cpp.o"
   "CMakeFiles/kursach.dir/validator/date_validator.cpp.o.d"
   "CMakeFiles/kursach.dir/validator/digit_validator.cpp.o"

@@ -48,6 +48,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/zhura/CLionProjects/kursach/main.cpp" "CMakeFiles/kursach.dir/main.cpp.o" "gcc" "CMakeFiles/kursach.dir/main.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp" "CMakeFiles/kursach.dir/owntype/own_type.cpp.o" "gcc" "CMakeFiles/kursach.dir/owntype/own_type.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp" "CMakeFiles/kursach.dir/string_methods/mystring.cpp.o" "gcc" "CMakeFiles/kursach.dir/string_methods/mystring.cpp.o.d"
+  "/mnt/c/Users/zhura/CLionProjects/kursach/validator/command_validator.cpp" "CMakeFiles/kursach.dir/validator/command_validator.cpp.o" "gcc" "CMakeFiles/kursach.dir/validator/command_validator.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp" "CMakeFiles/kursach.dir/validator/date_validator.cpp.o" "gcc" "CMakeFiles/kursach.dir/validator/date_validator.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp" "CMakeFiles/kursach.dir/validator/digit_validator.cpp.o" "gcc" "CMakeFiles/kursach.dir/validator/digit_validator.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp" "CMakeFiles/kursach.dir/validator/time_validator.cpp.o" "gcc" "CMakeFiles/kursach.dir/validator/time_validator.cpp.o.d"

@@ -25,12 +25,12 @@ void message_queue::send_message(const std::string &str)
     }
 }
 
-void message_queue::receive_message(std::string *&str)
+void message_queue::receive_message(std::string &str)
 {
     if(msgrcv(_msg_queue_id, &_message, sizeof(struct message_text), 0, 0) == -1)
     {
         throw std::invalid_argument("msgrcv error");
     }
 
-    *str = _message._message_text._buff;
+    str = _message._message_text._buff;
 }

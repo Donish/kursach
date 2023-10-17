@@ -63,42 +63,101 @@ CMAKE_BINARY_DIR = /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/kursach.dir/all
+all: server/all
+all: clients/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: server/preinstall
+preinstall: clients/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/kursach.dir/clean
+clean: server/clean
+clean: clients/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/kursach.dir
+# Directory level rules for directory clients
+
+# Recursive "all" directory target.
+clients/all: clients/CMakeFiles/client.dir/all
+.PHONY : clients/all
+
+# Recursive "preinstall" directory target.
+clients/preinstall:
+.PHONY : clients/preinstall
+
+# Recursive "clean" directory target.
+clients/clean: clients/CMakeFiles/client.dir/clean
+.PHONY : clients/clean
+
+#=============================================================================
+# Directory level rules for directory server
+
+# Recursive "all" directory target.
+server/all: server/CMakeFiles/server.dir/all
+.PHONY : server/all
+
+# Recursive "preinstall" directory target.
+server/preinstall:
+.PHONY : server/preinstall
+
+# Recursive "clean" directory target.
+server/clean: server/CMakeFiles/server.dir/clean
+.PHONY : server/clean
+
+#=============================================================================
+# Target rules for target server/CMakeFiles/server.dir
 
 # All Build rule for target.
-CMakeFiles/kursach.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target kursach"
-.PHONY : CMakeFiles/kursach.dir/all
+server/CMakeFiles/server.dir/all:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/depend
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target server"
+.PHONY : server/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/kursach.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles 44
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kursach.dir/all
+server/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles 42
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/kursach.dir/rule
+.PHONY : server/CMakeFiles/server.dir/rule
 
 # Convenience name for target.
-kursach: CMakeFiles/kursach.dir/rule
-.PHONY : kursach
+server: server/CMakeFiles/server.dir/rule
+.PHONY : server
 
 # clean rule for target.
-CMakeFiles/kursach.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kursach.dir/build.make CMakeFiles/kursach.dir/clean
-.PHONY : CMakeFiles/kursach.dir/clean
+server/CMakeFiles/server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/clean
+.PHONY : server/CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target clients/CMakeFiles/client.dir
+
+# All Build rule for target.
+clients/CMakeFiles/client.dir/all:
+	$(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/depend
+	$(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target client"
+.PHONY : clients/CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+clients/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clients/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles 0
+.PHONY : clients/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: clients/CMakeFiles/client.dir/rule
+.PHONY : client
+
+# clean rule for target.
+clients/CMakeFiles/client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/clean
+.PHONY : clients/CMakeFiles/client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

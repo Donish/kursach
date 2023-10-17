@@ -17,14 +17,11 @@
 #include <string.h>
 
 #include "../containers/data_base.h"
-#include "../backup_system/backup_system.h"
+#include "../ipc_connections/message_queue.h"
+#include "../ipc_connections/ipc_type.h"
 
 #define SERVER_KEY_PATHNAME "../tmp/mqueue_server_key"
 #define PROJECTD_ID 'M'
-#define RECOVERFILE_PATH "../recoverfile.txt"
-#define RECOVER_FILENAMES_PATH "../recover_files/existing_recover_files.txt"
-#define RECOVER_DIRECTORY "../recover_files/"
-#define RECOVER_BROKER "../recover_files/broker.txt"
 
 struct message_text
 {
@@ -38,98 +35,85 @@ struct message
     struct message_text _message_text;
 };
 
-void message_queues(backup_system &bs)
+void message_queues()
 {
-    key_t msq_key;
-    int qid;
-    struct message message;
+    ipc_type connection = ipc_type::MSG_QUEUE;
+    message_queue msq;
+//    key_t msq_key;
+//    int qid;
+//    struct message message;
 
-    if((msq_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
-    {
-        perror("ftok error");
-        exit(1);
-    }
-
-    if((qid = msgget(msq_key, IPC_CREAT | 0660)) == -1)
-    {
-        perror("msgget error");
-        exit(1);
-    }
+//    if((msq_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
+//    {
+//        perror("ftok error");
+//        exit(1);
+//    }
+//
+//    if((qid = msgget(msq_key, IPC_CREAT | 0660)) == -1)
+//    {
+//        perror("msgget error");
+//        exit(1);
+//    }
 
     auto *db = new data_base();
     std::string command;
-    std::ifstream fin_recover;
-    std::string recover_choice;
 
-    while(true)
-    {
-//        std::cout << "Do you want to restore data?" << std::endl;
-//        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Delete recover file" << std::endl << "4)Exit" << std::endl;
-//        std::getline(std::cin, recover_choice);
-        if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
-        {
-            perror("msgrcv error");
-            exit(1);
-        }
-        recover_choice = message._message_text._buff;
-        if(recover_choice == "1")
-        {
-
-            try
-            {
-                bs.restore_data(db);
-            }
-            catch(std::exception &ex)
-            {
-                throw std::invalid_argument(ex.what());
-            }
-
-            break;
-
-        }
-        else if(recover_choice == "2")
-        {
-            break;
-        }
-        else if(recover_choice == "3")
-        {
-
-            while(true)
-            {
-                std::cout << "Do you want to delete recover file?(y/n):" << std::endl;
-                std::getline(std::cin, command);
-                if(command == "y" || command == "Y")
-                {
-                    bs.remove_file_from_system();
-                }
-                else if(command == "n" || command == "N")
-                {
-                    break;
-                }
-                else
-                {
-                    std::cout << "No such choice!" << std::endl;
-                }
-            }
-
-        }
-        else if(recover_choice == "3")
-        {
-            exit(0);
-        }
-        else
-        {
-            std::cout << "No such choice!" << std::endl;
-        }
-    }
+//    //region backup at the start
+//    try
+//    {
+//        msq.receive_message(recover_choice);
+//    }
+//    catch(std::exception &ex)
+//    {
+//        perror(ex.what());
+//        exit(1);
+//    }
+//
+//    if(recover_choice == "restore")
+//    {
+//
+//        try
+//        {
+//            bs.restore_data(db, connection);
+//        }
+//        catch(std::exception &ex)
+//        {
+//            perror(ex.what());
+//            exit(1);
+//        }
+//
+//    }
+//    else if(recover_choice == "delete")
+//    {
+//
+//        while(true)
+//        {
+//            std::cout << "Do you want to delete recover file?(y/n):" << std::endl;
+//            std::getline(std::cin, command);
+//            if(command == "y" || command == "Y")
+//            {
+//                bs.remove_file_from_system();
+//            }
+//            else if(command == "n" || command == "N")
+//            {
+//                break;
+//            }
+//            else
+//            {
+//                std::cout << "No such choice!" << std::endl;
+//            }
+//        }
+//
+//    }
+//    //endregion backup at the start
 
     //переделать рекавер тут
-    std::ofstream broker(RECOVER_BROKER, std::ios::app);
-    if(!broker.is_open())
-    {
-        std::cerr << "Broker file can't be opened!" << std::endl;
-        exit(1);
-    }
+//    std::ofstream broker(RECOVER_BROKER, std::ios::app);
+//    if(!broker.is_open())
+//    {
+//        std::cerr << "Broker file can't be opened!" << std::endl;
+//        exit(1);
+//    }
 //    std::ofstream fout_recover(RECOVERFILE_PATH, std::ios::app);
 //    if(!fout_recover.is_open())
 //    {
@@ -139,32 +123,25 @@ void message_queues(backup_system &bs)
     std::string command_todo;
     while(true)
     {
-        if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
-        {
-            perror("msgrcv error");
-            exit(1);
-        }
-        if(strcmp(message._message_text._buff, "exit") == 0)
-        {
-            break;
-        }
-
-        std::cout << message._message_text._buff << std::endl;
-
+//        if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+//        {
+//            perror("msgrcv error");
+//            exit(1);
+//        }
+//        if(strcmp(message._message_text._buff, "exit") == 0)
+//        {
+//            break;
+//        }
         try
         {
-
-            command_todo = std::string(message._message_text._buff);
-            db->handle_request(command_todo);
-            if(command_todo.rfind("GET", 0))
-            {
-                broker << command_todo << std::endl;
-            }
-
+            msq.receive_message(command);
+            std::cout << command << std::endl;
+            db->handle_request(command);
         }
         catch(std::exception &ex)
         {
-            // TODO: cout
+            perror(ex.what());
+            exit(1);
         }
 
         std::cout << "message received." << std::endl;
@@ -176,14 +153,6 @@ int main()
     key_t msg_queue_key;
     int qid;
     struct message message;
-    std::ifstream recover_filenames(RECOVER_FILENAMES_PATH);
-    if(!recover_filenames.is_open())
-    {
-        perror("file open: main error");
-        exit(1);
-    }
-    backup_system bs(recover_filenames, RECOVER_FILENAMES_PATH, RECOVER_DIRECTORY);
-    recover_filenames.close();
 
     if((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
     {
@@ -198,7 +167,7 @@ int main()
 
     std::cout << "Connected with client." << std::endl;
 
-    message_queues(bs);
+    message_queues();
 
     return 0;
 }

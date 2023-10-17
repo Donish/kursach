@@ -40,7 +40,7 @@ public:
 
     void send_message(const std::string &str);
 
-    void receive_message(std::string *&str);
+    void receive_message(std::string &str);
 
 };
 

@@ -1,3 +1,8 @@
-/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/kursach.dir
 /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/edit_cache.dir
 /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server/CMakeFiles/server.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server/CMakeFiles/edit_cache.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients/CMakeFiles/client.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients/CMakeFiles/edit_cache.dir
+/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients/CMakeFiles/rebuild_cache.dir

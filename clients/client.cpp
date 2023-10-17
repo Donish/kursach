@@ -19,21 +19,19 @@
 #include <strings.h>
 #include <string.h>
 
-#define SERVER_KEY_PATHNAME "../server/tmp/mqueue_server_key"
-#define PROJECT_ID 'M'
+#include "../backup_system/backup_system.h"
+#include "../validator/command_validator.h"
 
-enum STATUS_CODE
-{
-    SUCCESS,
-    ARGS_ERROR,
-    IPC_ERROR
-};
+#define SERVER_KEY_PATHNAME "../tmp/mqueue_server_key"
+#define PROJECT_ID 'M'
+#define RECOVER_FILENAMES_PATH "../recover_files/existing_recover_files.txt"
+#define RECOVER_DIRECTORY "../recover_files/"
+#define RECOVER_BROKER "../recover_files/broker.txt"
 
 struct message_text
 {
     int _qid;
     char _buff[500];
-//    std::string _buff;
 };
 
 struct message
@@ -42,8 +40,10 @@ struct message
     struct message_text _message_text;
 };
 
-void message_queues()
+void message_queues(backup_system &bs)
 {
+    std::ifstream broker_in;
+    std::ofstream broker_out;
     key_t server_queue_key;
     int server_qid, myqid;
     struct message snd_message, rcv_messsage;
@@ -70,7 +70,10 @@ void message_queues()
     std::string filename;
     std::string command;
     std::ifstream commands_file;
+    std::vector<std::string> commands_to_restore;
 
+    broker_out.open(RECOVER_BROKER);
+    //region backup at the start
     while(true)
     {
         std::cout << std::endl << "Do you want to restore data?" << std::endl;
@@ -79,12 +82,29 @@ void message_queues()
 
         if(choice == "1")
         {
-            strcpy(snd_message._message_text._buff, "1");
-            if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
+
+            try
             {
-                perror("msgsnd error");
+                commands_to_restore = bs.restore_data();
+            }
+            catch(std::exception &ex)
+            {
+                perror(ex.what());
                 exit(1);
             }
+
+            for(auto &i : commands_to_restore)
+            {
+                //TODO: добавить валидатор команд
+                broker_out << i << std::endl;
+                strcpy(snd_message._message_text._buff, i.c_str());
+                if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
+                {
+                    perror("msgsnd error");
+                    exit(1);
+                }
+            }
+
         }
         else if(choice == "2")
         {
@@ -92,12 +112,17 @@ void message_queues()
         }
         else if(choice == "3")
         {
-            strcpy(snd_message._message_text._buff, "3");
-            if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
+
+            try
             {
-                perror("msgsnd error");
+                bs.remove_file_from_system();
+            }
+            catch(std::exception &ex)
+            {
+                perror(ex.what());
                 exit(1);
             }
+
         }
         else if(choice == "4")
         {
@@ -105,10 +130,13 @@ void message_queues()
         }
         else
         {
-            std::cout << "No such choice!" << std::endl;
+            std::cout << "No such option!" << std::endl;
         }
     }
+    //endregion backup at the start
 
+//    broker_out.open(RECOVER_BROKER, std::ios::app);
+    //region main menu
     while(true)
     {
 
@@ -116,11 +144,12 @@ void message_queues()
         std::cout << "2)File" << std::endl;
         std::cout << "3)Backup data" << std::endl;
         std::cout << "4)Restore data" << std::endl;
-        std::cout << "3)Exit" << std::endl;
+        std::cout << "5)Exit" << std::endl;
         std::getline(std::cin, choice);
 
         if(choice == "1")
         {
+
             std::cout << "Enter the command:" << std::endl;
 
             std::getline(std::cin, command);
@@ -131,9 +160,14 @@ void message_queues()
                 perror("msgsnd: command error");
                 exit(1);
             }
+
+            //TODO: validate command
+            broker_out << command << std::endl;
+
         }
         else if(choice == "2")
         {
+
             std::cout << "Enter the path to file:" << std::endl;
             std::getline(std::cin, filename);
             commands_file.open(filename);
@@ -145,18 +179,78 @@ void message_queues()
 
             while(std::getline(commands_file, command))
             {
+                delete_carriage_symbol_with_guard(command);
                 strcpy(snd_message._message_text._buff, command.c_str());
                 if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
                 {
                     perror("msgsnd: file error");
                     exit(1);
                 }
+                //TODO: validate command
+                broker_out << command << std::endl;
             }
-
             commands_file.close();
+
         }
         else if(choice == "3")
         {
+
+            broker_out.close();
+            broker_in.open(RECOVER_BROKER);
+            if(!broker_in.is_open())
+            {
+                perror("can't open the file");
+                exit(1);
+            }
+            try
+            {
+                bs.backup_data(broker_in);
+            }
+            catch(std::exception &ex)
+            {
+                perror(ex.what());
+                exit(1);
+            }
+            broker_in.close();
+            broker_out.open(RECOVER_BROKER, std::ios::app);
+            if(!broker_out.is_open())
+            {
+                perror("can't open the file");
+                exit(1);
+            }
+
+        }
+        else if(choice == "4")
+        {
+
+            try
+            {
+                commands_to_restore = bs.restore_data();
+                broker_out.close();
+                broker_out.open(RECOVER_BROKER);
+            }
+            catch(std::exception &ex)
+            {
+                perror(ex.what());
+                exit(1);
+            }
+
+            for(auto &i : commands_to_restore)
+            {
+                //TODO: validate command
+                broker_out << i << std::endl;
+                strcpy(snd_message._message_text._buff, i.c_str());
+                if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
+                {
+                    perror("msgsnd error");
+                    exit(1);
+                }
+            }
+
+        }
+        else if(choice == "5")
+        {
+
             strcpy(snd_message._message_text._buff, "exit");
             if(msgsnd(server_qid, &snd_message, sizeof(message_text), 0) == -1)
             {
@@ -165,12 +259,15 @@ void message_queues()
             }
 
             break;
+
         }
         else
         {
             std::cout << "No such choice!" << std::endl;
         }
     }
+    broker_out.close();
+    //endregion main menu
 
     if(msgctl(myqid, IPC_RMID, NULL) == -1)
     {
@@ -186,6 +283,15 @@ int main()
     key_t server_queue_key;
     int server_qid, my_qid;
     struct message snd_message, rcv_message;
+
+    std::ifstream existing_filenames(RECOVER_FILENAMES_PATH);
+    if(!existing_filenames.is_open())
+    {
+        perror("can't open the file");
+        exit(1);
+    }
+    backup_system bs(existing_filenames, RECOVER_FILENAMES_PATH, RECOVER_DIRECTORY);
+    existing_filenames.close();
 
     if((my_qid = msgget(IPC_PRIVATE, 0660)) == -1)
     {
@@ -207,7 +313,7 @@ int main()
 
     snd_message._message_type = 1;
     snd_message._message_text._qid = my_qid;
-    message_queues();
+    message_queues(bs);
 
     if(msgctl(my_qid, IPC_RMID, NULL) == -1)
     {
@@ -215,5 +321,5 @@ int main()
         exit(1);
     }
 
-    return SUCCESS;
+    return 0;
 }
