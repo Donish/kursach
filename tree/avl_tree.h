@@ -172,7 +172,7 @@ void avl_tree<tkey, tvalue, tkey_comparer>::balance_with_list(
     {
         if(balance_factor(subtree_node_address->left_subtree_address) < 0)
         {
-            this->left_rotation(subtree_node_address->left_subtree_address); //TODO:check
+            this->left_rotation(subtree_node_address->left_subtree_address);
             fix_node_height(&(subtree_node_address->left_subtree_address->left_subtree_address));
             fix_node_height(&(subtree_node_address->left_subtree_address->right_subtree_address));
             fix_node_height(&(subtree_node_address->left_subtree_address));
@@ -300,7 +300,6 @@ avl_tree<tkey, tvalue, tkey_comparer> &avl_tree<tkey, tvalue, tkey_comparer>::op
     return *this;
 }
 
-//TODO: переопределить конструкторы
 template<
         typename tkey,
         typename tvalue,
@@ -407,7 +406,7 @@ template<
 void avl_tree<tkey, tvalue, tkey_comparer>::avl_tree_insertion_template_method::initialize_memory_with_node(
         typename binary_search_tree<tkey, tvalue, tkey_comparer>::node * const node_address)
 {
-    new (node_address) avl_node; //TODO: check
+    new (node_address) avl_node;
 }
 
 template<

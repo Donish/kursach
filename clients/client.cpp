@@ -76,7 +76,6 @@ void message_queues(backup_system &bs)
 
     broker_out.open(RECOVER_BROKER);
     //region backup at the start
-    //TODO: при выполнении команды ADD_POOL добавлять в файл команду REMOVE_POOL
     while(true)
     {
         std::cout << std::endl << "Do you want to restore data?" << std::endl;

@@ -104,7 +104,6 @@ void backup_system::backup_data(std::ifstream &broker)
     std::cout << "Backup was made into file:" << input_filename << std::endl;
 }
 
-//TODO: сделать так, чтобы перед восстановлением данных удалялись существующие данные
 std::vector<std::string> backup_system::restore_data()
 {
     std::vector<std::string> result_commands;
