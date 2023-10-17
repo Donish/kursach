@@ -35,7 +35,7 @@ struct message
     struct message_text _message_text;
 };
 
-void message_queues()
+void message_queues(data_base *&db)
 {
     ipc_type connection = ipc_type::MSG_QUEUE;
     message_queue msq;
@@ -55,7 +55,6 @@ void message_queues()
 //        exit(1);
 //    }
 
-    auto *db = new data_base();
     std::string command;
 
 //    //region backup at the start
@@ -123,28 +122,28 @@ void message_queues()
     std::string command_todo;
     while(true)
     {
-//        if(msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
-//        {
-//            perror("msgrcv error");
-//            exit(1);
-//        }
-//        if(strcmp(message._message_text._buff, "exit") == 0)
-//        {
-//            break;
-//        }
+
         try
         {
             msq.receive_message(command);
+            if(command == "exit")
+            {
+                break;
+            }
+            else if(command == "restore")
+            {
+
+            }
             std::cout << command << std::endl;
-            db->handle_request(command);
         }
         catch(std::exception &ex)
         {
             perror(ex.what());
             exit(1);
         }
+        db->handle_request(command);
 
-        std::cout << "message received." << std::endl;
+//        std::cout << "message received." << std::endl;
     }
 }
 
@@ -153,6 +152,7 @@ int main()
     key_t msg_queue_key;
     int qid;
     struct message message;
+    auto *db = new data_base();
 
     if((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECTD_ID)) == -1)
     {
@@ -167,7 +167,8 @@ int main()
 
     std::cout << "Connected with client." << std::endl;
 
-    message_queues();
+    message_queues(db);
 
+    delete db;
     return 0;
 }

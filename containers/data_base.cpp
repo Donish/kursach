@@ -456,7 +456,6 @@ void data_base::get_data_between_keys(
                     {
                         std::cout << "\tData:" << index << std::endl;
 
-                        //TODO: разыменовать указатели
                         print_meeting_type(*data_value);
                         std::cout << std::endl;
                         print_format(*data_value);
@@ -580,7 +579,7 @@ void data_base::handle_request(
     if(!_chain.handle(request))
     {
         std::cout << "[DATA BASE] command can't be executed" << std::endl << std::endl;
-        throw std::invalid_argument("invalid command!");
+//        throw std::invalid_argument("invalid command!");
     }
 
 }

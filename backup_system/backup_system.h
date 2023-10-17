@@ -6,7 +6,7 @@
 #include <fstream>
 #include <vector>
 #include "../string_methods/mystring.h"
-//#include "../containers/data_base.h"
+#include "../command_handler/command_add_pool.h"
 
 class backup_system final
 {
@@ -15,6 +15,7 @@ private:
     std::vector<std::string> _filenames;
     std::string _existing_recover_files_path;
     std::string _recover_directory;
+    std::string _terminating_commands_filepath = "../recover_files/terminating_commands.txt";
 
 public:
 
@@ -28,6 +29,8 @@ public:
 
     void remove_file_from_system();
 
+    void check_add_terminating_commands(std::string &command);
+
 private:
 
     void remove_file(const int &index);
@@ -37,6 +40,10 @@ private:
     bool is_valid_filename(const std::string &filename);
 
     bool file_exists(std::string &filename);
+
+    bool is_valid_number(const std::string &number);
+
+    std::vector<std::string> split(const std::string &command, char delim);
 
 };
 

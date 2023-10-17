@@ -33,7 +33,6 @@ add_executable(server
         ../containers/collection_data.cpp
         ../containers/pool_data.cpp
         ../containers/scheme_data.cpp
-        ../dialogue/dialogue.cpp
         ../flyweight/flyweight_factory.cpp
         ../flyweight/flyweight_string.cpp
         ../logger/logger.cpp

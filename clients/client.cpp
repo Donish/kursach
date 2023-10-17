@@ -27,6 +27,7 @@
 #define RECOVER_FILENAMES_PATH "../recover_files/existing_recover_files.txt"
 #define RECOVER_DIRECTORY "../recover_files/"
 #define RECOVER_BROKER "../recover_files/broker.txt"
+#define RECOVER_TERMINATING_COMMANDS "../recover_files/terminating_commands.txt"
 
 struct message_text
 {
@@ -46,6 +47,7 @@ void message_queues(backup_system &bs)
     std::ofstream broker_out;
     key_t server_queue_key;
     int server_qid, myqid;
+    command_validator cmd_validate;
     struct message snd_message, rcv_messsage;
 
     if((myqid = msgget(IPC_PRIVATE, 0660)) == -1)
@@ -74,6 +76,7 @@ void message_queues(backup_system &bs)
 
     broker_out.open(RECOVER_BROKER);
     //region backup at the start
+    //TODO: при выполнении команды ADD_POOL добавлять в файл команду REMOVE_POOL
     while(true)
     {
         std::cout << std::endl << "Do you want to restore data?" << std::endl;
@@ -92,11 +95,17 @@ void message_queues(backup_system &bs)
                 perror(ex.what());
                 exit(1);
             }
-
+            if(commands_to_restore.empty())
+            {
+                continue;
+            }
             for(auto &i : commands_to_restore)
             {
-                //TODO: добавить валидатор команд
-                broker_out << i << std::endl;
+                if(cmd_validate(i))
+                {
+                    broker_out << i << std::endl;
+                }
+                bs.check_add_terminating_commands(i);
                 strcpy(snd_message._message_text._buff, i.c_str());
                 if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
                 {
@@ -104,6 +113,7 @@ void message_queues(backup_system &bs)
                     exit(1);
                 }
             }
+            break;
 
         }
         else if(choice == "2")
@@ -135,7 +145,6 @@ void message_queues(backup_system &bs)
     }
     //endregion backup at the start
 
-//    broker_out.open(RECOVER_BROKER, std::ios::app);
     //region main menu
     while(true)
     {
@@ -161,8 +170,11 @@ void message_queues(backup_system &bs)
                 exit(1);
             }
 
-            //TODO: validate command
-            broker_out << command << std::endl;
+            bs.check_add_terminating_commands(command);
+            if(cmd_validate(command))
+            {
+                broker_out << command << std::endl;
+            }
 
         }
         else if(choice == "2")
@@ -186,8 +198,11 @@ void message_queues(backup_system &bs)
                     perror("msgsnd: file error");
                     exit(1);
                 }
-                //TODO: validate command
-                broker_out << command << std::endl;
+                bs.check_add_terminating_commands(command);
+                if(cmd_validate(command))
+                {
+                    broker_out << command << std::endl;
+                }
             }
             commands_file.close();
 
@@ -226,8 +241,6 @@ void message_queues(backup_system &bs)
             try
             {
                 commands_to_restore = bs.restore_data();
-                broker_out.close();
-                broker_out.open(RECOVER_BROKER);
             }
             catch(std::exception &ex)
             {
@@ -235,10 +248,20 @@ void message_queues(backup_system &bs)
                 exit(1);
             }
 
+            if(commands_to_restore.empty())
+            {
+                continue;
+            }
+            broker_out.close();
+            broker_out.open(RECOVER_BROKER);
+
             for(auto &i : commands_to_restore)
             {
-                //TODO: validate command
-                broker_out << i << std::endl;
+                if(cmd_validate(i))
+                {
+                    broker_out << i << std::endl;
+                }
+                bs.check_add_terminating_commands(i);
                 strcpy(snd_message._message_text._buff, i.c_str());
                 if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
                 {

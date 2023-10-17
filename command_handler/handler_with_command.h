@@ -23,7 +23,9 @@ public:
 
 public:
 
-    bool handle(std::string const & request) const noexcept;
+    bool handle(std::string const &request) const noexcept;
+
+    bool validate(std::string const &request) const noexcept;
 
 };
 

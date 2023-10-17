@@ -754,30 +754,6 @@ __/containers/scheme_data.cpp.s:
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.s
 .PHONY : __/containers/scheme_data.cpp.s
 
-__/dialogue/dialogue.o: __/dialogue/dialogue.cpp.o
-.PHONY : __/dialogue/dialogue.o
-
-# target to build an object file
-__/dialogue/dialogue.cpp.o:
-	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o
-.PHONY : __/dialogue/dialogue.cpp.o
-
-__/dialogue/dialogue.i: __/dialogue/dialogue.cpp.i
-.PHONY : __/dialogue/dialogue.i
-
-# target to preprocess a source file
-__/dialogue/dialogue.cpp.i:
-	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.i
-.PHONY : __/dialogue/dialogue.cpp.i
-
-__/dialogue/dialogue.s: __/dialogue/dialogue.cpp.s
-.PHONY : __/dialogue/dialogue.s
-
-# target to generate assembly for a file
-__/dialogue/dialogue.cpp.s:
-	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.s
-.PHONY : __/dialogue/dialogue.cpp.s
-
 __/flyweight/flyweight_factory.o: __/flyweight/flyweight_factory.cpp.o
 .PHONY : __/flyweight/flyweight_factory.o
 
@@ -1201,9 +1177,6 @@ help:
 	@echo "... __/containers/scheme_data.o"
 	@echo "... __/containers/scheme_data.i"
 	@echo "... __/containers/scheme_data.s"
-	@echo "... __/dialogue/dialogue.o"
-	@echo "... __/dialogue/dialogue.i"
-	@echo "... __/dialogue/dialogue.s"
 	@echo "... __/flyweight/flyweight_factory.o"
 	@echo "... __/flyweight/flyweight_factory.i"
 	@echo "... __/flyweight/flyweight_factory.s"

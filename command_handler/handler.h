@@ -21,6 +21,8 @@ public:
 
     virtual bool handle(std::string const &request) const noexcept = 0;
 
+    virtual bool validate(std::string const &request) const noexcept = 0;
+
 };
 
 #endif //HANDLER_H

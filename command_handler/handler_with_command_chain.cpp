@@ -23,6 +23,16 @@ bool handler_with_command_chain::handle(const std::string &request) const
     return _first_handler->handle(request);
 }
 
+bool handler_with_command_chain::validate(const std::string &request) const
+{
+    if(_first_handler == nullptr)
+    {
+        return false;
+    }
+
+    return _first_handler->validate(request);
+}
+
 handler_with_command_chain &handler_with_command_chain::add_handler(command *cmd)
 {
     _last_handler = _first_handler == nullptr ?

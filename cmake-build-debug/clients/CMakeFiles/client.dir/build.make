@@ -97,10 +97,24 @@ clients/CMakeFiles/client.dir/__/backup_system/backup_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/backup_system/backup_system.cpp.s"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/backup_system/backup_system.cpp -o CMakeFiles/client.dir/__/backup_system/backup_system.cpp.s
 
+clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o: ../validator/command_validator.cpp
+clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o -MF CMakeFiles/client.dir/__/validator/command_validator.cpp.o.d -o CMakeFiles/client.dir/__/validator/command_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/command_validator.cpp
+
+clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/validator/command_validator.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/command_validator.cpp > CMakeFiles/client.dir/__/validator/command_validator.cpp.i
+
+clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/validator/command_validator.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/command_validator.cpp -o CMakeFiles/client.dir/__/validator/command_validator.cpp.s
+
 clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o: clients/CMakeFiles/client.dir/flags.make
 clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o: ../string_methods/mystring.cpp
 clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o -MF CMakeFiles/client.dir/__/string_methods/mystring.cpp.o.d -o CMakeFiles/client.dir/__/string_methods/mystring.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp
 
 clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.i: cmake_force
@@ -111,21 +125,615 @@ clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/string_methods/mystring.cpp.s"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp -o CMakeFiles/client.dir/__/string_methods/mystring.cpp.s
 
+clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o: ../command_handler/command.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command.cpp > CMakeFiles/client.dir/__/command_handler/command.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command.cpp -o CMakeFiles/client.dir/__/command_handler/command.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o: ../command_handler/handler_with_command_chain.cpp
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o -MF CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp > CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp -o CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o: ../command_handler/handler_with_command.cpp
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o -MF CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp > CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp -o CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o: ../command_handler/command_add_collection.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp > CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp -o CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o: ../command_handler/command_add_data.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp > CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp -o CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o: ../command_handler/command_add_pool.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp > CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp -o CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o: ../command_handler/command_add_scheme.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp > CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp -o CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o: ../command_handler/command_get_data.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp > CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp -o CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o: ../command_handler/command_get_data_between.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp > CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp -o CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o: ../command_handler/command_remove_collection.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp > CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp -o CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o: ../command_handler/command_remove_data.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp > CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp -o CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o: ../command_handler/command_remove_pool.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp > CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp -o CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o: ../command_handler/command_remove_scheme.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp > CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp -o CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.s
+
+clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o: ../command_handler/command_update_data.cpp
+clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o -MF CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o.d -o CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp
+
+clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp > CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp -o CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o: ../containers/data_base.cpp
+clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o -MF CMakeFiles/client.dir/__/containers/data_base.cpp.o.d -o CMakeFiles/client.dir/__/containers/data_base.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.cpp
+
+clients/CMakeFiles/client.dir/__/containers/data_base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/containers/data_base.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.cpp > CMakeFiles/client.dir/__/containers/data_base.cpp.i
+
+clients/CMakeFiles/client.dir/__/containers/data_base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/containers/data_base.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.cpp -o CMakeFiles/client.dir/__/containers/data_base.cpp.s
+
+clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o: ../containers/collection_data.cpp
+clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o -MF CMakeFiles/client.dir/__/containers/collection_data.cpp.o.d -o CMakeFiles/client.dir/__/containers/collection_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp
+
+clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/containers/collection_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp > CMakeFiles/client.dir/__/containers/collection_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/containers/collection_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp -o CMakeFiles/client.dir/__/containers/collection_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o: ../containers/pool_data.cpp
+clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o -MF CMakeFiles/client.dir/__/containers/pool_data.cpp.o.d -o CMakeFiles/client.dir/__/containers/pool_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp
+
+clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/containers/pool_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp > CMakeFiles/client.dir/__/containers/pool_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/containers/pool_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp -o CMakeFiles/client.dir/__/containers/pool_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o: ../containers/scheme_data.cpp
+clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o -MF CMakeFiles/client.dir/__/containers/scheme_data.cpp.o.d -o CMakeFiles/client.dir/__/containers/scheme_data.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp
+
+clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/containers/scheme_data.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp > CMakeFiles/client.dir/__/containers/scheme_data.cpp.i
+
+clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/containers/scheme_data.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp -o CMakeFiles/client.dir/__/containers/scheme_data.cpp.s
+
+clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o: ../allocator/borders_descriptors_memory.cpp
+clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o -MF CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o.d -o CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp
+
+clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp > CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.i
+
+clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp -o CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.s
+
+clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o: ../allocator/buddy_system_memory.cpp
+clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o -MF CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o.d -o CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp
+
+clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp > CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.i
+
+clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp -o CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.s
+
+clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o: ../allocator/memory.cpp
+clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o -MF CMakeFiles/client.dir/__/allocator/memory.cpp.o.d -o CMakeFiles/client.dir/__/allocator/memory.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory.cpp
+
+clients/CMakeFiles/client.dir/__/allocator/memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/allocator/memory.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory.cpp > CMakeFiles/client.dir/__/allocator/memory.cpp.i
+
+clients/CMakeFiles/client.dir/__/allocator/memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/allocator/memory.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory.cpp -o CMakeFiles/client.dir/__/allocator/memory.cpp.s
+
+clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o: ../allocator/memory_holder.cpp
+clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o -MF CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o.d -o CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp
+
+clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/allocator/memory_holder.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp > CMakeFiles/client.dir/__/allocator/memory_holder.cpp.i
+
+clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/allocator/memory_holder.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp -o CMakeFiles/client.dir/__/allocator/memory_holder.cpp.s
+
+clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o: ../allocator/memory_simple.cpp
+clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o -MF CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o.d -o CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp
+
+clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/allocator/memory_simple.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp > CMakeFiles/client.dir/__/allocator/memory_simple.cpp.i
+
+clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/allocator/memory_simple.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp -o CMakeFiles/client.dir/__/allocator/memory_simple.cpp.s
+
+clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o: ../allocator/sorted_list_memory.cpp
+clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o -MF CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o.d -o CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp
+
+clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp > CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.i
+
+clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp -o CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.s
+
+clients/CMakeFiles/client.dir/__/logger/logger.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/logger/logger.cpp.o: ../logger/logger.cpp
+clients/CMakeFiles/client.dir/__/logger/logger.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object clients/CMakeFiles/client.dir/__/logger/logger.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/logger/logger.cpp.o -MF CMakeFiles/client.dir/__/logger/logger.cpp.o.d -o CMakeFiles/client.dir/__/logger/logger.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp
+
+clients/CMakeFiles/client.dir/__/logger/logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/logger/logger.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp > CMakeFiles/client.dir/__/logger/logger.cpp.i
+
+clients/CMakeFiles/client.dir/__/logger/logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/logger/logger.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp -o CMakeFiles/client.dir/__/logger/logger.cpp.s
+
+clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o: ../logger/logger_builder.cpp
+clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o -MF CMakeFiles/client.dir/__/logger/logger_builder.cpp.o.d -o CMakeFiles/client.dir/__/logger/logger_builder.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp
+
+clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/logger/logger_builder.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp > CMakeFiles/client.dir/__/logger/logger_builder.cpp.i
+
+clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/logger/logger_builder.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp -o CMakeFiles/client.dir/__/logger/logger_builder.cpp.s
+
+clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o: ../logger/logger_builder_concrete.cpp
+clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o -MF CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o.d -o CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp
+
+clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp > CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.i
+
+clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp -o CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.s
+
+clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o: ../logger/logger_concrete.cpp
+clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o -MF CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o.d -o CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp
+
+clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/logger/logger_concrete.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp > CMakeFiles/client.dir/__/logger/logger_concrete.cpp.i
+
+clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/logger/logger_concrete.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp -o CMakeFiles/client.dir/__/logger/logger_concrete.cpp.s
+
+clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o: ../logger/logger_holder.cpp
+clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o -MF CMakeFiles/client.dir/__/logger/logger_holder.cpp.o.d -o CMakeFiles/client.dir/__/logger/logger_holder.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp
+
+clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/logger/logger_holder.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp > CMakeFiles/client.dir/__/logger/logger_holder.cpp.i
+
+clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/logger/logger_holder.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp -o CMakeFiles/client.dir/__/logger/logger_holder.cpp.s
+
+clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o: ../validator/date_validator.cpp
+clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o -MF CMakeFiles/client.dir/__/validator/date_validator.cpp.o.d -o CMakeFiles/client.dir/__/validator/date_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp
+
+clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/validator/date_validator.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp > CMakeFiles/client.dir/__/validator/date_validator.cpp.i
+
+clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/validator/date_validator.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp -o CMakeFiles/client.dir/__/validator/date_validator.cpp.s
+
+clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o: ../validator/digit_validator.cpp
+clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o -MF CMakeFiles/client.dir/__/validator/digit_validator.cpp.o.d -o CMakeFiles/client.dir/__/validator/digit_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp
+
+clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/validator/digit_validator.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp > CMakeFiles/client.dir/__/validator/digit_validator.cpp.i
+
+clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/validator/digit_validator.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp -o CMakeFiles/client.dir/__/validator/digit_validator.cpp.s
+
+clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o: ../validator/time_validator.cpp
+clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o -MF CMakeFiles/client.dir/__/validator/time_validator.cpp.o.d -o CMakeFiles/client.dir/__/validator/time_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp
+
+clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/validator/time_validator.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp > CMakeFiles/client.dir/__/validator/time_validator.cpp.i
+
+clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/validator/time_validator.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp -o CMakeFiles/client.dir/__/validator/time_validator.cpp.s
+
+clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o: ../comparers/key_comparer.cpp
+clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o -MF CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o.d -o CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp
+
+clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/comparers/key_comparer.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp > CMakeFiles/client.dir/__/comparers/key_comparer.cpp.i
+
+clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/comparers/key_comparer.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp -o CMakeFiles/client.dir/__/comparers/key_comparer.cpp.s
+
+clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o: ../comparers/string_comparer.cpp
+clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o -MF CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o.d -o CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp
+
+clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/comparers/string_comparer.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp > CMakeFiles/client.dir/__/comparers/string_comparer.cpp.i
+
+clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/comparers/string_comparer.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp -o CMakeFiles/client.dir/__/comparers/string_comparer.cpp.s
+
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o: ../flyweight/flyweight_factory.cpp
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o -MF CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o.d -o CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp
+
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp > CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.i
+
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp -o CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.s
+
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o: ../flyweight/flyweight_string.cpp
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o -MF CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o.d -o CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp
+
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp > CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.i
+
+clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp -o CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.s
+
+clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o: clients/CMakeFiles/client.dir/flags.make
+clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o: ../owntype/own_type.cpp
+clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o: clients/CMakeFiles/client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o -MF CMakeFiles/client.dir/__/owntype/own_type.cpp.o.d -o CMakeFiles/client.dir/__/owntype/own_type.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp
+
+clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/__/owntype/own_type.cpp.i"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp > CMakeFiles/client.dir/__/owntype/own_type.cpp.i
+
+clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/__/owntype/own_type.cpp.s"
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp -o CMakeFiles/client.dir/__/owntype/own_type.cpp.s
+
 # Object files for target client
 client_OBJECTS = \
 "CMakeFiles/client.dir/client.cpp.o" \
 "CMakeFiles/client.dir/__/backup_system/backup_system.cpp.o" \
-"CMakeFiles/client.dir/__/string_methods/mystring.cpp.o"
+"CMakeFiles/client.dir/__/validator/command_validator.cpp.o" \
+"CMakeFiles/client.dir/__/string_methods/mystring.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o" \
+"CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o" \
+"CMakeFiles/client.dir/__/containers/data_base.cpp.o" \
+"CMakeFiles/client.dir/__/containers/collection_data.cpp.o" \
+"CMakeFiles/client.dir/__/containers/pool_data.cpp.o" \
+"CMakeFiles/client.dir/__/containers/scheme_data.cpp.o" \
+"CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o" \
+"CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o" \
+"CMakeFiles/client.dir/__/allocator/memory.cpp.o" \
+"CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o" \
+"CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o" \
+"CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o" \
+"CMakeFiles/client.dir/__/logger/logger.cpp.o" \
+"CMakeFiles/client.dir/__/logger/logger_builder.cpp.o" \
+"CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o" \
+"CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o" \
+"CMakeFiles/client.dir/__/logger/logger_holder.cpp.o" \
+"CMakeFiles/client.dir/__/validator/date_validator.cpp.o" \
+"CMakeFiles/client.dir/__/validator/digit_validator.cpp.o" \
+"CMakeFiles/client.dir/__/validator/time_validator.cpp.o" \
+"CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o" \
+"CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o" \
+"CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o" \
+"CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o" \
+"CMakeFiles/client.dir/__/owntype/own_type.cpp.o"
 
 # External object files for target client
 client_EXTERNAL_OBJECTS =
 
 clients/client: clients/CMakeFiles/client.dir/client.cpp.o
 clients/client: clients/CMakeFiles/client.dir/__/backup_system/backup_system.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o
 clients/client: clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/logger/logger.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o
+clients/client: clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o
 clients/client: clients/CMakeFiles/client.dir/build.make
 clients/client: clients/CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking CXX executable client"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

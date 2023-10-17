@@ -130,6 +130,150 @@ client/fast:
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+__/allocator/borders_descriptors_memory.o: __/allocator/borders_descriptors_memory.cpp.o
+.PHONY : __/allocator/borders_descriptors_memory.o
+
+# target to build an object file
+__/allocator/borders_descriptors_memory.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.o
+.PHONY : __/allocator/borders_descriptors_memory.cpp.o
+
+__/allocator/borders_descriptors_memory.i: __/allocator/borders_descriptors_memory.cpp.i
+.PHONY : __/allocator/borders_descriptors_memory.i
+
+# target to preprocess a source file
+__/allocator/borders_descriptors_memory.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.i
+.PHONY : __/allocator/borders_descriptors_memory.cpp.i
+
+__/allocator/borders_descriptors_memory.s: __/allocator/borders_descriptors_memory.cpp.s
+.PHONY : __/allocator/borders_descriptors_memory.s
+
+# target to generate assembly for a file
+__/allocator/borders_descriptors_memory.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.s
+.PHONY : __/allocator/borders_descriptors_memory.cpp.s
+
+__/allocator/buddy_system_memory.o: __/allocator/buddy_system_memory.cpp.o
+.PHONY : __/allocator/buddy_system_memory.o
+
+# target to build an object file
+__/allocator/buddy_system_memory.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.o
+.PHONY : __/allocator/buddy_system_memory.cpp.o
+
+__/allocator/buddy_system_memory.i: __/allocator/buddy_system_memory.cpp.i
+.PHONY : __/allocator/buddy_system_memory.i
+
+# target to preprocess a source file
+__/allocator/buddy_system_memory.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.i
+.PHONY : __/allocator/buddy_system_memory.cpp.i
+
+__/allocator/buddy_system_memory.s: __/allocator/buddy_system_memory.cpp.s
+.PHONY : __/allocator/buddy_system_memory.s
+
+# target to generate assembly for a file
+__/allocator/buddy_system_memory.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.s
+.PHONY : __/allocator/buddy_system_memory.cpp.s
+
+__/allocator/memory.o: __/allocator/memory.cpp.o
+.PHONY : __/allocator/memory.o
+
+# target to build an object file
+__/allocator/memory.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory.cpp.o
+.PHONY : __/allocator/memory.cpp.o
+
+__/allocator/memory.i: __/allocator/memory.cpp.i
+.PHONY : __/allocator/memory.i
+
+# target to preprocess a source file
+__/allocator/memory.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory.cpp.i
+.PHONY : __/allocator/memory.cpp.i
+
+__/allocator/memory.s: __/allocator/memory.cpp.s
+.PHONY : __/allocator/memory.s
+
+# target to generate assembly for a file
+__/allocator/memory.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory.cpp.s
+.PHONY : __/allocator/memory.cpp.s
+
+__/allocator/memory_holder.o: __/allocator/memory_holder.cpp.o
+.PHONY : __/allocator/memory_holder.o
+
+# target to build an object file
+__/allocator/memory_holder.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.o
+.PHONY : __/allocator/memory_holder.cpp.o
+
+__/allocator/memory_holder.i: __/allocator/memory_holder.cpp.i
+.PHONY : __/allocator/memory_holder.i
+
+# target to preprocess a source file
+__/allocator/memory_holder.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.i
+.PHONY : __/allocator/memory_holder.cpp.i
+
+__/allocator/memory_holder.s: __/allocator/memory_holder.cpp.s
+.PHONY : __/allocator/memory_holder.s
+
+# target to generate assembly for a file
+__/allocator/memory_holder.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.s
+.PHONY : __/allocator/memory_holder.cpp.s
+
+__/allocator/memory_simple.o: __/allocator/memory_simple.cpp.o
+.PHONY : __/allocator/memory_simple.o
+
+# target to build an object file
+__/allocator/memory_simple.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.o
+.PHONY : __/allocator/memory_simple.cpp.o
+
+__/allocator/memory_simple.i: __/allocator/memory_simple.cpp.i
+.PHONY : __/allocator/memory_simple.i
+
+# target to preprocess a source file
+__/allocator/memory_simple.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.i
+.PHONY : __/allocator/memory_simple.cpp.i
+
+__/allocator/memory_simple.s: __/allocator/memory_simple.cpp.s
+.PHONY : __/allocator/memory_simple.s
+
+# target to generate assembly for a file
+__/allocator/memory_simple.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.s
+.PHONY : __/allocator/memory_simple.cpp.s
+
+__/allocator/sorted_list_memory.o: __/allocator/sorted_list_memory.cpp.o
+.PHONY : __/allocator/sorted_list_memory.o
+
+# target to build an object file
+__/allocator/sorted_list_memory.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.o
+.PHONY : __/allocator/sorted_list_memory.cpp.o
+
+__/allocator/sorted_list_memory.i: __/allocator/sorted_list_memory.cpp.i
+.PHONY : __/allocator/sorted_list_memory.i
+
+# target to preprocess a source file
+__/allocator/sorted_list_memory.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.i
+.PHONY : __/allocator/sorted_list_memory.cpp.i
+
+__/allocator/sorted_list_memory.s: __/allocator/sorted_list_memory.cpp.s
+.PHONY : __/allocator/sorted_list_memory.s
+
+# target to generate assembly for a file
+__/allocator/sorted_list_memory.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.s
+.PHONY : __/allocator/sorted_list_memory.cpp.s
+
 __/backup_system/backup_system.o: __/backup_system/backup_system.cpp.o
 .PHONY : __/backup_system/backup_system.o
 
@@ -154,6 +298,678 @@ __/backup_system/backup_system.cpp.s:
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/backup_system/backup_system.cpp.s
 .PHONY : __/backup_system/backup_system.cpp.s
 
+__/command_handler/command.o: __/command_handler/command.cpp.o
+.PHONY : __/command_handler/command.o
+
+# target to build an object file
+__/command_handler/command.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o
+.PHONY : __/command_handler/command.cpp.o
+
+__/command_handler/command.i: __/command_handler/command.cpp.i
+.PHONY : __/command_handler/command.i
+
+# target to preprocess a source file
+__/command_handler/command.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command.cpp.i
+.PHONY : __/command_handler/command.cpp.i
+
+__/command_handler/command.s: __/command_handler/command.cpp.s
+.PHONY : __/command_handler/command.s
+
+# target to generate assembly for a file
+__/command_handler/command.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command.cpp.s
+.PHONY : __/command_handler/command.cpp.s
+
+__/command_handler/command_add_collection.o: __/command_handler/command_add_collection.cpp.o
+.PHONY : __/command_handler/command_add_collection.o
+
+# target to build an object file
+__/command_handler/command_add_collection.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.o
+.PHONY : __/command_handler/command_add_collection.cpp.o
+
+__/command_handler/command_add_collection.i: __/command_handler/command_add_collection.cpp.i
+.PHONY : __/command_handler/command_add_collection.i
+
+# target to preprocess a source file
+__/command_handler/command_add_collection.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.i
+.PHONY : __/command_handler/command_add_collection.cpp.i
+
+__/command_handler/command_add_collection.s: __/command_handler/command_add_collection.cpp.s
+.PHONY : __/command_handler/command_add_collection.s
+
+# target to generate assembly for a file
+__/command_handler/command_add_collection.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.s
+.PHONY : __/command_handler/command_add_collection.cpp.s
+
+__/command_handler/command_add_data.o: __/command_handler/command_add_data.cpp.o
+.PHONY : __/command_handler/command_add_data.o
+
+# target to build an object file
+__/command_handler/command_add_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.o
+.PHONY : __/command_handler/command_add_data.cpp.o
+
+__/command_handler/command_add_data.i: __/command_handler/command_add_data.cpp.i
+.PHONY : __/command_handler/command_add_data.i
+
+# target to preprocess a source file
+__/command_handler/command_add_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.i
+.PHONY : __/command_handler/command_add_data.cpp.i
+
+__/command_handler/command_add_data.s: __/command_handler/command_add_data.cpp.s
+.PHONY : __/command_handler/command_add_data.s
+
+# target to generate assembly for a file
+__/command_handler/command_add_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.s
+.PHONY : __/command_handler/command_add_data.cpp.s
+
+__/command_handler/command_add_pool.o: __/command_handler/command_add_pool.cpp.o
+.PHONY : __/command_handler/command_add_pool.o
+
+# target to build an object file
+__/command_handler/command_add_pool.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.o
+.PHONY : __/command_handler/command_add_pool.cpp.o
+
+__/command_handler/command_add_pool.i: __/command_handler/command_add_pool.cpp.i
+.PHONY : __/command_handler/command_add_pool.i
+
+# target to preprocess a source file
+__/command_handler/command_add_pool.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.i
+.PHONY : __/command_handler/command_add_pool.cpp.i
+
+__/command_handler/command_add_pool.s: __/command_handler/command_add_pool.cpp.s
+.PHONY : __/command_handler/command_add_pool.s
+
+# target to generate assembly for a file
+__/command_handler/command_add_pool.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.s
+.PHONY : __/command_handler/command_add_pool.cpp.s
+
+__/command_handler/command_add_scheme.o: __/command_handler/command_add_scheme.cpp.o
+.PHONY : __/command_handler/command_add_scheme.o
+
+# target to build an object file
+__/command_handler/command_add_scheme.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.o
+.PHONY : __/command_handler/command_add_scheme.cpp.o
+
+__/command_handler/command_add_scheme.i: __/command_handler/command_add_scheme.cpp.i
+.PHONY : __/command_handler/command_add_scheme.i
+
+# target to preprocess a source file
+__/command_handler/command_add_scheme.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.i
+.PHONY : __/command_handler/command_add_scheme.cpp.i
+
+__/command_handler/command_add_scheme.s: __/command_handler/command_add_scheme.cpp.s
+.PHONY : __/command_handler/command_add_scheme.s
+
+# target to generate assembly for a file
+__/command_handler/command_add_scheme.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.s
+.PHONY : __/command_handler/command_add_scheme.cpp.s
+
+__/command_handler/command_get_data.o: __/command_handler/command_get_data.cpp.o
+.PHONY : __/command_handler/command_get_data.o
+
+# target to build an object file
+__/command_handler/command_get_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.o
+.PHONY : __/command_handler/command_get_data.cpp.o
+
+__/command_handler/command_get_data.i: __/command_handler/command_get_data.cpp.i
+.PHONY : __/command_handler/command_get_data.i
+
+# target to preprocess a source file
+__/command_handler/command_get_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.i
+.PHONY : __/command_handler/command_get_data.cpp.i
+
+__/command_handler/command_get_data.s: __/command_handler/command_get_data.cpp.s
+.PHONY : __/command_handler/command_get_data.s
+
+# target to generate assembly for a file
+__/command_handler/command_get_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.s
+.PHONY : __/command_handler/command_get_data.cpp.s
+
+__/command_handler/command_get_data_between.o: __/command_handler/command_get_data_between.cpp.o
+.PHONY : __/command_handler/command_get_data_between.o
+
+# target to build an object file
+__/command_handler/command_get_data_between.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.o
+.PHONY : __/command_handler/command_get_data_between.cpp.o
+
+__/command_handler/command_get_data_between.i: __/command_handler/command_get_data_between.cpp.i
+.PHONY : __/command_handler/command_get_data_between.i
+
+# target to preprocess a source file
+__/command_handler/command_get_data_between.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.i
+.PHONY : __/command_handler/command_get_data_between.cpp.i
+
+__/command_handler/command_get_data_between.s: __/command_handler/command_get_data_between.cpp.s
+.PHONY : __/command_handler/command_get_data_between.s
+
+# target to generate assembly for a file
+__/command_handler/command_get_data_between.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.s
+.PHONY : __/command_handler/command_get_data_between.cpp.s
+
+__/command_handler/command_remove_collection.o: __/command_handler/command_remove_collection.cpp.o
+.PHONY : __/command_handler/command_remove_collection.o
+
+# target to build an object file
+__/command_handler/command_remove_collection.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.o
+.PHONY : __/command_handler/command_remove_collection.cpp.o
+
+__/command_handler/command_remove_collection.i: __/command_handler/command_remove_collection.cpp.i
+.PHONY : __/command_handler/command_remove_collection.i
+
+# target to preprocess a source file
+__/command_handler/command_remove_collection.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.i
+.PHONY : __/command_handler/command_remove_collection.cpp.i
+
+__/command_handler/command_remove_collection.s: __/command_handler/command_remove_collection.cpp.s
+.PHONY : __/command_handler/command_remove_collection.s
+
+# target to generate assembly for a file
+__/command_handler/command_remove_collection.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.s
+.PHONY : __/command_handler/command_remove_collection.cpp.s
+
+__/command_handler/command_remove_data.o: __/command_handler/command_remove_data.cpp.o
+.PHONY : __/command_handler/command_remove_data.o
+
+# target to build an object file
+__/command_handler/command_remove_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.o
+.PHONY : __/command_handler/command_remove_data.cpp.o
+
+__/command_handler/command_remove_data.i: __/command_handler/command_remove_data.cpp.i
+.PHONY : __/command_handler/command_remove_data.i
+
+# target to preprocess a source file
+__/command_handler/command_remove_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.i
+.PHONY : __/command_handler/command_remove_data.cpp.i
+
+__/command_handler/command_remove_data.s: __/command_handler/command_remove_data.cpp.s
+.PHONY : __/command_handler/command_remove_data.s
+
+# target to generate assembly for a file
+__/command_handler/command_remove_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.s
+.PHONY : __/command_handler/command_remove_data.cpp.s
+
+__/command_handler/command_remove_pool.o: __/command_handler/command_remove_pool.cpp.o
+.PHONY : __/command_handler/command_remove_pool.o
+
+# target to build an object file
+__/command_handler/command_remove_pool.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.o
+.PHONY : __/command_handler/command_remove_pool.cpp.o
+
+__/command_handler/command_remove_pool.i: __/command_handler/command_remove_pool.cpp.i
+.PHONY : __/command_handler/command_remove_pool.i
+
+# target to preprocess a source file
+__/command_handler/command_remove_pool.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.i
+.PHONY : __/command_handler/command_remove_pool.cpp.i
+
+__/command_handler/command_remove_pool.s: __/command_handler/command_remove_pool.cpp.s
+.PHONY : __/command_handler/command_remove_pool.s
+
+# target to generate assembly for a file
+__/command_handler/command_remove_pool.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.s
+.PHONY : __/command_handler/command_remove_pool.cpp.s
+
+__/command_handler/command_remove_scheme.o: __/command_handler/command_remove_scheme.cpp.o
+.PHONY : __/command_handler/command_remove_scheme.o
+
+# target to build an object file
+__/command_handler/command_remove_scheme.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.o
+.PHONY : __/command_handler/command_remove_scheme.cpp.o
+
+__/command_handler/command_remove_scheme.i: __/command_handler/command_remove_scheme.cpp.i
+.PHONY : __/command_handler/command_remove_scheme.i
+
+# target to preprocess a source file
+__/command_handler/command_remove_scheme.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.i
+.PHONY : __/command_handler/command_remove_scheme.cpp.i
+
+__/command_handler/command_remove_scheme.s: __/command_handler/command_remove_scheme.cpp.s
+.PHONY : __/command_handler/command_remove_scheme.s
+
+# target to generate assembly for a file
+__/command_handler/command_remove_scheme.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.s
+.PHONY : __/command_handler/command_remove_scheme.cpp.s
+
+__/command_handler/command_update_data.o: __/command_handler/command_update_data.cpp.o
+.PHONY : __/command_handler/command_update_data.o
+
+# target to build an object file
+__/command_handler/command_update_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.o
+.PHONY : __/command_handler/command_update_data.cpp.o
+
+__/command_handler/command_update_data.i: __/command_handler/command_update_data.cpp.i
+.PHONY : __/command_handler/command_update_data.i
+
+# target to preprocess a source file
+__/command_handler/command_update_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.i
+.PHONY : __/command_handler/command_update_data.cpp.i
+
+__/command_handler/command_update_data.s: __/command_handler/command_update_data.cpp.s
+.PHONY : __/command_handler/command_update_data.s
+
+# target to generate assembly for a file
+__/command_handler/command_update_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.s
+.PHONY : __/command_handler/command_update_data.cpp.s
+
+__/command_handler/handler_with_command.o: __/command_handler/handler_with_command.cpp.o
+.PHONY : __/command_handler/handler_with_command.o
+
+# target to build an object file
+__/command_handler/handler_with_command.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.o
+.PHONY : __/command_handler/handler_with_command.cpp.o
+
+__/command_handler/handler_with_command.i: __/command_handler/handler_with_command.cpp.i
+.PHONY : __/command_handler/handler_with_command.i
+
+# target to preprocess a source file
+__/command_handler/handler_with_command.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.i
+.PHONY : __/command_handler/handler_with_command.cpp.i
+
+__/command_handler/handler_with_command.s: __/command_handler/handler_with_command.cpp.s
+.PHONY : __/command_handler/handler_with_command.s
+
+# target to generate assembly for a file
+__/command_handler/handler_with_command.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.s
+.PHONY : __/command_handler/handler_with_command.cpp.s
+
+__/command_handler/handler_with_command_chain.o: __/command_handler/handler_with_command_chain.cpp.o
+.PHONY : __/command_handler/handler_with_command_chain.o
+
+# target to build an object file
+__/command_handler/handler_with_command_chain.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.o
+.PHONY : __/command_handler/handler_with_command_chain.cpp.o
+
+__/command_handler/handler_with_command_chain.i: __/command_handler/handler_with_command_chain.cpp.i
+.PHONY : __/command_handler/handler_with_command_chain.i
+
+# target to preprocess a source file
+__/command_handler/handler_with_command_chain.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.i
+.PHONY : __/command_handler/handler_with_command_chain.cpp.i
+
+__/command_handler/handler_with_command_chain.s: __/command_handler/handler_with_command_chain.cpp.s
+.PHONY : __/command_handler/handler_with_command_chain.s
+
+# target to generate assembly for a file
+__/command_handler/handler_with_command_chain.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.s
+.PHONY : __/command_handler/handler_with_command_chain.cpp.s
+
+__/comparers/key_comparer.o: __/comparers/key_comparer.cpp.o
+.PHONY : __/comparers/key_comparer.o
+
+# target to build an object file
+__/comparers/key_comparer.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.o
+.PHONY : __/comparers/key_comparer.cpp.o
+
+__/comparers/key_comparer.i: __/comparers/key_comparer.cpp.i
+.PHONY : __/comparers/key_comparer.i
+
+# target to preprocess a source file
+__/comparers/key_comparer.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.i
+.PHONY : __/comparers/key_comparer.cpp.i
+
+__/comparers/key_comparer.s: __/comparers/key_comparer.cpp.s
+.PHONY : __/comparers/key_comparer.s
+
+# target to generate assembly for a file
+__/comparers/key_comparer.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.s
+.PHONY : __/comparers/key_comparer.cpp.s
+
+__/comparers/string_comparer.o: __/comparers/string_comparer.cpp.o
+.PHONY : __/comparers/string_comparer.o
+
+# target to build an object file
+__/comparers/string_comparer.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.o
+.PHONY : __/comparers/string_comparer.cpp.o
+
+__/comparers/string_comparer.i: __/comparers/string_comparer.cpp.i
+.PHONY : __/comparers/string_comparer.i
+
+# target to preprocess a source file
+__/comparers/string_comparer.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.i
+.PHONY : __/comparers/string_comparer.cpp.i
+
+__/comparers/string_comparer.s: __/comparers/string_comparer.cpp.s
+.PHONY : __/comparers/string_comparer.s
+
+# target to generate assembly for a file
+__/comparers/string_comparer.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.s
+.PHONY : __/comparers/string_comparer.cpp.s
+
+__/containers/collection_data.o: __/containers/collection_data.cpp.o
+.PHONY : __/containers/collection_data.o
+
+# target to build an object file
+__/containers/collection_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.o
+.PHONY : __/containers/collection_data.cpp.o
+
+__/containers/collection_data.i: __/containers/collection_data.cpp.i
+.PHONY : __/containers/collection_data.i
+
+# target to preprocess a source file
+__/containers/collection_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.i
+.PHONY : __/containers/collection_data.cpp.i
+
+__/containers/collection_data.s: __/containers/collection_data.cpp.s
+.PHONY : __/containers/collection_data.s
+
+# target to generate assembly for a file
+__/containers/collection_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.s
+.PHONY : __/containers/collection_data.cpp.s
+
+__/containers/data_base.o: __/containers/data_base.cpp.o
+.PHONY : __/containers/data_base.o
+
+# target to build an object file
+__/containers/data_base.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/data_base.cpp.o
+.PHONY : __/containers/data_base.cpp.o
+
+__/containers/data_base.i: __/containers/data_base.cpp.i
+.PHONY : __/containers/data_base.i
+
+# target to preprocess a source file
+__/containers/data_base.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/data_base.cpp.i
+.PHONY : __/containers/data_base.cpp.i
+
+__/containers/data_base.s: __/containers/data_base.cpp.s
+.PHONY : __/containers/data_base.s
+
+# target to generate assembly for a file
+__/containers/data_base.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/data_base.cpp.s
+.PHONY : __/containers/data_base.cpp.s
+
+__/containers/pool_data.o: __/containers/pool_data.cpp.o
+.PHONY : __/containers/pool_data.o
+
+# target to build an object file
+__/containers/pool_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.o
+.PHONY : __/containers/pool_data.cpp.o
+
+__/containers/pool_data.i: __/containers/pool_data.cpp.i
+.PHONY : __/containers/pool_data.i
+
+# target to preprocess a source file
+__/containers/pool_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.i
+.PHONY : __/containers/pool_data.cpp.i
+
+__/containers/pool_data.s: __/containers/pool_data.cpp.s
+.PHONY : __/containers/pool_data.s
+
+# target to generate assembly for a file
+__/containers/pool_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.s
+.PHONY : __/containers/pool_data.cpp.s
+
+__/containers/scheme_data.o: __/containers/scheme_data.cpp.o
+.PHONY : __/containers/scheme_data.o
+
+# target to build an object file
+__/containers/scheme_data.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.o
+.PHONY : __/containers/scheme_data.cpp.o
+
+__/containers/scheme_data.i: __/containers/scheme_data.cpp.i
+.PHONY : __/containers/scheme_data.i
+
+# target to preprocess a source file
+__/containers/scheme_data.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.i
+.PHONY : __/containers/scheme_data.cpp.i
+
+__/containers/scheme_data.s: __/containers/scheme_data.cpp.s
+.PHONY : __/containers/scheme_data.s
+
+# target to generate assembly for a file
+__/containers/scheme_data.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.s
+.PHONY : __/containers/scheme_data.cpp.s
+
+__/flyweight/flyweight_factory.o: __/flyweight/flyweight_factory.cpp.o
+.PHONY : __/flyweight/flyweight_factory.o
+
+# target to build an object file
+__/flyweight/flyweight_factory.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.o
+.PHONY : __/flyweight/flyweight_factory.cpp.o
+
+__/flyweight/flyweight_factory.i: __/flyweight/flyweight_factory.cpp.i
+.PHONY : __/flyweight/flyweight_factory.i
+
+# target to preprocess a source file
+__/flyweight/flyweight_factory.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.i
+.PHONY : __/flyweight/flyweight_factory.cpp.i
+
+__/flyweight/flyweight_factory.s: __/flyweight/flyweight_factory.cpp.s
+.PHONY : __/flyweight/flyweight_factory.s
+
+# target to generate assembly for a file
+__/flyweight/flyweight_factory.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.s
+.PHONY : __/flyweight/flyweight_factory.cpp.s
+
+__/flyweight/flyweight_string.o: __/flyweight/flyweight_string.cpp.o
+.PHONY : __/flyweight/flyweight_string.o
+
+# target to build an object file
+__/flyweight/flyweight_string.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.o
+.PHONY : __/flyweight/flyweight_string.cpp.o
+
+__/flyweight/flyweight_string.i: __/flyweight/flyweight_string.cpp.i
+.PHONY : __/flyweight/flyweight_string.i
+
+# target to preprocess a source file
+__/flyweight/flyweight_string.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.i
+.PHONY : __/flyweight/flyweight_string.cpp.i
+
+__/flyweight/flyweight_string.s: __/flyweight/flyweight_string.cpp.s
+.PHONY : __/flyweight/flyweight_string.s
+
+# target to generate assembly for a file
+__/flyweight/flyweight_string.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.s
+.PHONY : __/flyweight/flyweight_string.cpp.s
+
+__/logger/logger.o: __/logger/logger.cpp.o
+.PHONY : __/logger/logger.o
+
+# target to build an object file
+__/logger/logger.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger.cpp.o
+.PHONY : __/logger/logger.cpp.o
+
+__/logger/logger.i: __/logger/logger.cpp.i
+.PHONY : __/logger/logger.i
+
+# target to preprocess a source file
+__/logger/logger.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger.cpp.i
+.PHONY : __/logger/logger.cpp.i
+
+__/logger/logger.s: __/logger/logger.cpp.s
+.PHONY : __/logger/logger.s
+
+# target to generate assembly for a file
+__/logger/logger.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger.cpp.s
+.PHONY : __/logger/logger.cpp.s
+
+__/logger/logger_builder.o: __/logger/logger_builder.cpp.o
+.PHONY : __/logger/logger_builder.o
+
+# target to build an object file
+__/logger/logger_builder.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.o
+.PHONY : __/logger/logger_builder.cpp.o
+
+__/logger/logger_builder.i: __/logger/logger_builder.cpp.i
+.PHONY : __/logger/logger_builder.i
+
+# target to preprocess a source file
+__/logger/logger_builder.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.i
+.PHONY : __/logger/logger_builder.cpp.i
+
+__/logger/logger_builder.s: __/logger/logger_builder.cpp.s
+.PHONY : __/logger/logger_builder.s
+
+# target to generate assembly for a file
+__/logger/logger_builder.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.s
+.PHONY : __/logger/logger_builder.cpp.s
+
+__/logger/logger_builder_concrete.o: __/logger/logger_builder_concrete.cpp.o
+.PHONY : __/logger/logger_builder_concrete.o
+
+# target to build an object file
+__/logger/logger_builder_concrete.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.o
+.PHONY : __/logger/logger_builder_concrete.cpp.o
+
+__/logger/logger_builder_concrete.i: __/logger/logger_builder_concrete.cpp.i
+.PHONY : __/logger/logger_builder_concrete.i
+
+# target to preprocess a source file
+__/logger/logger_builder_concrete.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.i
+.PHONY : __/logger/logger_builder_concrete.cpp.i
+
+__/logger/logger_builder_concrete.s: __/logger/logger_builder_concrete.cpp.s
+.PHONY : __/logger/logger_builder_concrete.s
+
+# target to generate assembly for a file
+__/logger/logger_builder_concrete.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.s
+.PHONY : __/logger/logger_builder_concrete.cpp.s
+
+__/logger/logger_concrete.o: __/logger/logger_concrete.cpp.o
+.PHONY : __/logger/logger_concrete.o
+
+# target to build an object file
+__/logger/logger_concrete.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.o
+.PHONY : __/logger/logger_concrete.cpp.o
+
+__/logger/logger_concrete.i: __/logger/logger_concrete.cpp.i
+.PHONY : __/logger/logger_concrete.i
+
+# target to preprocess a source file
+__/logger/logger_concrete.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.i
+.PHONY : __/logger/logger_concrete.cpp.i
+
+__/logger/logger_concrete.s: __/logger/logger_concrete.cpp.s
+.PHONY : __/logger/logger_concrete.s
+
+# target to generate assembly for a file
+__/logger/logger_concrete.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.s
+.PHONY : __/logger/logger_concrete.cpp.s
+
+__/logger/logger_holder.o: __/logger/logger_holder.cpp.o
+.PHONY : __/logger/logger_holder.o
+
+# target to build an object file
+__/logger/logger_holder.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.o
+.PHONY : __/logger/logger_holder.cpp.o
+
+__/logger/logger_holder.i: __/logger/logger_holder.cpp.i
+.PHONY : __/logger/logger_holder.i
+
+# target to preprocess a source file
+__/logger/logger_holder.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.i
+.PHONY : __/logger/logger_holder.cpp.i
+
+__/logger/logger_holder.s: __/logger/logger_holder.cpp.s
+.PHONY : __/logger/logger_holder.s
+
+# target to generate assembly for a file
+__/logger/logger_holder.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.s
+.PHONY : __/logger/logger_holder.cpp.s
+
+__/owntype/own_type.o: __/owntype/own_type.cpp.o
+.PHONY : __/owntype/own_type.o
+
+# target to build an object file
+__/owntype/own_type.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.o
+.PHONY : __/owntype/own_type.cpp.o
+
+__/owntype/own_type.i: __/owntype/own_type.cpp.i
+.PHONY : __/owntype/own_type.i
+
+# target to preprocess a source file
+__/owntype/own_type.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.i
+.PHONY : __/owntype/own_type.cpp.i
+
+__/owntype/own_type.s: __/owntype/own_type.cpp.s
+.PHONY : __/owntype/own_type.s
+
+# target to generate assembly for a file
+__/owntype/own_type.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.s
+.PHONY : __/owntype/own_type.cpp.s
+
 __/string_methods/mystring.o: __/string_methods/mystring.cpp.o
 .PHONY : __/string_methods/mystring.o
 
@@ -177,6 +993,102 @@ __/string_methods/mystring.s: __/string_methods/mystring.cpp.s
 __/string_methods/mystring.cpp.s:
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.s
 .PHONY : __/string_methods/mystring.cpp.s
+
+__/validator/command_validator.o: __/validator/command_validator.cpp.o
+.PHONY : __/validator/command_validator.o
+
+# target to build an object file
+__/validator/command_validator.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.o
+.PHONY : __/validator/command_validator.cpp.o
+
+__/validator/command_validator.i: __/validator/command_validator.cpp.i
+.PHONY : __/validator/command_validator.i
+
+# target to preprocess a source file
+__/validator/command_validator.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.i
+.PHONY : __/validator/command_validator.cpp.i
+
+__/validator/command_validator.s: __/validator/command_validator.cpp.s
+.PHONY : __/validator/command_validator.s
+
+# target to generate assembly for a file
+__/validator/command_validator.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.s
+.PHONY : __/validator/command_validator.cpp.s
+
+__/validator/date_validator.o: __/validator/date_validator.cpp.o
+.PHONY : __/validator/date_validator.o
+
+# target to build an object file
+__/validator/date_validator.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.o
+.PHONY : __/validator/date_validator.cpp.o
+
+__/validator/date_validator.i: __/validator/date_validator.cpp.i
+.PHONY : __/validator/date_validator.i
+
+# target to preprocess a source file
+__/validator/date_validator.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.i
+.PHONY : __/validator/date_validator.cpp.i
+
+__/validator/date_validator.s: __/validator/date_validator.cpp.s
+.PHONY : __/validator/date_validator.s
+
+# target to generate assembly for a file
+__/validator/date_validator.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.s
+.PHONY : __/validator/date_validator.cpp.s
+
+__/validator/digit_validator.o: __/validator/digit_validator.cpp.o
+.PHONY : __/validator/digit_validator.o
+
+# target to build an object file
+__/validator/digit_validator.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.o
+.PHONY : __/validator/digit_validator.cpp.o
+
+__/validator/digit_validator.i: __/validator/digit_validator.cpp.i
+.PHONY : __/validator/digit_validator.i
+
+# target to preprocess a source file
+__/validator/digit_validator.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.i
+.PHONY : __/validator/digit_validator.cpp.i
+
+__/validator/digit_validator.s: __/validator/digit_validator.cpp.s
+.PHONY : __/validator/digit_validator.s
+
+# target to generate assembly for a file
+__/validator/digit_validator.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.s
+.PHONY : __/validator/digit_validator.cpp.s
+
+__/validator/time_validator.o: __/validator/time_validator.cpp.o
+.PHONY : __/validator/time_validator.o
+
+# target to build an object file
+__/validator/time_validator.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.o
+.PHONY : __/validator/time_validator.cpp.o
+
+__/validator/time_validator.i: __/validator/time_validator.cpp.i
+.PHONY : __/validator/time_validator.i
+
+# target to preprocess a source file
+__/validator/time_validator.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.i
+.PHONY : __/validator/time_validator.cpp.i
+
+__/validator/time_validator.s: __/validator/time_validator.cpp.s
+.PHONY : __/validator/time_validator.s
+
+# target to generate assembly for a file
+__/validator/time_validator.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f clients/CMakeFiles/client.dir/build.make clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.s
+.PHONY : __/validator/time_validator.cpp.s
 
 client.o: client.cpp.o
 .PHONY : client.o
@@ -211,12 +1123,126 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... client"
+	@echo "... __/allocator/borders_descriptors_memory.o"
+	@echo "... __/allocator/borders_descriptors_memory.i"
+	@echo "... __/allocator/borders_descriptors_memory.s"
+	@echo "... __/allocator/buddy_system_memory.o"
+	@echo "... __/allocator/buddy_system_memory.i"
+	@echo "... __/allocator/buddy_system_memory.s"
+	@echo "... __/allocator/memory.o"
+	@echo "... __/allocator/memory.i"
+	@echo "... __/allocator/memory.s"
+	@echo "... __/allocator/memory_holder.o"
+	@echo "... __/allocator/memory_holder.i"
+	@echo "... __/allocator/memory_holder.s"
+	@echo "... __/allocator/memory_simple.o"
+	@echo "... __/allocator/memory_simple.i"
+	@echo "... __/allocator/memory_simple.s"
+	@echo "... __/allocator/sorted_list_memory.o"
+	@echo "... __/allocator/sorted_list_memory.i"
+	@echo "... __/allocator/sorted_list_memory.s"
 	@echo "... __/backup_system/backup_system.o"
 	@echo "... __/backup_system/backup_system.i"
 	@echo "... __/backup_system/backup_system.s"
+	@echo "... __/command_handler/command.o"
+	@echo "... __/command_handler/command.i"
+	@echo "... __/command_handler/command.s"
+	@echo "... __/command_handler/command_add_collection.o"
+	@echo "... __/command_handler/command_add_collection.i"
+	@echo "... __/command_handler/command_add_collection.s"
+	@echo "... __/command_handler/command_add_data.o"
+	@echo "... __/command_handler/command_add_data.i"
+	@echo "... __/command_handler/command_add_data.s"
+	@echo "... __/command_handler/command_add_pool.o"
+	@echo "... __/command_handler/command_add_pool.i"
+	@echo "... __/command_handler/command_add_pool.s"
+	@echo "... __/command_handler/command_add_scheme.o"
+	@echo "... __/command_handler/command_add_scheme.i"
+	@echo "... __/command_handler/command_add_scheme.s"
+	@echo "... __/command_handler/command_get_data.o"
+	@echo "... __/command_handler/command_get_data.i"
+	@echo "... __/command_handler/command_get_data.s"
+	@echo "... __/command_handler/command_get_data_between.o"
+	@echo "... __/command_handler/command_get_data_between.i"
+	@echo "... __/command_handler/command_get_data_between.s"
+	@echo "... __/command_handler/command_remove_collection.o"
+	@echo "... __/command_handler/command_remove_collection.i"
+	@echo "... __/command_handler/command_remove_collection.s"
+	@echo "... __/command_handler/command_remove_data.o"
+	@echo "... __/command_handler/command_remove_data.i"
+	@echo "... __/command_handler/command_remove_data.s"
+	@echo "... __/command_handler/command_remove_pool.o"
+	@echo "... __/command_handler/command_remove_pool.i"
+	@echo "... __/command_handler/command_remove_pool.s"
+	@echo "... __/command_handler/command_remove_scheme.o"
+	@echo "... __/command_handler/command_remove_scheme.i"
+	@echo "... __/command_handler/command_remove_scheme.s"
+	@echo "... __/command_handler/command_update_data.o"
+	@echo "... __/command_handler/command_update_data.i"
+	@echo "... __/command_handler/command_update_data.s"
+	@echo "... __/command_handler/handler_with_command.o"
+	@echo "... __/command_handler/handler_with_command.i"
+	@echo "... __/command_handler/handler_with_command.s"
+	@echo "... __/command_handler/handler_with_command_chain.o"
+	@echo "... __/command_handler/handler_with_command_chain.i"
+	@echo "... __/command_handler/handler_with_command_chain.s"
+	@echo "... __/comparers/key_comparer.o"
+	@echo "... __/comparers/key_comparer.i"
+	@echo "... __/comparers/key_comparer.s"
+	@echo "... __/comparers/string_comparer.o"
+	@echo "... __/comparers/string_comparer.i"
+	@echo "... __/comparers/string_comparer.s"
+	@echo "... __/containers/collection_data.o"
+	@echo "... __/containers/collection_data.i"
+	@echo "... __/containers/collection_data.s"
+	@echo "... __/containers/data_base.o"
+	@echo "... __/containers/data_base.i"
+	@echo "... __/containers/data_base.s"
+	@echo "... __/containers/pool_data.o"
+	@echo "... __/containers/pool_data.i"
+	@echo "... __/containers/pool_data.s"
+	@echo "... __/containers/scheme_data.o"
+	@echo "... __/containers/scheme_data.i"
+	@echo "... __/containers/scheme_data.s"
+	@echo "... __/flyweight/flyweight_factory.o"
+	@echo "... __/flyweight/flyweight_factory.i"
+	@echo "... __/flyweight/flyweight_factory.s"
+	@echo "... __/flyweight/flyweight_string.o"
+	@echo "... __/flyweight/flyweight_string.i"
+	@echo "... __/flyweight/flyweight_string.s"
+	@echo "... __/logger/logger.o"
+	@echo "... __/logger/logger.i"
+	@echo "... __/logger/logger.s"
+	@echo "... __/logger/logger_builder.o"
+	@echo "... __/logger/logger_builder.i"
+	@echo "... __/logger/logger_builder.s"
+	@echo "... __/logger/logger_builder_concrete.o"
+	@echo "... __/logger/logger_builder_concrete.i"
+	@echo "... __/logger/logger_builder_concrete.s"
+	@echo "... __/logger/logger_concrete.o"
+	@echo "... __/logger/logger_concrete.i"
+	@echo "... __/logger/logger_concrete.s"
+	@echo "... __/logger/logger_holder.o"
+	@echo "... __/logger/logger_holder.i"
+	@echo "... __/logger/logger_holder.s"
+	@echo "... __/owntype/own_type.o"
+	@echo "... __/owntype/own_type.i"
+	@echo "... __/owntype/own_type.s"
 	@echo "... __/string_methods/mystring.o"
 	@echo "... __/string_methods/mystring.i"
 	@echo "... __/string_methods/mystring.s"
+	@echo "... __/validator/command_validator.o"
+	@echo "... __/validator/command_validator.i"
+	@echo "... __/validator/command_validator.s"
+	@echo "... __/validator/date_validator.o"
+	@echo "... __/validator/date_validator.i"
+	@echo "... __/validator/date_validator.s"
+	@echo "... __/validator/digit_validator.o"
+	@echo "... __/validator/digit_validator.i"
+	@echo "... __/validator/digit_validator.s"
+	@echo "... __/validator/time_validator.o"
+	@echo "... __/validator/time_validator.i"
+	@echo "... __/validator/time_validator.s"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"

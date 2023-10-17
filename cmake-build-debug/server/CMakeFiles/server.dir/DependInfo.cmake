@@ -34,7 +34,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.cpp" "server/CMakeFiles/server.dir/__/containers/data_base.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/containers/data_base.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp" "server/CMakeFiles/server.dir/__/containers/pool_data.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/containers/pool_data.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp" "server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.o.d"
-  "/mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp" "server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp" "server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp" "server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o.d"
   "/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/message_queue.cpp" "server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o" "gcc" "server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o.d"

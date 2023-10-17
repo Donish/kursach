@@ -10,9 +10,9 @@ handler_with_command::~handler_with_command() noexcept
 
 bool handler_with_command::handle(const std::string &request) const noexcept
 {
-    if (!_target_action->can_execute(request))
+    if(!_target_action->can_execute(request))
     {
-        if (handler::_next_handler == nullptr)
+        if(handler::_next_handler == nullptr)
         {
             return false;
         }
@@ -21,6 +21,21 @@ bool handler_with_command::handle(const std::string &request) const noexcept
     }
 
     _target_action->execute(request);
+
+    return true;
+}
+
+bool handler_with_command::validate(const std::string &request) const noexcept
+{
+    if(!_target_action->can_execute(request))
+    {
+        if(handler::_next_handler == nullptr)
+        {
+            return false;
+        }
+
+        return handler::_next_handler->validate(request);
+    }
 
     return true;
 }

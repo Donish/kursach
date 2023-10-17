@@ -128,42 +128,55 @@
 		</Build>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/allocator_types.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_holder.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/memory_simple.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/backup_system/backup_system.cpp">
 			<Option target="client"/>
@@ -176,144 +189,183 @@
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/comparers/key_comparer.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/comparers/string_comparer.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/collection_data.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/data_base.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/pool_data.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.h">
 			<Option target="server"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.h">
-			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/ipc_type.h">
 			<Option target="server"/>
@@ -326,39 +378,51 @@
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/server/server.cpp">
 			<Option target="server"/>
@@ -373,33 +437,47 @@
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/associative_container.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/avl_tree.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/binary_search_tree.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/splay_tree.h">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/tree/tree_types.h">
 			<Option target="server"/>
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/command_validator.cpp">
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/command_validator.h">
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp">
 			<Option target="server"/>
+			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.h">
 			<Option target="server"/>

@@ -27,6 +27,8 @@ public:
 
     bool handle(std::string const &request) const;
 
+    bool validate(std::string const &request) const;
+
 public:
 
     handler_with_command_chain &add_handler(command *cmd);

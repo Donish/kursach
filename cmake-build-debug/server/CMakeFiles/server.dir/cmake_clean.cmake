@@ -51,8 +51,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/__/containers/pool_data.cpp.o.d"
   "CMakeFiles/server.dir/__/containers/scheme_data.cpp.o"
   "CMakeFiles/server.dir/__/containers/scheme_data.cpp.o.d"
-  "CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o"
-  "CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o.d"
   "CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o"
   "CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o.d"
   "CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o"

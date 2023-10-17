@@ -447,24 +447,10 @@ server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/__/containers/scheme_data.cpp.s"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp -o CMakeFiles/server.dir/__/containers/scheme_data.cpp.s
 
-server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o: server/CMakeFiles/server.dir/flags.make
-server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o: ../dialogue/dialogue.cpp
-server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o"
-	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o -MF CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o.d -o CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp
-
-server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/__/dialogue/dialogue.cpp.i"
-	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp > CMakeFiles/server.dir/__/dialogue/dialogue.cpp.i
-
-server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/__/dialogue/dialogue.cpp.s"
-	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp -o CMakeFiles/server.dir/__/dialogue/dialogue.cpp.s
-
 server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o: ../flyweight/flyweight_factory.cpp
 server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o -MF CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o.d -o CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp
 
 server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.i: cmake_force
@@ -478,7 +464,7 @@ server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o: ../flyweight/flyweight_string.cpp
 server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o -MF CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o.d -o CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp
 
 server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.i: cmake_force
@@ -492,7 +478,7 @@ server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/logger/logger.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/logger/logger.cpp.o: ../logger/logger.cpp
 server/CMakeFiles/server.dir/__/logger/logger.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/logger/logger.cpp.o -MF CMakeFiles/server.dir/__/logger/logger.cpp.o.d -o CMakeFiles/server.dir/__/logger/logger.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger.cpp
 
 server/CMakeFiles/server.dir/__/logger/logger.cpp.i: cmake_force
@@ -506,7 +492,7 @@ server/CMakeFiles/server.dir/__/logger/logger.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.o: ../logger/logger_builder.cpp
 server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.o -MF CMakeFiles/server.dir/__/logger/logger_builder.cpp.o.d -o CMakeFiles/server.dir/__/logger/logger_builder.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp
 
 server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.i: cmake_force
@@ -520,7 +506,7 @@ server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o: ../logger/logger_builder_concrete.cpp
 server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o -MF CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o.d -o CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp
 
 server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.i: cmake_force
@@ -534,7 +520,7 @@ server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.s: cmake_forc
 server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o: ../logger/logger_concrete.cpp
 server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o -MF CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o.d -o CMakeFiles/server.dir/__/logger/logger_concrete.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp
 
 server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.i: cmake_force
@@ -548,7 +534,7 @@ server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.o: ../logger/logger_holder.cpp
 server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.o -MF CMakeFiles/server.dir/__/logger/logger_holder.cpp.o.d -o CMakeFiles/server.dir/__/logger/logger_holder.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp
 
 server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.i: cmake_force
@@ -562,7 +548,7 @@ server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/owntype/own_type.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/owntype/own_type.cpp.o: ../owntype/own_type.cpp
 server/CMakeFiles/server.dir/__/owntype/own_type.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object server/CMakeFiles/server.dir/__/owntype/own_type.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object server/CMakeFiles/server.dir/__/owntype/own_type.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/owntype/own_type.cpp.o -MF CMakeFiles/server.dir/__/owntype/own_type.cpp.o.d -o CMakeFiles/server.dir/__/owntype/own_type.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp
 
 server/CMakeFiles/server.dir/__/owntype/own_type.cpp.i: cmake_force
@@ -576,7 +562,7 @@ server/CMakeFiles/server.dir/__/owntype/own_type.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.o: ../string_methods/mystring.cpp
 server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.o -MF CMakeFiles/server.dir/__/string_methods/mystring.cpp.o.d -o CMakeFiles/server.dir/__/string_methods/mystring.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp
 
 server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.i: cmake_force
@@ -590,7 +576,7 @@ server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/validator/date_validator.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/validator/date_validator.cpp.o: ../validator/date_validator.cpp
 server/CMakeFiles/server.dir/__/validator/date_validator.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object server/CMakeFiles/server.dir/__/validator/date_validator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object server/CMakeFiles/server.dir/__/validator/date_validator.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/validator/date_validator.cpp.o -MF CMakeFiles/server.dir/__/validator/date_validator.cpp.o.d -o CMakeFiles/server.dir/__/validator/date_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp
 
 server/CMakeFiles/server.dir/__/validator/date_validator.cpp.i: cmake_force
@@ -604,7 +590,7 @@ server/CMakeFiles/server.dir/__/validator/date_validator.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.o: ../validator/digit_validator.cpp
 server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.o -MF CMakeFiles/server.dir/__/validator/digit_validator.cpp.o.d -o CMakeFiles/server.dir/__/validator/digit_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp
 
 server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.i: cmake_force
@@ -618,7 +604,7 @@ server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o: ../validator/time_validator.cpp
 server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o -MF CMakeFiles/server.dir/__/validator/time_validator.cpp.o.d -o CMakeFiles/server.dir/__/validator/time_validator.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp
 
 server/CMakeFiles/server.dir/__/validator/time_validator.cpp.i: cmake_force
@@ -632,7 +618,7 @@ server/CMakeFiles/server.dir/__/validator/time_validator.cpp.s: cmake_force
 server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o: ../ipc_connections/message_queue.cpp
 server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o: server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o -MF CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o.d -o CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o -c /mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/message_queue.cpp
 
 server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.i: cmake_force
@@ -672,7 +658,6 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/__/containers/collection_data.cpp.o" \
 "CMakeFiles/server.dir/__/containers/pool_data.cpp.o" \
 "CMakeFiles/server.dir/__/containers/scheme_data.cpp.o" \
-"CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o" \
 "CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o" \
 "CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o" \
 "CMakeFiles/server.dir/__/logger/logger.cpp.o" \
@@ -717,7 +702,6 @@ server/server: server/CMakeFiles/server.dir/__/containers/data_base.cpp.o
 server/server: server/CMakeFiles/server.dir/__/containers/collection_data.cpp.o
 server/server: server/CMakeFiles/server.dir/__/containers/pool_data.cpp.o
 server/server: server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.o
-server/server: server/CMakeFiles/server.dir/__/dialogue/dialogue.cpp.o
 server/server: server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o
 server/server: server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o
 server/server: server/CMakeFiles/server.dir/__/logger/logger.cpp.o
@@ -733,7 +717,7 @@ server/server: server/CMakeFiles/server.dir/__/validator/time_validator.cpp.o
 server/server: server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o
 server/server: server/CMakeFiles/server.dir/build.make
 server/server: server/CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX executable server"
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
