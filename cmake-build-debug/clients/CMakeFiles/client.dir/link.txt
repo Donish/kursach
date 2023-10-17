@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/client.dir/client.cpp.o CMakeFiles/client.dir/__/backup_system/backup_system.cpp.o CMakeFiles/client.dir/__/string_methods/mystring.cpp.o -o client 
