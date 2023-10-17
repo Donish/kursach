@@ -1,0 +1,1 @@
+REMOVE_POOL pool_1
