@@ -58,10 +58,6 @@ void message_queues(data_base *&db)
             {
                 break;
             }
-            else if(command == "restore")
-            {
-
-            }
             std::cout << command << std::endl;
         }
         catch(std::exception &ex)

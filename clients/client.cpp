@@ -274,12 +274,6 @@ void message_queues(backup_system &bs)
         else if(choice == "5")
         {
 
-            strcpy(snd_message._message_text._buff, "exit");
-            if(msgsnd(server_qid, &snd_message, sizeof(message_text), 0) == -1)
-            {
-                perror("msgsnd: file");
-                exit(1);
-            }
 
             std::cout << "Make backup before exit?(y/n)" << std::endl;
             while(true)
@@ -319,6 +313,13 @@ void message_queues(backup_system &bs)
                     exit(1);
                 }
 
+            }
+
+            strcpy(snd_message._message_text._buff, "exit");
+            if(msgsnd(server_qid, &snd_message, sizeof(message_text), 0) == -1)
+            {
+                perror("msgsnd: file");
+                exit(1);
             }
 
             break;

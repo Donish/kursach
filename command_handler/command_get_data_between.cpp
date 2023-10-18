@@ -31,6 +31,10 @@ bool command_get_data_between::can_execute(std::string const &request) noexcept
             {
                 return false;
             }
+            if(_id_meeting_first > _id_meeting_second)
+            {
+                return false;
+            }
 
             return true;
         }

@@ -456,8 +456,10 @@ void data_base::get_data_between_keys(
                     {
                         std::cout << "\tData:" << index << std::endl;
 
+                        std::cout << "meeting type: ";
                         print_meeting_type(*data_value);
                         std::cout << std::endl;
+                        std::cout << "meeting format: ";
                         print_format(*data_value);
                         std::cout << std::endl;
                         std::cout << "description: " << data_value->get_description()->get_value() << std::endl;
