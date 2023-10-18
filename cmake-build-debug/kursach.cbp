@@ -367,6 +367,12 @@
 			<Option target="server"/>
 			<Option target="client"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/file_mapping.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/file_mapping.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/zhura/CLionProjects/kursach/ipc_connections/ipc_type.h">
 			<Option target="server"/>
 		</Unit>

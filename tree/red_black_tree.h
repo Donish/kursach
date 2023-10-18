@@ -10,7 +10,7 @@ template<
         typename tkey_comparer>
 class red_black_tree final : public binary_search_tree<tkey, tvalue, tkey_comparer>
 {
-protected:
+public:
 
     enum class color_node
     {

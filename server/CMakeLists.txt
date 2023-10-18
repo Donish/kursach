@@ -55,4 +55,6 @@ add_executable(server
         ../validator/time_validator.cpp
         ../ipc_connections/message_queue.cpp
         ../ipc_connections/ipc_type.h
+        ../ipc_connections/file_mapping.cpp
+        ../ipc_connections/file_mapping.h
 )

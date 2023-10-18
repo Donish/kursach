@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.o.d"
   "CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o"
   "CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.o.d"
+  "CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.o"
+  "CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.o.d"
   "CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o"
   "CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.o.d"
   "CMakeFiles/server.dir/__/logger/logger.cpp.o"

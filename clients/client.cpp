@@ -144,6 +144,7 @@ void message_queues(backup_system &bs)
     }
     //endregion backup at the start
 
+    std::string sub_choice;
     //region main menu
     while(true)
     {
@@ -278,6 +279,46 @@ void message_queues(backup_system &bs)
             {
                 perror("msgsnd: file");
                 exit(1);
+            }
+
+            std::cout << "Make backup before exit?(y/n)" << std::endl;
+            while(true)
+            {
+                std::getline(std::cin, sub_choice);
+                if(sub_choice != "y" && sub_choice != "n")
+                {
+                    std::cout << "No such choice!" << std::endl;
+                    continue;
+                }
+                break;
+            }
+            if(sub_choice == "y")
+            {
+
+                broker_out.close();
+                broker_in.open(RECOVER_BROKER);
+                if(!broker_in.is_open())
+                {
+                    perror("can't open the file!");
+                    exit(1);
+                }
+                try
+                {
+                    bs.backup_data(broker_in);
+                }
+                catch(std::exception &ex)
+                {
+                    perror(ex.what());
+                    exit(1);
+                }
+                broker_in.close();
+                broker_out.open(RECOVER_BROKER, std::ios::app);
+                if(!broker_out.is_open())
+                {
+                    perror("can't open the file!");
+                    exit(1);
+                }
+
             }
 
             break;

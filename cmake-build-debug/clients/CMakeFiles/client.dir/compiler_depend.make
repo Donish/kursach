@@ -1505,6 +1505,134 @@ clients/CMakeFiles/client.dir/__/backup_system/backup_system.cpp.o: ../backup_sy
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../string_methods/mystring.h \
+  ../command_handler/command_add_pool.h \
+  ../command_handler/command.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  ../allocator/memory.h \
+  ../logger/logger.h \
+  ../owntype/own_type.h \
+  ../flyweight/flyweight_factory.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/bits/atomic_wait.h \
+  /usr/include/c++/11/climits \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd.h \
+  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
+  /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/bits/ranges_uninitialized.h \
+  /usr/include/c++/11/bits/ranges_algobase.h \
+  /usr/include/c++/11/iterator \
+  /usr/include/c++/11/bits/stream_iterator.h \
+  /usr/include/c++/11/bits/uses_allocator_args.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  ../flyweight/flyweight_string.h \
+  ../validator/digit_validator.h \
+  ../validator/date_validator.h \
+  ../validator/digit_validator.h \
+  ../validator/time_validator.h \
+  ../tree/tree_types.h \
+  ../allocator/allocator_types.h \
+  ../containers/data_base.h \
+  ../containers/pool_data.h \
+  ../containers/scheme_data.h \
+  ../containers/collection_data.h \
+  ../owntype/own_type.h \
+  ../allocator/memory_simple.h \
+  ../allocator/memory.h \
+  ../logger/logger_concrete.h \
+  ../logger/logger.h \
+  ../logger/logger_builder_concrete.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  ../logger/logger_builder.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  ../logger/logger_builder_concrete.h \
+  ../logger/logger_holder.h \
+  ../allocator/memory_holder.h \
+  ../allocator/sorted_list_memory.h \
+  ../allocator/borders_descriptors_memory.h \
+  ../allocator/buddy_system_memory.h \
+  ../tree/binary_search_tree.h \
+  ../tree/associative_container.h \
+  ../logger/logger.h \
+  ../logger/logger_holder.h \
+  ../allocator/memory.h \
+  ../allocator/memory_holder.h \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_stack.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../tree/splay_tree.h \
+  ../tree/binary_search_tree.h \
+  ../tree/avl_tree.h \
+  ../comparers/key_comparer.h \
+  ../owntype/own_type.h \
+  ../comparers/string_comparer.h \
+  ../tree/tree_types.h \
+  ../allocator/allocator_types.h \
+  ../command_handler/handler_with_command_chain.h \
+  ../command_handler/handler_with_command.h \
+  ../command_handler/handler.h \
+  ../command_handler/command.h \
   ../string_methods/mystring.h
 
 clients/CMakeFiles/client.dir/__/command_handler/command.cpp.o: ../command_handler/command.cpp \
@@ -10981,10 +11109,7 @@ clients/CMakeFiles/client.dir/client.cpp.o: ../clients/client.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../string_methods/mystring.h \
-  ../validator/command_validator.h \
-  ../command_handler/handler_with_command_chain.h \
-  ../command_handler/handler_with_command.h \
-  ../command_handler/handler.h \
+  ../command_handler/command_add_pool.h \
   ../command_handler/command.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
@@ -11049,6 +11174,62 @@ clients/CMakeFiles/client.dir/client.cpp.o: ../clients/client.cpp \
   ../validator/digit_validator.h \
   ../validator/time_validator.h \
   ../tree/tree_types.h \
+  ../allocator/allocator_types.h \
+  ../containers/data_base.h \
+  ../containers/pool_data.h \
+  ../containers/scheme_data.h \
+  ../containers/collection_data.h \
+  ../owntype/own_type.h \
+  ../allocator/memory_simple.h \
+  ../allocator/memory.h \
+  ../logger/logger_concrete.h \
+  ../logger/logger.h \
+  ../logger/logger_builder_concrete.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  ../logger/logger_builder.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  ../logger/logger_builder_concrete.h \
+  ../logger/logger_holder.h \
+  ../allocator/memory_holder.h \
+  ../allocator/sorted_list_memory.h \
+  ../allocator/borders_descriptors_memory.h \
+  ../allocator/buddy_system_memory.h \
+  ../tree/binary_search_tree.h \
+  ../tree/associative_container.h \
+  ../logger/logger.h \
+  ../logger/logger_holder.h \
+  ../allocator/memory.h \
+  ../allocator/memory_holder.h \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_stack.h \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  ../tree/splay_tree.h \
+  ../tree/binary_search_tree.h \
+  ../tree/avl_tree.h \
+  ../comparers/key_comparer.h \
+  ../owntype/own_type.h \
+  ../comparers/string_comparer.h \
+  ../tree/tree_types.h \
+  ../allocator/allocator_types.h \
+  ../command_handler/handler_with_command_chain.h \
+  ../command_handler/handler_with_command.h \
+  ../command_handler/handler.h \
+  ../command_handler/command.h \
+  ../string_methods/mystring.h \
+  ../validator/command_validator.h \
+  ../command_handler/handler_with_command_chain.h \
   ../string_methods/mystring.h
 
 
@@ -11180,11 +11361,13 @@ clients/CMakeFiles/client.dir/client.cpp.o: ../clients/client.cpp \
 
 ../command_handler/command_add_data.h:
 
+../command_handler/command_add_collection.cpp:
+
+../command_handler/command.cpp:
+
 ../command_handler/handler_with_command.h:
 
 ../command_handler/handler_with_command_chain.h:
-
-../allocator/allocator_types.h:
 
 /usr/include/c++/11/bits/stl_stack.h:
 
@@ -11204,7 +11387,7 @@ clients/CMakeFiles/client.dir/client.cpp.o: ../clients/client.cpp \
 
 ../containers/pool_data.h:
 
-../command_handler/command_add_collection.cpp:
+../allocator/allocator_types.h:
 
 ../validator/date_validator.h:
 
@@ -11289,8 +11472,6 @@ clients/CMakeFiles/client.dir/client.cpp.o: ../clients/client.cpp \
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 ../command_handler/command.h:
-
-../command_handler/command.cpp:
 
 ../string_methods/mystring.h:
 

@@ -802,6 +802,30 @@ __/flyweight/flyweight_string.cpp.s:
 	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.s
 .PHONY : __/flyweight/flyweight_string.cpp.s
 
+__/ipc_connections/file_mapping.o: __/ipc_connections/file_mapping.cpp.o
+.PHONY : __/ipc_connections/file_mapping.o
+
+# target to build an object file
+__/ipc_connections/file_mapping.cpp.o:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.o
+.PHONY : __/ipc_connections/file_mapping.cpp.o
+
+__/ipc_connections/file_mapping.i: __/ipc_connections/file_mapping.cpp.i
+.PHONY : __/ipc_connections/file_mapping.i
+
+# target to preprocess a source file
+__/ipc_connections/file_mapping.cpp.i:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.i
+.PHONY : __/ipc_connections/file_mapping.cpp.i
+
+__/ipc_connections/file_mapping.s: __/ipc_connections/file_mapping.cpp.s
+.PHONY : __/ipc_connections/file_mapping.s
+
+# target to generate assembly for a file
+__/ipc_connections/file_mapping.cpp.s:
+	cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.s
+.PHONY : __/ipc_connections/file_mapping.cpp.s
+
 __/ipc_connections/message_queue.o: __/ipc_connections/message_queue.cpp.o
 .PHONY : __/ipc_connections/message_queue.o
 
@@ -1183,6 +1207,9 @@ help:
 	@echo "... __/flyweight/flyweight_string.o"
 	@echo "... __/flyweight/flyweight_string.i"
 	@echo "... __/flyweight/flyweight_string.s"
+	@echo "... __/ipc_connections/file_mapping.o"
+	@echo "... __/ipc_connections/file_mapping.i"
+	@echo "... __/ipc_connections/file_mapping.s"
 	@echo "... __/ipc_connections/message_queue.o"
 	@echo "... __/ipc_connections/message_queue.i"
 	@echo "... __/ipc_connections/message_queue.s"

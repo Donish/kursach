@@ -326,6 +326,10 @@ private:
     reading_template_method *_reading;
     removing_template_method *_removing;
 
+public:
+
+    node* get_root() const noexcept { return _root; }
+
 protected:
 
     explicit binary_search_tree(
