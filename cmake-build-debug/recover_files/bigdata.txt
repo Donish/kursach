@@ -1,0 +1,19 @@
+ADD_POOL pool_1 sorted_list 1000000 first_match splay_tree
+ADD_POOL pool_2 border_descriptors 500000 the_best_match avl_tree
+ADD_SCHEME pool_2 scheme_1 avl_tree
+ADD_SCHEME pool_2 scheme_2 splay_tree
+ADD_COLLECTION pool_2 scheme_2 collection_1 avl_tree
+ADD_DATA pool_2 scheme_2 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:30 60 ivan,maksim,danila,ilya
+ADD_SCHEME pool_1 scheme_1 splay_tree
+ADD_COLLECTION pool_1 scheme_1 collection_1 splay_tree
+ADD_DATA pool_1 scheme_1 collection_1 1 period online bugdet_meeting - khasanov ivan ivanovich 21.09.2023 16:30 60 ivan,maksim,danila,ilya
+ADD_DATA pool_1 scheme_1 collection_1 2 period online lesson zoom.com/meeting1 zhuraev donish salohitdinovich 19.04.2023 12:00 240 daniil,mihail,rudolf,ilya,denis
+ADD_DATA pool_1 scheme_1 collection_1 3 interview offline job - juraev donish juraevich 07.06.2023 09:00 30 daniil,german
+ADD_DATA pool_1 scheme_1 collection_1 4 corporative offline party - naumov german konstantinovich 14.06.2023 18:00 120 zhuraev,khasanov
+UPDATE_DATA pool_1 scheme_1 collection_1 1 daily offline budget_meeting - mitev roman stanimirovich 16.09.2023 17:30 120 ivan,maksim,donish
+REMOVE_DATA pool_1 scheme_1 collection_1 3
+REMOVE_DATA pool_1 scheme_1 collection_1 1
+REMOVE_DATA pool_1 scheme_1 collection_1 4
+REMOVE_COLLECTION pool_1 scheme_1 collection_1
+REMOVE_SCHEME pool_1 scheme_1
+REMOVE_POOL pool_1
