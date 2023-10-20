@@ -3,7 +3,8 @@
 
 enum ipc_type
 {
-    MSG_QUEUE
+    MSG_QUEUE,
+    FILE_MAPPING
 };
 
 #endif //IPC_TYPE_H

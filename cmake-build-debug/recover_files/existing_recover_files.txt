@@ -2,3 +2,4 @@
 ../recover_files/happykittydrugs.txt
 ../recover_files/tyazhelayaatletika.txt
 ../recover_files/bigdata.txt
+../recover_files/friends.txt

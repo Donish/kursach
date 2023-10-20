@@ -10826,6 +10826,25 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
   /usr/include/strings.h \
   /usr/include/string.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/sys/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shmlba.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h \
+  /usr/include/x86_64-linux-gnu/sys/sem.h \
+  /usr/include/x86_64-linux-gnu/bits/sem.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h \
+  /usr/include/x86_64-linux-gnu/sys/mman.h \
+  /usr/include/x86_64-linux-gnu/bits/mman.h \
+  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
   ../containers/data_base.h \
   ../containers/pool_data.h \
   ../containers/scheme_data.h \
@@ -10947,16 +10966,25 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
   ../validator/time_validator.h \
   ../tree/tree_types.h \
   ../string_methods/mystring.h \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
   ../ipc_connections/message_queue.h \
   ../ipc_connections/ipc_type.h
 
 
 ../ipc_connections/ipc_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman-shared.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman.h:
+
+/usr/include/x86_64-linux-gnu/sys/mman.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h:
+
+/usr/include/x86_64-linux-gnu/bits/sem.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
@@ -10985,6 +11013,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 /usr/include/x86_64-linux-gnu/sys/uio.h:
 
 /usr/include/x86_64-linux-gnu/bits/netdb.h:
+
+/usr/include/x86_64-linux-gnu/bits/mman-linux.h:
 
 /usr/include/rpc/netdb.h:
 
@@ -11028,6 +11058,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_msqid_ds.h:
 
+/usr/include/x86_64-linux-gnu/bits/shm.h:
+
 /usr/include/x86_64-linux-gnu/bits/msq.h:
 
 ../ipc_connections/message_queue.cpp:
@@ -11051,6 +11083,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 ../command_handler/command_update_data.cpp:
 
 ../command_handler/command_remove_scheme.h:
+
+/usr/include/x86_64-linux-gnu/bits/shmlba.h:
 
 ../command_handler/command_remove_scheme.cpp:
 
@@ -11285,6 +11319,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/11/bits/localefwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
@@ -11550,6 +11586,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
+/usr/include/x86_64-linux-gnu/sys/sem.h:
+
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
@@ -11692,6 +11730,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
+/usr/include/x86_64-linux-gnu/sys/shm.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
@@ -11745,6 +11785,8 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp \
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 

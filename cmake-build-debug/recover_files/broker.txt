@@ -1,3 +1,4 @@
+REMOVE_POOL pool_1
 ADD_POOL pool_1 sorted_list 1000000 first_match splay_tree
 ADD_POOL pool_2 border_descriptors 500000 the_best_match avl_tree
 ADD_SCHEME pool_2 scheme_1 avl_tree
