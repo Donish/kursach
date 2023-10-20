@@ -49,7 +49,6 @@ void file_mapping(data_base *&db)
     ipc_type connection = ipc_type::FILE_MAPPING;
     int shm_fd;
     void *shm_region;
-    std::cout << "file mapping\n";
 
     const int file_size = 100;
     int fd = open(FILE_MAPPING_PATHNAME, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);

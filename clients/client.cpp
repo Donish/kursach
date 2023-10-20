@@ -52,7 +52,6 @@ void file_mapping(backup_system &bs)
     int shm_fd;
     void *shm_region;
     const int file_size = 100;
-    std::cout << "file mapping\n";
 
     int fd = open(FILE_MAPPING_PATHNAME, O_CREAT | O_RDWR);
     if(fd == -1)
