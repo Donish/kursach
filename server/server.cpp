@@ -27,6 +27,9 @@
 #define SEMAPHORE_KEY 54321
 #define SEMAPHORE_COUNT 1
 
+#define SHARED_MEMORY_KEY 12345
+#define SHARED_MEMORY_SIZE 4096
+
 #define FILE_MAPPING_PATHNAME "../tmp/example.txt"
 
 #define SERVER_KEY_PATHNAME "../tmp/mqueue_server_key"
@@ -43,6 +46,57 @@ struct message
     long int _message_type;
     struct message_text _message_text;
 };
+
+struct SharedData
+{
+    int count;
+    char msg[999];
+};
+
+void shared_memory(data_base *&db)
+{
+    int shm_id = shmget(SHARED_MEMORY_KEY, SHARED_MEMORY_SIZE, 0666);
+    if(shm_id == -1)
+    {
+        perror("shmget error");
+        exit(1);
+    }
+
+    auto *shared_data = (SharedData*) shmat(shm_id, nullptr, 0);
+    if(shared_data == (SharedData*)(-1))
+    {
+        perror("shmat error");
+        exit(1);
+    }
+
+    int sem_id = semget(SEMAPHORE_KEY, SEMAPHORE_COUNT, 0666);
+    if(sem_id == -1)
+    {
+        perror("semget error");
+        exit(1);
+    }
+
+    std::string command;
+
+    while(true)
+    {
+        struct sembuf sem_ops[1] = {0, 1, 0};
+        sem_ops[0].sem_op = -1;
+        semop(sem_id, sem_ops, 1);
+
+        command = shared_data->msg;
+
+        if(command == "exit")
+        {
+            break;
+        }
+        std::cout << command << std::endl;
+
+        db->handle_request(command);
+    }
+
+    shmdt(shared_data);
+}
 
 void file_mapping(data_base *&db)
 {
@@ -79,9 +133,7 @@ void file_mapping(data_base *&db)
         exit(1);
     }
 
-    std::string message;
     std::string command;
-    char msg[1500];
 
     while(true)
     {
@@ -89,7 +141,6 @@ void file_mapping(data_base *&db)
 //        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
-
 
         command = addr;
 //        sem_ops[0].sem_op = 1;
@@ -175,6 +226,10 @@ int main()
     else if(connection == "file mapping")
     {
         file_mapping(db);
+    }
+    else if(connection == "shared memory")
+    {
+        shared_memory(db);
     }
 
 
