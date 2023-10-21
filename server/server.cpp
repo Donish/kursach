@@ -55,6 +55,8 @@ struct SharedData
 
 void shared_memory(data_base *&db)
 {
+    ipc_type connection = ipc_type::SHARED_MEMORY;
+
     int shm_id = shmget(SHARED_MEMORY_KEY, SHARED_MEMORY_SIZE, 0666);
     if(shm_id == -1)
     {
@@ -186,7 +188,6 @@ void message_queues(data_base *&db)
         }
         db->handle_request(command);
 
-//        std::cout << "message received." << std::endl;
     }
 }
 

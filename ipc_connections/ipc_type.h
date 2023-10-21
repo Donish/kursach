@@ -4,7 +4,8 @@
 enum ipc_type
 {
     MSG_QUEUE,
-    FILE_MAPPING
+    FILE_MAPPING,
+    SHARED_MEMORY
 };
 
 #endif //IPC_TYPE_H
