@@ -1,4 +1,10 @@
-"D:\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/JetBrains/CLion 2023.2.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\zhura\CLionProjects\kursach -B C:\Users\zhura\CLionProjects\kursach\cmake-build-debug
--- Configuring done (0.2s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Users/zhura/CLionProjects/kursach/cmake-build-debug
+C:\Windows\system32\wsl.exe --distribution Ubuntu-22.04 --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/zhura/CLionProjects/kursach -B /mnt/c/Users/zhura/CLionProjects/kursach/cmake-build-debug"
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.26 or higher is required.  You are running version 3.22.1
+
+
+-- Configuring incomplete, errors occurred!
+
+Cannot get compiler information:
+	Cannot start process, the working directory 'C:\Users\zhura\CLionProjects\kursach\cmake-build-debug\clients' does not exist
+	Cannot start process, the working directory 'C:\Users\zhura\CLionProjects\kursach\cmake-build-debug\server' does not exist
