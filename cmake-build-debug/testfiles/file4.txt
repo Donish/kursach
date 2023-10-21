@@ -21,4 +21,5 @@ GET_RANGE pool_1 scheme_1 collection_1 1 4
 REMOVE_COLLECTION pool_1 scheme_1 collection_1
 REMOVE_SCHEME pool_1 scheme_1
 REMOVE_POOL pool_1
+REMOVE_POOL pool_2
 GET_DATA pool_1 scheme_1 collection_1 3

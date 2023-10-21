@@ -209,19 +209,20 @@ void shared_memory(backup_system &bs)
 
             while(std::getline(commands_file, command))
             {
-                delete_carriage_symbol_with_guard(command);
-
                 memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
                 strcpy(shared_data->msg, command.c_str());
 
-                bs.check_add_terminating_commands(command);
+                sem_ops[0].sem_op = 1;
+                semop(sem_id, sem_ops, 1);
+
+                delete_carriage_symbol_with_guard(command);
                 if(cmd_validate(command))
                 {
                     broker_out << command << std::endl;
                 }
+                bs.check_add_terminating_commands(command);
 
-                sem_ops[0].sem_op = 1;
-                semop(sem_id, sem_ops, 1);
+                std::cout << command << std::endl;
             }
             commands_file.close();
 
@@ -522,17 +523,17 @@ void file_mapping(backup_system &bs)
 
 //                sem_ops[0].sem_op = -1;
 //                semop(sem_id, sem_ops, 1);
-
-                sprintf(addr, "%s", command.c_str());
-
-                bs.check_add_terminating_commands(command);
                 if(cmd_validate(command))
                 {
                     broker_out << command << std::endl;
                 }
+                bs.check_add_terminating_commands(command);
+
+                sprintf(addr, "%s", command.c_str());
 
                 sem_ops[0].sem_op = 1;
                 semop(sem_id, sem_ops, 1);
+
             }
             commands_file.close();
 

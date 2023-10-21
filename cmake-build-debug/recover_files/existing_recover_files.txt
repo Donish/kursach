@@ -1,5 +1,3 @@
 ../recover_files/reserved.txt
 ../recover_files/happykittydrugs.txt
 ../recover_files/bigdata.txt
-../recover_files/gogogog.txt
-../recover_files/bebra.txt
