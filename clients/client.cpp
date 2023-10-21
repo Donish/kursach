@@ -221,8 +221,6 @@ void shared_memory(backup_system &bs)
                     broker_out << command << std::endl;
                 }
                 bs.check_add_terminating_commands(command);
-
-                std::cout << command << std::endl;
             }
             commands_file.close();
 
@@ -519,8 +517,12 @@ void file_mapping(backup_system &bs)
 
             while(std::getline(commands_file, command))
             {
-                delete_carriage_symbol_with_guard(command);
+                sprintf(addr, "%s", command.c_str());
 
+                sem_ops[0].sem_op = 1;
+                semop(sem_id, sem_ops, 1);
+
+                delete_carriage_symbol_with_guard(command);
 //                sem_ops[0].sem_op = -1;
 //                semop(sem_id, sem_ops, 1);
                 if(cmd_validate(command))
@@ -529,10 +531,6 @@ void file_mapping(backup_system &bs)
                 }
                 bs.check_add_terminating_commands(command);
 
-                sprintf(addr, "%s", command.c_str());
-
-                sem_ops[0].sem_op = 1;
-                semop(sem_id, sem_ops, 1);
 
             }
             commands_file.close();

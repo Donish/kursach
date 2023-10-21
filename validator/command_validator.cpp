@@ -31,10 +31,10 @@ bool command_validator::operator()(std::string &command)
 {
     delete_carriage_symbol_with_guard(command);
 
-    if(command.starts_with("GET"))
-    {
-        return false;
-    }
+//    if(command.starts_with("GET"))
+//    {
+//        return false;
+//    }
     if(!_chain.validate(command))
     {
         return false;
