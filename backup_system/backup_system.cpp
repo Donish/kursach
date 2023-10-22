@@ -46,7 +46,7 @@ void backup_system::backup_data(std::ifstream &broker)
             {
                 std::cout << "Error:" << std::endl;
                 std::cout << "Filename must include letters and numbers only!" << std::endl;
-                std::cout << "You can't create file with name 'broker', 'existing_recover_files' and 'terminating_commands'!" << std::endl;
+                std::cout << "You can't create file with name 'broker', 'existing_recover_files', 'terminating_commands' and 'trash_commands'!" << std::endl;
                 continue;
             }
             input_filename += ".txt";
