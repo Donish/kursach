@@ -1,3 +1,4 @@
 ../recover_files/reserved.txt
 ../recover_files/happykittydrugs.txt
 ../recover_files/bigdata.txt
+../recover_files/withinvalid.txt

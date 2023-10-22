@@ -248,7 +248,7 @@ void backup_system::remove_file(const int &index)
 
 bool backup_system::is_valid_filename(const std::string &filename)
 {
-    if(filename == "broker" || filename == "existing_recover_files" || filename == "terminating_commands")
+    if(filename == "broker" || filename == "existing_recover_files" || filename == "terminating_commands" || filename == "trash_commands")
     {
         return false;
     }

@@ -37,6 +37,7 @@
 #define RECOVER_DIRECTORY "../recover_files/"
 #define RECOVER_BROKER "../recover_files/broker.txt"
 #define RECOVER_TERMINATING_COMMANDS "../recover_files/terminating_commands.txt"
+#define TRASH_COMMANDS "../recover_files/trash_commands.txt"
 
 struct message_text
 {
@@ -87,6 +88,7 @@ void shared_memory(backup_system &bs)
     command_validator cmd_validate;
     std::string choice;
     std::vector<std::string> commands_to_restore;
+    std::ofstream trash_commands(TRASH_COMMANDS);
 
     broker_out.open(RECOVER_BROKER);
 
@@ -119,6 +121,10 @@ void shared_memory(backup_system &bs)
                 if(cmd_validate(i))
                 {
                     broker_out << i << std::endl;
+                }
+                else
+                {
+                    trash_commands << i << std::endl;
                 }
                 bs.check_add_terminating_commands(i);
 
@@ -193,6 +199,10 @@ void shared_memory(backup_system &bs)
             {
                 broker_out << command << std::endl;
             }
+            else
+            {
+                trash_commands << command << std::endl;
+            }
 
         }
         else if(choice == "2")
@@ -219,6 +229,10 @@ void shared_memory(backup_system &bs)
                 if(cmd_validate(command))
                 {
                     broker_out << command << std::endl;
+                }
+                else
+                {
+                    trash_commands << command << std::endl;
                 }
                 bs.check_add_terminating_commands(command);
             }
@@ -278,6 +292,10 @@ void shared_memory(backup_system &bs)
                 if(cmd_validate(i))
                 {
                     broker_out << i << std::endl;
+                }
+                else
+                {
+                    trash_commands << i << std::endl;
                 }
                 bs.check_add_terminating_commands(i);
 
@@ -346,6 +364,7 @@ void shared_memory(backup_system &bs)
 
     }
 
+    trash_commands.close();
     shmdt(shared_data);
     shmctl(shm_id, IPC_RMID, nullptr);
     semctl(sem_id, 0, IPC_RMID);
@@ -386,6 +405,7 @@ void file_mapping(backup_system &bs)
     command_validator cmd_validate;
     std::string choice;
     std::vector<std::string> commands_to_restore;
+    std::ofstream trash_commands(TRASH_COMMANDS);
 
     broker_out.open(RECOVER_BROKER);
 
@@ -422,6 +442,10 @@ void file_mapping(backup_system &bs)
                 if(cmd_validate(i))
                 {
                     broker_out << i << std::endl;
+                }
+                else
+                {
+                    trash_commands << i << std::endl;
                 }
                 bs.check_add_terminating_commands(i);
 
@@ -499,6 +523,10 @@ void file_mapping(backup_system &bs)
             {
                 broker_out << command << std::endl;
             }
+            else
+            {
+                trash_commands << command << std::endl;
+            }
 
         }
         else if(choice == "2")
@@ -528,6 +556,10 @@ void file_mapping(backup_system &bs)
                 if(cmd_validate(command))
                 {
                     broker_out << command << std::endl;
+                }
+                else
+                {
+                    trash_commands << command << std::endl;
                 }
                 bs.check_add_terminating_commands(command);
 
@@ -595,6 +627,10 @@ void file_mapping(backup_system &bs)
                 if(cmd_validate(i))
                 {
                     broker_out << i << std::endl;
+                }
+                else
+                {
+                    trash_commands << i << std::endl;
                 }
                 bs.check_add_terminating_commands(i);
 
@@ -665,6 +701,7 @@ void file_mapping(backup_system &bs)
         }
     }
 
+    trash_commands.close();
     munmap(addr, file_size);
 }
 
@@ -700,6 +737,7 @@ void message_queues(backup_system &bs)
     std::string command;
     std::ifstream commands_file;
     std::vector<std::string> commands_to_restore;
+    std::ofstream trash_commands(TRASH_COMMANDS);
 
     broker_out.open(RECOVER_BROKER);
     //region backup at the start
@@ -731,6 +769,11 @@ void message_queues(backup_system &bs)
                 {
                     broker_out << i << std::endl;
                 }
+                else
+                {
+                    trash_commands << i << std::endl;
+                }
+
                 bs.check_add_terminating_commands(i);
                 strcpy(snd_message._message_text._buff, i.c_str());
                 if(msgsnd(server_qid, &snd_message, sizeof(struct message_text), 0) == -1)
@@ -802,6 +845,10 @@ void message_queues(backup_system &bs)
             {
                 broker_out << command << std::endl;
             }
+            else
+            {
+                trash_commands << command << std::endl;
+            }
 
         }
         else if(choice == "2")
@@ -829,6 +876,10 @@ void message_queues(backup_system &bs)
                 if(cmd_validate(command))
                 {
                     broker_out << command << std::endl;
+                }
+                else
+                {
+                    trash_commands << command << std::endl;
                 }
             }
             commands_file.close();
@@ -887,6 +938,10 @@ void message_queues(backup_system &bs)
                 if(cmd_validate(i))
                 {
                     broker_out << i << std::endl;
+                }
+                else
+                {
+                    trash_commands << i << std::endl;
                 }
                 bs.check_add_terminating_commands(i);
                 strcpy(snd_message._message_text._buff, i.c_str());
@@ -958,6 +1013,7 @@ void message_queues(backup_system &bs)
         }
     }
     broker_out.close();
+    trash_commands.close();
     //endregion main menu
 
     if(msgctl(myqid, IPC_RMID, NULL) == -1)
