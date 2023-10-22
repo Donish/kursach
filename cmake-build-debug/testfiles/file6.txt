@@ -8,6 +8,7 @@ GET_DATA pool_2 scheme_2 collection_1 1
 GET_DATA de
 ADD_SCHEME pool_1 scheme_1 splay_tree
 ADD_COLLECTION pool_1 scheme_1 collection_1 splay_tree
+GET_DATA pool_1 scheme_1 collection_2 1
 afaef
 ADD_DATA pool_1 scheme_1 collection_1 1 period online bugdet_meeting - khasanov ivan ivanovich 21.09.2023 16:30 60 ivan,maksim,danila,ilya
 ADD_DATA pool_1 scheme_1 collection_1 2 period online lesson zoom.com/meeting1 zhuraev donish salohitdinovich 19.04.2023 12:00 240 daniil,mihail,rudolf,ilya,denis

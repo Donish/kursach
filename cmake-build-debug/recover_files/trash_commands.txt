@@ -1,3 +1,7 @@
 GET_DATA de
+GET_DATA pool_1 scheme_1 collection_2
+afaef
+GET_RANGE feew
+GET_DATA de
 afaef
 GET_RANGE feew
