@@ -224,12 +224,6 @@ void shared_memory(backup_system &bs)
 
             while(std::getline(commands_file, command))
             {
-                memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
-                strcpy(shared_data->msg, command.c_str());
-
-                sem_ops[0].sem_op = 1;
-                semop(sem_id, sem_ops, 1);
-
                 delete_carriage_symbol_with_guard(command);
                 if(cmd_validate(command))
                 {
@@ -240,6 +234,13 @@ void shared_memory(backup_system &bs)
                     trash_commands << command << std::endl;
                 }
                 bs.check_add_terminating_commands(command);
+
+                memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+                strcpy(shared_data->msg, command.c_str());
+
+                sem_ops[0].sem_op = 1;
+                semop(sem_id, sem_ops, 1);
+                std::cout << shared_data->msg << std::endl;
             }
             commands_file.close();
 
