@@ -1,28 +1,79 @@
-REMOVE_POOL pool_1
-REMOVE_POOL pool_1
-REMOVE_POOL pool_1
+ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
+ADD_SCHEME pool_1 scheme_1 splay_tree
+ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
+ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
+GET_DATA pool_1 scheme_1 collection_1 1
+REMOVE_POOL pool_2
+REMOVE_DATA pool_1 scheme_1 collection_1 1
+REMOVE_COLLECTION pool_1 scheme_1 collection_1
+REMOVE_SCHEME pool_1 scheme_1
 REMOVE_POOL pool_1
 ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
 ADD_SCHEME pool_1 scheme_1 avl_tree
 ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
 ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
-ADD_POOL pool_1 buddies_system 50000 first_match avl_tree
-ADD_SCHEME pool_1 scheme_1 splay_tree
+GET_DATA pool_1 scheme_1 collection_1 1
+REMOVE_POOL pool_1
+ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
+ADD_SCHEME pool_1 scheme_1 avl_tree
 ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
 ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
 GET_DATA pool_1 scheme_1 collection_1 1
-REMOVE_POOL pool_2
-REMOVE_DATA pool_1 scheme_1 collection_1 1
-REMOVE_COLLECTION pool_1 scheme_1 collection_1
-REMOVE_SCHEME pool_1 scheme_1
-REMOVE_POOL pool_1
-ADD_POOL pool_1 buddies_system 50000 first_match avl_tree
-ADD_SCHEME pool_1 scheme_1 splay_tree
+ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
+ADD_POOL pool_2 sorted_list 100000 the_best_match avl_tree
+ADD_POOL pool_3 border_descriptors 70000 the_worst_match splay_tree
+ADD_SCHEME pool_1 scheme_1 avl_tree
+ADD_SCHEME pool_2 scheme_2 splay_tree
+ADD_SCHEME pool_3 scheme_3 avl_tree
 ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
+ADD_COLLECTION pool_2 scheme_2 collection_2 splay_tree
+ADD_COLLECTION pool_3 scheme_3 collection_3 splay_tree
 ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
+ADD_DATA pool_2 scheme_2 collection_2 1 period online bugdet_meeting - khasanov ivan ivanovich 21.09.2023 16:30 60 ivan,maksim,danila,ilya
+ADD_DATA pool_3 scheme_3 collection_3 1 period online lesson zoom.com/meeting1 zhuraev donish salohitdinovich 19.04.2023 12:00 240 daniil,mihail,rudolf,ilya,denis
 GET_DATA pool_1 scheme_1 collection_1 1
-REMOVE_POOL pool_2
-REMOVE_DATA pool_1 scheme_1 collection_1 1
-REMOVE_COLLECTION pool_1 scheme_1 collection_1
-REMOVE_SCHEME pool_1 scheme_1
+GET_DATA pool_2 scheme_2 collection_2 1
+GET_DATA pool_3 scheme_3 collection_3 1
+ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
+ADD_POOL pool_2 sorted_list 100000 the_best_match avl_tree
+ADD_POOL pool_3 border_descriptors 70000 the_worst_match splay_tree
+ADD_SCHEME pool_1 scheme_1 avl_tree
+ADD_SCHEME pool_2 scheme_2 splay_tree
+ADD_SCHEME pool_3 scheme_3 avl_tree
+ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
+ADD_COLLECTION pool_2 scheme_2 collection_2 splay_tree
+ADD_COLLECTION pool_3 scheme_3 collection_3 splay_tree
+ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
+ADD_DATA pool_2 scheme_2 collection_2 1 period online bugdet_meeting - khasanov ivan ivanovich 21.09.2023 16:30 60 ivan,maksim,danila,ilya
+ADD_DATA pool_3 scheme_3 collection_3 1 period online lesson zoom.com/meeting1 zhuraev donish salohitdinovich 19.04.2023 12:00 240 daniil,mihail,rudolf,ilya,denis
+GET_DATA pool_1 scheme_1 collection_1 1
+GET_DATA pool_2 scheme_2 collection_2 1
+GET_DATA pool_3 scheme_3 collection_3 1
 REMOVE_POOL pool_1
+REMOVE_POOL pool_2
+REMOVE_POOL pool_3
+ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
+ADD_POOL pool_2 sorted_list 100000 the_best_match avl_tree
+ADD_POOL pool_3 border_descriptors 70000 the_worst_match splay_tree
+ADD_SCHEME pool_1 scheme_1 avl_tree
+ADD_SCHEME pool_2 scheme_2 splay_tree
+ADD_SCHEME pool_3 scheme_3 avl_tree
+ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
+ADD_COLLECTION pool_2 scheme_2 collection_2 splay_tree
+ADD_COLLECTION pool_3 scheme_3 collection_3 splay_tree
+ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
+ADD_DATA pool_2 scheme_2 collection_2 1 period online bugdet_meeting - khasanov ivan ivanovich 21.09.2023 16:30 60 ivan,maksim,danila,ilya
+ADD_DATA pool_3 scheme_3 collection_3 1 period online lesson zoom.com/meeting1 zhuraev donish salohitdinovich 19.04.2023 12:00 240 daniil,mihail,rudolf,ilya,denis
+GET_DATA pool_1 scheme_1 collection_1 1
+GET_DATA pool_2 scheme_2 collection_2 1
+GET_DATA pool_3 scheme_3 collection_3 1
+REMOVE_POOL pool_1
+REMOVE_POOL pool_2
+REMOVE_POOL pool_3
+ADD_POOL pool_1 global_heap splay_tree
+ADD_SCHEME pool_1 scheme_1 avl_tree
+ADD_COLLECTION pool_1 scheme_1 collection_1 splay_tree
+ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
+ADD_DATA pool_1 scheme_1 collection_1 2 period offline bugdet_meeting - khasanov ivan ivanovich 21.09.2023 16:30 60 ivan,maksim,danila,ilya
+ADD_DATA pool_1 scheme_1 collection_1 3 period online lesson zoom.com/meeting1 zhuraev donish salohitdinovich 19.04.2023 12:00 240 daniil,mihail,rudolf,ilya,denis
+GET_RANGE pool_1 scheme_1 collection_1 1 3

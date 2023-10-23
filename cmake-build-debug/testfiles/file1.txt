@@ -1,2 +1,2 @@
-ADD_POOL pool_1 global_heap splay_tree
+ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
 REMOVE_POOL pool_1

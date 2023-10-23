@@ -1,0 +1,3 @@
+ADD_SCHEME pool_1 scheme_2 splay
+ADD_SCHEME pool_1 scheme_2 splay
+REMOVE pool_1 scheme_1 collection_1
