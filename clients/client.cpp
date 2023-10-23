@@ -157,6 +157,11 @@ void shared_memory(backup_system &bs)
         }
         else if(choice == "4")
         {
+            memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+            strcpy(shared_data->msg, "exit");
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
+
             exit(0);
         }
         else
@@ -481,6 +486,9 @@ void file_mapping(backup_system &bs)
         }
         else if(choice == "4")
         {
+            sprintf(addr, "%s", "exit");
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
             exit(0);
         }
         else
@@ -805,6 +813,12 @@ void message_queues(backup_system &bs)
         }
         else if(choice == "4")
         {
+            strcpy(snd_message._message_text._buff, "exit");
+            if(msgsnd(server_qid, &snd_message, sizeof(message_text), 0) == -1)
+            {
+                perror("msgsnd: file");
+                exit(1);
+            }
             exit(0);
         }
         else
@@ -1070,7 +1084,7 @@ int main()
         std::cout << "4)Exit" << std::endl;
         std::getline(std::cin, choice);
 
-        if(choice != "1" && choice != "2" && choice != "3")
+        if(choice != "1" && choice != "2" && choice != "3" && choice != "4")
         {
             std::cout << "No such option!" << std::endl;
             continue;

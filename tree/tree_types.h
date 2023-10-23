@@ -5,7 +5,7 @@ enum tree_types
 {
     SPLAY_TREE,
     AVL_TREE,
-    RED_BLACK_TREE
+//    RED_BLACK_TREE
 };
 
 #endif //TREE_TYPES_H

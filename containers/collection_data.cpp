@@ -13,10 +13,10 @@ collection_data::collection_data(memory *allocator, tree_types outer_tree_type):
     {
         _data = new avl_tree<key*, value*, key_comparer>(allocator, nullptr);
     }
-    else if(_tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(_tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //        _data = new red_black_tree<key*, value*, key_comparer>(allocator, nullptr);
-    }
+//    }
 }
 
 void collection_data::add(
@@ -121,10 +121,10 @@ collection_data::collection_data(collection_data const &other):
     {
         _data = new avl_tree<key*, value*, key_comparer>(*reinterpret_cast<avl_tree<key*, value*, key_comparer>*>(other._data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //        _data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
-    }
+//    }
 }
 
 collection_data& collection_data::operator=(collection_data const &other)
@@ -150,10 +150,10 @@ collection_data& collection_data::operator=(collection_data const &other)
     {
         this->_data = new avl_tree<key*, value*, key_comparer>(*reinterpret_cast<avl_tree<key*, value*, key_comparer>*>(other._data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //        this->_data = new red_black_tree<key*, value*, key_comparer>(*reinterpret_cast<red_black_tree<key*, value*, key_comparer>*>(other._data));
-    }
+//    }
     this->_tree_type = other._tree_type;
 
     return *this;

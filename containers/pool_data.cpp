@@ -13,10 +13,10 @@ pool_data::pool_data(memory *allocator, tree_types outer_tree_type):
     {
         _pool_data = new avl_tree<std::string, scheme_data, string_comparer>();
     }
-    else if(_tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(_tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //        _pool_data = new red_black_tree<std::string, scheme_data, string_comparer>();
-    }
+//    }
 }
 
 void pool_data::add(std::string const &key, scheme_data &&target)
@@ -57,10 +57,10 @@ pool_data::pool_data(pool_data const &other):
     {
         _pool_data = new avl_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<avl_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //        _pool_data = new red_black_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
-    }
+//    }
 }
 
 pool_data& pool_data::operator=(pool_data const &other)
@@ -86,10 +86,10 @@ pool_data& pool_data::operator=(pool_data const &other)
     {
         this->_pool_data = new avl_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<avl_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //      this._pool_data = new red_black_tree<std::string, scheme_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme_data, string_comparer>*>(other._pool_data));
-    }
+//    }
     this->_tree_type = other._tree_type;
 
     return *this;

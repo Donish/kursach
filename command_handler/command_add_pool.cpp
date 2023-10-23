@@ -21,10 +21,6 @@ bool command_add_pool::can_execute(const std::string &request) noexcept
             {
                 _tree_type = tree_types::AVL_TREE;
             }
-            else if(argc[3] == "black_red_tree")
-            {
-                _tree_type = tree_types::RED_BLACK_TREE;
-            }
             else
             {
                 return false;

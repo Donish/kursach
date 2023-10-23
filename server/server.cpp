@@ -114,11 +114,9 @@ void file_mapping(data_base *&db)
         exit(1);
     }
 
-    //размер файла
     lseek(fd, file_size - 1, SEEK_SET);
     write(fd, "", 1);
 
-    //отобрадение файла в памяти
     char *addr = (char*) mmap(NULL, file_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
     if(addr == MAP_FAILED)
     {

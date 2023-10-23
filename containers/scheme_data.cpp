@@ -12,10 +12,10 @@ scheme_data::scheme_data(tree_types outer_tree_type):
     {
         _scheme_data = new avl_tree<std::string, collection_data, string_comparer>();
     }
-    else if(_tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(_tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //        _scheme_data = new red_black_tree<std::string, collection_data, string_comparer>();
-    }
+//    }
 }
 
 void scheme_data::add(std::string const &key, collection_data &&target)
@@ -50,10 +50,10 @@ scheme_data::scheme_data(scheme_data const &other):
     {
         _scheme_data = new avl_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<avl_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //      _scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
-    }
+//    }
 }
 
 scheme_data& scheme_data::operator=(const scheme_data &other)
@@ -73,10 +73,10 @@ scheme_data& scheme_data::operator=(const scheme_data &other)
     {
         this->_scheme_data = new avl_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<avl_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //      this->_scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
-    }
+//    }
     this->_tree_type = other._tree_type;
 
     return *this;
@@ -106,10 +106,10 @@ scheme_data& scheme_data::operator=(scheme_data &&other) noexcept
     {
         this->_scheme_data = new avl_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<avl_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
     }
-    else if(other._tree_type == tree_types::RED_BLACK_TREE)
-    {
+//    else if(other._tree_type == tree_types::RED_BLACK_TREE)
+//    {
 //      this->_scheme_data = new red_black_tree<std::string, collection_data, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection_data, string_comparer>*>(other._scheme_data));
-    }
+//    }
     this->_tree_type = other._tree_type;
 
     return *this;

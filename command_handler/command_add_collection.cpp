@@ -20,10 +20,6 @@ bool command_add_collection::can_execute(const std::string &request) noexcept
             {
                 _tree_type = tree_types::AVL_TREE;
             }
-            else if(argc[4] == "black_red_tree")
-            {
-                _tree_type = tree_types::RED_BLACK_TREE;
-            }
             else
             {
                 return false;
