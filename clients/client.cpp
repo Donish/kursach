@@ -200,6 +200,7 @@ void shared_memory(backup_system &bs)
         }
         else if(choice == "2")
         {
+            std::cout << "file choice\n";
             memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
             strcpy(shared_data->msg, "file");
             sem_ops[0].sem_op = -1;

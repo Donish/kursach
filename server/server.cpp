@@ -89,7 +89,7 @@ void shared_memory(data_base *&db)
 //        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
-
+        std::cout << "here\n";
         command = shared_data->msg;
 
         if(command == "file")
