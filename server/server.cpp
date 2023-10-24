@@ -86,7 +86,7 @@ void shared_memory(data_base *&db)
     while(true)
     {
         struct sembuf sem_ops[1] = {0, 1, 0};
-//        semop(sem_id, sem_ops, 1);
+        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
         std::cout << "here\n";
