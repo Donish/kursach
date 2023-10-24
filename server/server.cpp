@@ -79,22 +79,58 @@ void shared_memory(data_base *&db)
     }
 
     std::string command;
+    std::string filename;
+    std::string command_from_file;
+    std::ifstream file;
 
     while(true)
     {
         struct sembuf sem_ops[1] = {0, 1, 0};
+//        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
 
         command = shared_data->msg;
 
-        if(command == "exit")
+        if(command == "file")
+        {
+
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
+
+            sem_ops[0].sem_op = -1;
+            semop(sem_id, sem_ops, 1);
+            filename = shared_data->msg;
+            std::cout << filename << std::endl;
+
+            file.open(filename);
+            if(!file.is_open())
+            {
+                std::cout << "No such file!" << std::endl;
+                continue;
+            }
+
+            std::cout << command_from_file << std::endl;
+            while(std::getline(file, command_from_file))
+            {
+                db->handle_request(command_from_file);
+            }
+            file.close();
+
+
+        }
+        else if(command == "exit")
         {
             break;
         }
-        std::cout << command << std::endl;
+        else
+        {
+            std::cout << command << std::endl;
+            db->handle_request(command);
+        }
+//        std::cout << command << std::endl;
 
-        db->handle_request(command);
+//        db->handle_request(command);
     }
 
     shmdt(shared_data);

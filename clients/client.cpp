@@ -91,75 +91,75 @@ void shared_memory(backup_system &bs)
     broker_out.open(RECOVER_BROKER);
 
     //region backup at start
-    while(true)
-    {
-        struct sembuf sem_ops[1] = {0, -1, 0};
-        std::cout << std::endl << "Do you want to restore data?" << std::endl;
-        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Delete recover file" << std::endl << "4)Exit" << std::endl;
-        std::getline(std::cin, choice);
-
-        if(choice == "1")
-        {
-
-            try
-            {
-                commands_to_restore = bs.restore_data();
-            }
-            catch(std::exception &ex)
-            {
-                perror(ex.what());
-                exit(1);
-            }
-            if(commands_to_restore.empty())
-            {
-                continue;
-            }
-            for(auto &i : commands_to_restore)
-            {
-                if(cmd_validate(i))
-                {
-                    broker_out << i << std::endl;
-                }
-                bs.check_add_terminating_commands(i);
-
-                memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
-                strcpy(shared_data->msg, i.c_str());
-
-                sem_ops[0].sem_op = 1;
-                semop(sem_id, sem_ops, 1);
-            }
-            break;
-
-        }
-        else if(choice == "2")
-        {
-            break;
-        }
-        else if(choice == "3")
-        {
-
-            try
-            {
-                bs.remove_file_from_system();
-            }
-            catch(std::exception &ex)
-            {
-                perror(ex.what());
-                exit(1);
-            }
-
-        }
-        else if(choice == "4")
-        {
-            exit(0);
-        }
-        else
-        {
-            std::cout << "No such option!" << std::endl;
-//            sem_ops[0].sem_op = 1;
-//            semop(sem_id, sem_ops, 1);
-        }
-    }
+//    while(true)
+//    {
+//        struct sembuf sem_ops[1] = {0, -1, 0};
+//        std::cout << std::endl << "Do you want to restore data?" << std::endl;
+//        std::cout << "1)Yes" << std::endl << "2)No" << std::endl << "3)Delete recover file" << std::endl << "4)Exit" << std::endl;
+//        std::getline(std::cin, choice);
+//
+//        if(choice == "1")
+//        {
+//
+//            try
+//            {
+//                commands_to_restore = bs.restore_data();
+//            }
+//            catch(std::exception &ex)
+//            {
+//                perror(ex.what());
+//                exit(1);
+//            }
+//            if(commands_to_restore.empty())
+//            {
+//                continue;
+//            }
+//            for(auto &i : commands_to_restore)
+//            {
+//                if(cmd_validate(i))
+//                {
+//                    broker_out << i << std::endl;
+//                }
+//                bs.check_add_terminating_commands(i);
+//
+//                memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+//                strcpy(shared_data->msg, i.c_str());
+//
+//                sem_ops[0].sem_op = 1;
+//                semop(sem_id, sem_ops, 1);
+//            }
+//            break;
+//
+//        }
+//        else if(choice == "2")
+//        {
+//            break;
+//        }
+//        else if(choice == "3")
+//        {
+//
+//            try
+//            {
+//                bs.remove_file_from_system();
+//            }
+//            catch(std::exception &ex)
+//            {
+//                perror(ex.what());
+//                exit(1);
+//            }
+//
+//        }
+//        else if(choice == "4")
+//        {
+//            exit(0);
+//        }
+//        else
+//        {
+//            std::cout << "No such option!" << std::endl;
+////            sem_ops[0].sem_op = 1;
+////            semop(sem_id, sem_ops, 1);
+//        }
+//    }
     //endregion backup at start
 
     std::string sub_choice;
@@ -169,6 +169,9 @@ void shared_memory(backup_system &bs)
     while(true)
     {
         struct sembuf sem_ops[1] = {0, -1, 0};
+//        semop(sem_id, sem_ops, 1);
+        memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+
         std::cout << std::endl << "1)Command" << std::endl;
         std::cout << "2)File" << std::endl;
         std::cout << "3)Backup data" << std::endl;
@@ -197,6 +200,13 @@ void shared_memory(backup_system &bs)
         }
         else if(choice == "2")
         {
+            memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+            strcpy(shared_data->msg, "file");
+            sem_ops[0].sem_op = -1;
+            semop(sem_id, sem_ops, 1);
+
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
 
             std::cout << "Enter the path to file:" << std::endl;
             std::getline(std::cin, filename);
@@ -209,11 +219,11 @@ void shared_memory(backup_system &bs)
 
             while(std::getline(commands_file, command))
             {
-                memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
-                strcpy(shared_data->msg, command.c_str());
-
-                sem_ops[0].sem_op = 1;
-                semop(sem_id, sem_ops, 1);
+//                memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+//                strcpy(shared_data->msg, command.c_str());
+//
+//                sem_ops[0].sem_op = 1;
+//                semop(sem_id, sem_ops, 1);
 
                 delete_carriage_symbol_with_guard(command);
                 if(cmd_validate(command))
@@ -223,6 +233,9 @@ void shared_memory(backup_system &bs)
                 bs.check_add_terminating_commands(command);
             }
             commands_file.close();
+
+            memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
+            strcpy(shared_data->msg, filename.c_str());
 
         }
         else if(choice == "3")
