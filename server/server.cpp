@@ -86,30 +86,21 @@ void shared_memory(data_base *&db)
     while(true)
     {
         struct sembuf sem_ops[1] = {0, 1, 0};
-//        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
 
         command = shared_data->msg;
 
-        if(command == "file")
+        if(command.starts_with("file"))
         {
 
-            sem_ops[0].sem_op = 1;
-            semop(sem_id, sem_ops, 1);
-
-            //продебажить
-            filename = shared_data->msg;
-            std::cout << filename << std::endl;
-            sem_ops[0].sem_op = -1;
-            semop(sem_id, sem_ops, 1);
-//
-//            sem_ops[0].sem_op = 1;
-//            semop(sem_id, sem_ops, 1);
+            filename = command.substr(5, command.length() - 1);
             file.open(filename);
             if(!file.is_open())
             {
                 std::cout << "Can't open the file!" << std::endl;
+                sem_ops[0].sem_op = 1;
+                semop(sem_id, sem_ops, 1);
                 continue;
             }
 
@@ -119,8 +110,9 @@ void shared_memory(data_base *&db)
                 db->handle_request(command_from_file);
             }
             file.close();
-//            sem_ops[0].sem_op = -1;
-//            semop(sem_id, sem_ops, 1);
+
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
 
         }
         else if(command == "exit")
@@ -176,26 +168,54 @@ void file_mapping(data_base *&db)
     }
 
     std::string command;
+    std::string filename;
+    std::string command_from_file;
+    std::ifstream file;
 
     while(true)
     {
         struct sembuf sem_ops[1] = {0, 1, 0};
-//        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
 
         command = addr;
-//        sem_ops[0].sem_op = 1;
-//        semop(sem_id, sem_ops, 1);
-//        sem_ops[0].sem_op = -1;
-//        semop(sem_id, sem_ops, 1);
-        if(command == "exit")
+
+        if(command.starts_with("file"))
+        {
+
+            filename = command.substr(5, command.length() - 1);
+            file.open(filename);
+            if(!file.is_open())
+            {
+                std::cout << "Can't open the file!" << std::endl;
+                sem_ops[0].sem_op = 1;
+                semop(sem_id, sem_ops, 1);
+                continue;
+            }
+
+            while(std::getline(file, command_from_file))
+            {
+                std::cout << command_from_file << std::endl;
+                db->handle_request(command_from_file);
+            }
+            file.close();
+
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
+
+        }
+        else if(command == "exit")
         {
             break;
         }
-        std::cout << command << std::endl;
-
-        db->handle_request(command);
+        else
+        {
+            std::cout << command << std::endl;
+            db->handle_request(command);
+        }
+//        std::cout << command << std::endl;
+//
+//        db->handle_request(command);
     }
 
     munmap(addr, file_size);
