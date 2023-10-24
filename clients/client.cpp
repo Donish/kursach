@@ -200,13 +200,12 @@ void shared_memory(backup_system &bs)
         }
         else if(choice == "2")
         {
-            std::cout << "file choice\n";
             memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
             strcpy(shared_data->msg, "file");
-            sem_ops[0].sem_op = -1;
+            sem_ops[0].sem_op = 1;
             semop(sem_id, sem_ops, 1);
 
-            sem_ops[0].sem_op = 1;
+            sem_ops[0].sem_op = -1;
             semop(sem_id, sem_ops, 1);
 
             std::cout << "Enter the path to file:" << std::endl;
@@ -235,8 +234,15 @@ void shared_memory(backup_system &bs)
             }
             commands_file.close();
 
+            //продебажить
             memset(&(shared_data->msg), 0, sizeof(shared_data->msg));
             strcpy(shared_data->msg, filename.c_str());
+            sem_ops[0].sem_op = 1;
+            semop(sem_id, sem_ops, 1);
+//            sem_ops[0].sem_op = -1;
+//            semop(sem_id, sem_ops, 1);
+//            sem_ops[0].sem_op = 1;
+//            semop(sem_id, sem_ops, 1);
 
         }
         else if(choice == "3")

@@ -86,10 +86,10 @@ void shared_memory(data_base *&db)
     while(true)
     {
         struct sembuf sem_ops[1] = {0, 1, 0};
-        semop(sem_id, sem_ops, 1);
+//        semop(sem_id, sem_ops, 1);
         sem_ops[0].sem_op = -1;
         semop(sem_id, sem_ops, 1);
-        std::cout << "here\n";
+
         command = shared_data->msg;
 
         if(command == "file")
@@ -98,25 +98,29 @@ void shared_memory(data_base *&db)
             sem_ops[0].sem_op = 1;
             semop(sem_id, sem_ops, 1);
 
-            sem_ops[0].sem_op = -1;
-            semop(sem_id, sem_ops, 1);
+            //продебажить
             filename = shared_data->msg;
             std::cout << filename << std::endl;
-
+            sem_ops[0].sem_op = -1;
+            semop(sem_id, sem_ops, 1);
+//
+//            sem_ops[0].sem_op = 1;
+//            semop(sem_id, sem_ops, 1);
             file.open(filename);
             if(!file.is_open())
             {
-                std::cout << "No such file!" << std::endl;
+                std::cout << "Can't open the file!" << std::endl;
                 continue;
             }
 
-            std::cout << command_from_file << std::endl;
             while(std::getline(file, command_from_file))
             {
+                std::cout << command_from_file << std::endl;
                 db->handle_request(command_from_file);
             }
             file.close();
-
+//            sem_ops[0].sem_op = -1;
+//            semop(sem_id, sem_ops, 1);
 
         }
         else if(command == "exit")
