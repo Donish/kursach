@@ -270,7 +270,6 @@ int main()
         exit(1);
     }
 
-    std::cout << "Connected with client." << std::endl;
 
     std::string connection;
     if(msgrcv(qid, &message_rcv, sizeof(struct message_text), 0, 0) == -1)
@@ -278,6 +277,7 @@ int main()
         perror("msgrcv error");
         exit(1);
     }
+    std::cout << "Connected with client." << std::endl;
 
     connection = message_rcv._message_text._buff;
     if(connection == "message queues")
