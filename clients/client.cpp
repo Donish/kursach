@@ -1010,7 +1010,7 @@ int main()
         std::cout << "4)Exit" << std::endl;
         std::getline(std::cin, choice);
 
-        if(choice != "1" && choice != "2" && choice != "3")
+        if(choice != "1" && choice != "2" && choice != "3" && choice != "4")
         {
             std::cout << "No such option!" << std::endl;
             continue;

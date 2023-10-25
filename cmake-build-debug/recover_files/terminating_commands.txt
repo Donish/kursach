@@ -1,0 +1,3 @@
+REMOVE_POOL pool_1
+REMOVE_POOL pool_1
+REMOVE_POOL pool_2

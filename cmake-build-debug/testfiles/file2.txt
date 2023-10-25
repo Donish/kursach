@@ -1,5 +1,5 @@
 ADD_POOL pool_1 buddies_system 50000 first_match splay_tree
 ADD_SCHEME pool_1 scheme_1 avl_tree
-ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree
+ADD_COLLECTION pool_1 scheme_1 collection_1 splay_tree
 ADD_DATA pool_1 scheme_1 collection_1 1 daily offline bugdet_meeting - ivanov ivan ivanovich 16.09.2023 15:34 60 ivan,maksim,danila,ilya
 GET_DATA pool_1 scheme_1 collection_1 1

@@ -270,6 +270,10 @@ bool backup_system::file_exists(std::string &filename)
 
 bool backup_system::is_valid_number(const std::string &number)
 {
+    if(number.length() == 0)
+    {
+        return false;
+    }
     for(const auto &i : number)
     {
         if(!isdigit(i))
