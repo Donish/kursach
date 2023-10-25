@@ -13,7 +13,7 @@ protected:
 
     struct avl_node : public binary_search_tree<tkey, tvalue, tkey_comparer>::node
     {
-        size_t _height = 0;
+        size_t _height = 1;
     };
 
 private:
@@ -88,15 +88,9 @@ private:
 
     size_t get_node_height(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *node_address) const;
 
-    void fix_node_height(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **subtree_node_address);
+    void fix_node_height(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_node_address);
 
     size_t balance_factor(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *subtree_node_address) const;
-
-    void balance_with_stack(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_node_address,
-                 std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive);
-
-    void balance_with_list(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_node_address,
-                 std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive);
 
 public:
 
@@ -132,12 +126,15 @@ template<
         typename tkey,
         typename tvalue,
         typename tkey_comparer>
-void avl_tree<tkey, tvalue, tkey_comparer>::fix_node_height(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **subtree_node_address)
+void avl_tree<tkey, tvalue, tkey_comparer>::fix_node_height(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_node_address)
 {
-    size_t left_node_height = get_node_height((*subtree_node_address)->left_subtree_address);
-    size_t right_node_height = get_node_height((*subtree_node_address)->right_subtree_address);
+    size_t left_node_height = subtree_node_address == nullptr ? 0 : get_node_height(subtree_node_address->left_subtree_address);
+    size_t right_node_height = subtree_node_address == nullptr ? 0 : get_node_height(subtree_node_address->right_subtree_address);
 
-    reinterpret_cast<avl_node*>(*subtree_node_address)->_height = (left_node_height > right_node_height ? left_node_height : right_node_height) + 1;
+    if(subtree_node_address != nullptr)
+    {
+        reinterpret_cast<avl_node *>(subtree_node_address)->_height = (left_node_height > right_node_height ? left_node_height : right_node_height) + 1;
+    }
 }
 
 template<
@@ -147,118 +144,6 @@ template<
 size_t avl_tree<tkey, tvalue, tkey_comparer>::balance_factor(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *subtree_node_address) const
 {
     return get_node_height(subtree_node_address->left_subtree_address) - get_node_height(subtree_node_address->right_subtree_address);
-}
-
-template<
-        typename tkey,
-        typename tvalue,
-        typename tkey_comparer>
-void avl_tree<tkey, tvalue, tkey_comparer>::balance_with_list(
-        typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_node_address,
-        std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
-{
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **parent = nullptr;
-
-    if(!path_to_subtree_root_exclusive.empty())
-    {
-        parent = path_to_subtree_root_exclusive.back();
-        path_to_subtree_root_exclusive.pop_back();
-    }
-
-    fix_node_height(&subtree_node_address);
-    size_t bf = balance_factor(subtree_node_address);
-
-    if(bf == 2)
-    {
-        if(balance_factor(subtree_node_address->left_subtree_address) < 0)
-        {
-            this->left_rotation(subtree_node_address->left_subtree_address);
-            fix_node_height(&(subtree_node_address->left_subtree_address->left_subtree_address));
-            fix_node_height(&(subtree_node_address->left_subtree_address->right_subtree_address));
-            fix_node_height(&(subtree_node_address->left_subtree_address));
-        }
-
-        this->right_rotation(subtree_node_address);
-        fix_node_height(&(subtree_node_address->right_subtree_address));
-        fix_node_height(&(subtree_node_address->left_subtree_address));
-        fix_node_height(&subtree_node_address);
-    }
-    if(bf == -2)
-    {
-        if(balance_factor(subtree_node_address->right_subtree_address) > 0)
-        {
-            this->right_rotation(subtree_node_address->right_subtree_address);
-            fix_node_height(&(subtree_node_address->right_subtree_address->right_subtree_address));
-            fix_node_height(&(subtree_node_address->right_subtree_address->left_subtree_address));
-            fix_node_height(&(subtree_node_address->right_subtree_address));
-        }
-
-        this->left_rotation(subtree_node_address);
-        fix_node_height(&(subtree_node_address->right_subtree_address));
-        fix_node_height(&(subtree_node_address->left_subtree_address));
-        fix_node_height(&(subtree_node_address));
-    }
-
-    if(parent != nullptr)
-    {
-        path_to_subtree_root_exclusive.push_back(parent);
-    }
-}
-
-template<
-        typename tkey,
-        typename tvalue,
-        typename tkey_comparer>
-void avl_tree<tkey, tvalue, tkey_comparer>::balance_with_stack(
-        typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_node_address,
-        std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
-{
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **parent = nullptr;
-
-    if(!path_to_subtree_root_exclusive.empty())
-    {
-        parent = path_to_subtree_root_exclusive.top();
-        path_to_subtree_root_exclusive.pop();
-    }
-
-    fix_node_height(&subtree_node_address);
-    size_t bf = balance_factor(subtree_node_address);
-
-    if(bf == 2)
-    {
-        if(balance_factor(subtree_node_address->left_subtree_address) < 0)
-        {
-            this->left_rotation(subtree_node_address->left_subtree_address);
-            fix_node_height(&(subtree_node_address->left_subtree_address->left_subtree_address));
-            fix_node_height(&(subtree_node_address->left_subtree_address->right_subtree_address));
-            fix_node_height(&(subtree_node_address->left_subtree_address));
-        }
-
-        this->right_rotation(subtree_node_address);
-        fix_node_height(&(subtree_node_address->right_subtree_address));
-        fix_node_height(&(subtree_node_address->left_subtree_address));
-        fix_node_height(&subtree_node_address);
-    }
-    if(bf == -2)
-    {
-        if(balance_factor(subtree_node_address->right_subtree_address) > 0)
-        {
-            this->right_rotation(subtree_node_address->right_subtree_address);
-            fix_node_height(&(subtree_node_address->right_subtree_address->right_subtree_address));
-            fix_node_height(&(subtree_node_address->right_subtree_address->left_subtree_address));
-            fix_node_height(&(subtree_node_address->right_subtree_address));
-        }
-
-        this->left_rotation(subtree_node_address);
-        fix_node_height(&(subtree_node_address->right_subtree_address));
-        fix_node_height(&(subtree_node_address->left_subtree_address));
-        fix_node_height(&(subtree_node_address));
-    }
-
-    if(parent != nullptr)
-    {
-        path_to_subtree_root_exclusive.push(parent);
-    }
 }
 
 template<
@@ -349,12 +234,13 @@ avl_tree<tkey, tvalue, tkey_comparer>::copy_inner(typename binary_search_tree<tk
         return nullptr;
     }
 
-    auto * node_copy = reinterpret_cast<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node*>(this->allocate_with_guard(this->get_node_size()));
+    auto * node_copy = reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer>::avl_node*>(this->allocate_with_guard(this->get_node_size()));
 
-    new (node_copy) typename binary_search_tree<tkey, tvalue, tkey_comparer>::node;
+    new (node_copy) avl_tree<tkey, tvalue, tkey_comparer>::avl_node;
 
     node_copy->key_and_value._key = to_copy->key_and_value._key;
     node_copy->key_and_value._value = to_copy->key_and_value._value;
+    node_copy->_height = reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer>::avl_node*>(to_copy)->_height;
     node_copy->left_subtree_address = copy_inner(to_copy->left_subtree_address);
     node_copy->right_subtree_address = copy_inner(to_copy->right_subtree_address);
 
@@ -387,13 +273,48 @@ void avl_tree<tkey, tvalue, tkey_comparer>::avl_tree_insertion_template_method::
         typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
         std::stack<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *current_node = subtree_root_address;
+    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **current_node = nullptr;
 
     while(!path_to_subtree_root_exclusive.empty())
     {
-        _tree->balance_with_stack(current_node, path_to_subtree_root_exclusive);
-        current_node = *path_to_subtree_root_exclusive.top();
+        current_node = path_to_subtree_root_exclusive.top();
         path_to_subtree_root_exclusive.pop();
+
+        reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer>*>(this->_tree)->fix_node_height(*current_node);
+
+        size_t balance_factor = reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer>*>(this->_tree)->balance_factor(*current_node);
+
+        if(balance_factor == 2)
+        {
+            if(reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer>*>(this->_tree)->balance_factor((*current_node)->left_subtree_address) == -1)
+            {
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->left_rotation((*current_node)->left_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->left_subtree_address->left_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->left_subtree_address);
+            }
+
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->right_rotation(*current_node);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->right_subtree_address);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height(*current_node);
+        }
+
+        if(balance_factor == -2)
+        {
+            if (reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->balance_factor((*current_node)->right_subtree_address) == 1)
+            {
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->right_rotation((*current_node)->right_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->right_subtree_address->right_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->right_subtree_address);
+            }
+
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->left_rotation(*current_node);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->left_subtree_address);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height(*current_node);
+        }
+
+//        _tree->balance_with_stack(current_node, path_to_subtree_root_exclusive);
+//        current_node = *path_to_subtree_root_exclusive.top();
+//        path_to_subtree_root_exclusive.pop();
     }
 
     this->trace_with_guard("[AVL TREE] Node inserted.");
@@ -427,13 +348,48 @@ void avl_tree<tkey, tvalue, tkey_comparer>::avl_tree_removing_template_method::a
         typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *&subtree_root_address,
         std::list<typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **> &path_to_subtree_root_exclusive)
 {
-    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node *current_node = subtree_root_address;
+    typename binary_search_tree<tkey, tvalue, tkey_comparer>::node **current_node = nullptr;
 
     while(!path_to_subtree_root_exclusive.empty())
     {
-        _tree->balance_with_list(current_node, path_to_subtree_root_exclusive);
-        current_node = *path_to_subtree_root_exclusive.back();
+        current_node = path_to_subtree_root_exclusive.back();
         path_to_subtree_root_exclusive.pop_back();
+
+        reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height(*current_node);
+
+        size_t balance_factor = reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer>*>(this->_tree)->balance_factor(*current_node);
+
+        if (balance_factor == 2)
+        {
+            if (reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->balance_factor((*current_node)->left_subtree_address) == -1)
+            {
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->left_rotation((*current_node)->left_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->left_subtree_address->left_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->left_subtree_address);
+            }
+
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->right_rotation(*current_node);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->right_subtree_address);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height(*current_node);
+        }
+
+        if (balance_factor == -2)
+        {
+            if (reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->balance_factor((*current_node)->right_subtree_address) == 1)
+            {
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->right_rotation((*current_node)->right_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->right_subtree_address->right_subtree_address);
+                reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->right_subtree_address);
+            }
+
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->left_rotation(*current_node);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height((*current_node)->left_subtree_address);
+            reinterpret_cast<avl_tree<tkey, tvalue, tkey_comparer> *>(this->_tree)->fix_node_height(*current_node);
+        }
+
+//        _tree->balance_with_list(current_node, path_to_subtree_root_exclusive);
+//        current_node = *path_to_subtree_root_exclusive.back();
+//        path_to_subtree_root_exclusive.pop_back();
     }
 }
 
