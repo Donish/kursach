@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "containers/data_base.h"
-#include "dialogue/dialogue.h"
+//#include "dialogue/dialogue.h"
 
 int main()
 {
@@ -33,7 +33,7 @@ int main()
 //        std::cout << "File with name:" << argv[1] << " can't be opened" << std::endl;
 //    }
 
-    dialogue_with_user(db);
+//    dialogue_with_user(db);
 
     delete db;
 
