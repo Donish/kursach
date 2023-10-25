@@ -1,5 +1,3 @@
-ADD_POOL pool_1 global_heap splay_tree
-ADD_SCHEME pool_1 scheme_1 avl_tree
 ADD_POOL pool_1 buddies_system 50000 first_match avl_tree
 ADD_SCHEME pool_1 scheme_1 splay_tree
 ADD_COLLECTION pool_1 scheme_1 collection_1 avl_tree

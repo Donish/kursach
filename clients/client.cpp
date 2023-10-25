@@ -560,6 +560,7 @@ void file_mapping(backup_system &bs)
     }
 
     munmap(addr, file_size);
+    semctl(sem_id, 0, IPC_RMID);
 }
 
 void message_queues(backup_system &bs)
