@@ -42,6 +42,11 @@ void backup_system::backup_data(std::ifstream &broker)
         {
             std::cout << std::endl << "Name the file:" << std::endl;
             std::getline(std::cin, input_filename);
+            if(input_filename.length() == 0)
+            {
+                std::cout << "Wrong filename!" << std::endl;
+                continue;
+            }
             if(!is_valid_filename(input_filename))
             {
                 std::cout << "Error:" << std::endl;
