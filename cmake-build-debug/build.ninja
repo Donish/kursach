@@ -40,267 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/zhura/CLionProjects/kursach/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target kursach
-
-
-#############################################
-# Order-only phony target for kursach
-
-build cmake_object_order_depends_target_kursach: phony || CMakeFiles/kursach.dir
-
-build CMakeFiles/kursach.dir/main.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/main.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir
-
-build CMakeFiles/kursach.dir/comparers/key_comparer.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\comparers\key_comparer.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\comparers
-
-build CMakeFiles/kursach.dir/containers/data_base.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/data_base.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\containers\data_base.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\containers
-
-build CMakeFiles/kursach.dir/comparers/string_comparer.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\comparers\string_comparer.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\comparers
-
-build CMakeFiles/kursach.dir/allocator/borders_descriptors_memory.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\allocator\borders_descriptors_memory.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\allocator
-
-build CMakeFiles/kursach.dir/allocator/buddy_system_memory.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\allocator\buddy_system_memory.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\allocator
-
-build CMakeFiles/kursach.dir/allocator/memory.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\allocator\memory.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\allocator
-
-build CMakeFiles/kursach.dir/allocator/memory_simple.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\allocator\memory_simple.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\allocator
-
-build CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\allocator\sorted_list_memory.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\allocator
-
-build CMakeFiles/kursach.dir/command_handler/command.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_add_collection.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_add_collection.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_add_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_add_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_add_pool.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_add_pool.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_add_scheme.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_add_scheme.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_get_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_get_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_get_data_between.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_get_data_between.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_remove_collection.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_remove_collection.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_remove_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_remove_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_remove_pool.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_remove_pool.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_remove_scheme.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_remove_scheme.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/command_update_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\command_update_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/handler_with_command.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\handler_with_command.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/command_handler/handler_with_command_chain.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\command_handler\handler_with_command_chain.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\command_handler
-
-build CMakeFiles/kursach.dir/containers/scheme_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\containers\scheme_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\containers
-
-build CMakeFiles/kursach.dir/containers/collection_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\containers\collection_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\containers
-
-build CMakeFiles/kursach.dir/containers/pool_data.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\containers\pool_data.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\containers
-
-build CMakeFiles/kursach.dir/logger/logger.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\logger\logger.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\logger
-
-build CMakeFiles/kursach.dir/logger/logger_builder.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\logger\logger_builder.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\logger
-
-build CMakeFiles/kursach.dir/logger/logger_builder_concrete.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\logger\logger_builder_concrete.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\logger
-
-build CMakeFiles/kursach.dir/logger/logger_concrete.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\logger\logger_concrete.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\logger
-
-build CMakeFiles/kursach.dir/validator/date_validator.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\validator\date_validator.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\validator
-
-build CMakeFiles/kursach.dir/validator/digit_validator.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\validator\digit_validator.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\validator
-
-build CMakeFiles/kursach.dir/validator/time_validator.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\validator\time_validator.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\validator
-
-build CMakeFiles/kursach.dir/allocator/memory_holder.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\allocator\memory_holder.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\allocator
-
-build CMakeFiles/kursach.dir/logger/logger_holder.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\logger\logger_holder.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\logger
-
-build CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\flyweight\flyweight_string.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\flyweight
-
-build CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\flyweight\flyweight_factory.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\flyweight
-
-build CMakeFiles/kursach.dir/owntype/own_type.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\owntype\own_type.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\owntype
-
-build CMakeFiles/kursach.dir/dialogue/dialogue.cpp.obj: CXX_COMPILER__kursach_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/dialogue/dialogue.cpp || cmake_object_order_depends_target_kursach
-  DEP_FILE = CMakeFiles\kursach.dir\dialogue\dialogue.cpp.obj.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  OBJECT_FILE_DIR = CMakeFiles\kursach.dir\dialogue
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target kursach
-
-
-#############################################
-# Link the executable kursach.exe
-
-build kursach.exe: CXX_EXECUTABLE_LINKER__kursach_Debug CMakeFiles/kursach.dir/main.cpp.obj CMakeFiles/kursach.dir/comparers/key_comparer.cpp.obj CMakeFiles/kursach.dir/containers/data_base.cpp.obj CMakeFiles/kursach.dir/comparers/string_comparer.cpp.obj CMakeFiles/kursach.dir/allocator/borders_descriptors_memory.cpp.obj CMakeFiles/kursach.dir/allocator/buddy_system_memory.cpp.obj CMakeFiles/kursach.dir/allocator/memory.cpp.obj CMakeFiles/kursach.dir/allocator/memory_simple.cpp.obj CMakeFiles/kursach.dir/allocator/sorted_list_memory.cpp.obj CMakeFiles/kursach.dir/command_handler/command.cpp.obj CMakeFiles/kursach.dir/command_handler/command_add_collection.cpp.obj CMakeFiles/kursach.dir/command_handler/command_add_data.cpp.obj CMakeFiles/kursach.dir/command_handler/command_add_pool.cpp.obj CMakeFiles/kursach.dir/command_handler/command_add_scheme.cpp.obj CMakeFiles/kursach.dir/command_handler/command_get_data.cpp.obj CMakeFiles/kursach.dir/command_handler/command_get_data_between.cpp.obj CMakeFiles/kursach.dir/command_handler/command_remove_collection.cpp.obj CMakeFiles/kursach.dir/command_handler/command_remove_data.cpp.obj CMakeFiles/kursach.dir/command_handler/command_remove_pool.cpp.obj CMakeFiles/kursach.dir/command_handler/command_remove_scheme.cpp.obj CMakeFiles/kursach.dir/command_handler/command_update_data.cpp.obj CMakeFiles/kursach.dir/command_handler/handler_with_command.cpp.obj CMakeFiles/kursach.dir/command_handler/handler_with_command_chain.cpp.obj CMakeFiles/kursach.dir/containers/scheme_data.cpp.obj CMakeFiles/kursach.dir/containers/collection_data.cpp.obj CMakeFiles/kursach.dir/containers/pool_data.cpp.obj CMakeFiles/kursach.dir/logger/logger.cpp.obj CMakeFiles/kursach.dir/logger/logger_builder.cpp.obj CMakeFiles/kursach.dir/logger/logger_builder_concrete.cpp.obj CMakeFiles/kursach.dir/logger/logger_concrete.cpp.obj CMakeFiles/kursach.dir/validator/date_validator.cpp.obj CMakeFiles/kursach.dir/validator/digit_validator.cpp.obj CMakeFiles/kursach.dir/validator/time_validator.cpp.obj CMakeFiles/kursach.dir/allocator/memory_holder.cpp.obj CMakeFiles/kursach.dir/logger/logger_holder.cpp.obj CMakeFiles/kursach.dir/flyweight/flyweight_string.cpp.obj CMakeFiles/kursach.dir/flyweight/flyweight_factory.cpp.obj CMakeFiles/kursach.dir/owntype/own_type.cpp.obj CMakeFiles/kursach.dir/dialogue/dialogue.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\kursach.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = kursach.exe
-  TARGET_IMPLIB = libkursach.dll.a
-  TARGET_PDB = kursach.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -325,9 +64,783 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/zhura/CLionProjects/kursach/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target server
+
+
+#############################################
+# Order-only phony target for server
+
+build cmake_object_order_depends_target_server: phony || server/CMakeFiles/server.dir
+
+build server/CMakeFiles/server.dir/server.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/server/server.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\server.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/allocator/borders_descriptors_memory.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\allocator\borders_descriptors_memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\allocator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/allocator/buddy_system_memory.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\allocator\buddy_system_memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\allocator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/allocator/memory.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\allocator\memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\allocator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/allocator/memory_holder.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\allocator\memory_holder.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\allocator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/allocator/memory_simple.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\allocator\memory_simple.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\allocator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/allocator/sorted_list_memory.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\allocator\sorted_list_memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\allocator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_add_collection.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_add_collection.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_add_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_add_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_add_pool.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_add_pool.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_add_scheme.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_add_scheme.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_get_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_get_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_get_data_between.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_get_data_between.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_remove_collection.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_remove_collection.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_remove_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_remove_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_remove_pool.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_remove_pool.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_remove_scheme.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_remove_scheme.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/command_update_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\command_update_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/handler_with_command.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\handler_with_command.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/command_handler/handler_with_command_chain.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\command_handler\handler_with_command_chain.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\command_handler
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/comparers/key_comparer.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\comparers\key_comparer.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\comparers
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/comparers/string_comparer.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\comparers\string_comparer.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\comparers
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/containers/data_base.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/data_base.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\containers\data_base.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\containers
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/containers/collection_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\containers\collection_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\containers
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/containers/pool_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\containers\pool_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\containers
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\containers\scheme_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\containers
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\flyweight\flyweight_factory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\flyweight
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\flyweight\flyweight_string.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\flyweight
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/logger/logger.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\logger\logger.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\logger
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\logger\logger_builder.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\logger
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\logger\logger_builder_concrete.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\logger
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\logger\logger_concrete.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\logger
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\logger\logger_holder.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\logger
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/owntype/own_type.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\owntype\own_type.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\owntype
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\string_methods\mystring.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\string_methods
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/validator/date_validator.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\validator\date_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\validator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\validator\digit_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\validator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/validator/time_validator.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\validator\time_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\validator
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/ipc_connections/message_queue.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\ipc_connections\message_queue.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\ipc_connections
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+build server/CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.obj: CXX_COMPILER__server_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/ipc_connections/file_mapping.cpp || cmake_object_order_depends_target_server
+  DEP_FILE = server\CMakeFiles\server.dir\__\ipc_connections\file_mapping.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  OBJECT_FILE_DIR = server\CMakeFiles\server.dir\__\ipc_connections
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_PDB = server\server.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target server
+
+
+#############################################
+# Link the executable server\server.exe
+
+build server/server.exe: CXX_EXECUTABLE_LINKER__server_Debug server/CMakeFiles/server.dir/server.cpp.obj server/CMakeFiles/server.dir/__/allocator/borders_descriptors_memory.cpp.obj server/CMakeFiles/server.dir/__/allocator/buddy_system_memory.cpp.obj server/CMakeFiles/server.dir/__/allocator/memory.cpp.obj server/CMakeFiles/server.dir/__/allocator/memory_holder.cpp.obj server/CMakeFiles/server.dir/__/allocator/memory_simple.cpp.obj server/CMakeFiles/server.dir/__/allocator/sorted_list_memory.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_add_collection.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_add_data.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_add_pool.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_add_scheme.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_get_data.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_get_data_between.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_remove_collection.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_remove_data.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_remove_pool.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_remove_scheme.cpp.obj server/CMakeFiles/server.dir/__/command_handler/command_update_data.cpp.obj server/CMakeFiles/server.dir/__/command_handler/handler_with_command.cpp.obj server/CMakeFiles/server.dir/__/command_handler/handler_with_command_chain.cpp.obj server/CMakeFiles/server.dir/__/comparers/key_comparer.cpp.obj server/CMakeFiles/server.dir/__/comparers/string_comparer.cpp.obj server/CMakeFiles/server.dir/__/containers/data_base.cpp.obj server/CMakeFiles/server.dir/__/containers/collection_data.cpp.obj server/CMakeFiles/server.dir/__/containers/pool_data.cpp.obj server/CMakeFiles/server.dir/__/containers/scheme_data.cpp.obj server/CMakeFiles/server.dir/__/flyweight/flyweight_factory.cpp.obj server/CMakeFiles/server.dir/__/flyweight/flyweight_string.cpp.obj server/CMakeFiles/server.dir/__/logger/logger.cpp.obj server/CMakeFiles/server.dir/__/logger/logger_builder.cpp.obj server/CMakeFiles/server.dir/__/logger/logger_builder_concrete.cpp.obj server/CMakeFiles/server.dir/__/logger/logger_concrete.cpp.obj server/CMakeFiles/server.dir/__/logger/logger_holder.cpp.obj server/CMakeFiles/server.dir/__/owntype/own_type.cpp.obj server/CMakeFiles/server.dir/__/string_methods/mystring.cpp.obj server/CMakeFiles/server.dir/__/validator/date_validator.cpp.obj server/CMakeFiles/server.dir/__/validator/digit_validator.cpp.obj server/CMakeFiles/server.dir/__/validator/time_validator.cpp.obj server/CMakeFiles/server.dir/__/ipc_connections/message_queue.cpp.obj server/CMakeFiles/server.dir/__/ipc_connections/file_mapping.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = server\CMakeFiles\server.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = server\CMakeFiles\server.dir\
+  TARGET_FILE = server\server.exe
+  TARGET_IMPLIB = server\libserver.dll.a
+  TARGET_PDB = server\server.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build server/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zhura\CLionProjects\kursach\cmake-build-debug\server && "D:\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build server/edit_cache: phony server/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build server/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zhura\CLionProjects\kursach\cmake-build-debug\server && "D:\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\zhura\CLionProjects\kursach -BC:\Users\zhura\CLionProjects\kursach\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build server/rebuild_cache: phony server/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/zhura/CLionProjects/kursach/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target client
+
+
+#############################################
+# Order-only phony target for client
+
+build cmake_object_order_depends_target_client: phony || clients/CMakeFiles/client.dir
+
+build clients/CMakeFiles/client.dir/client.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/clients/client.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\client.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/backup_system/backup_system.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/backup_system/backup_system.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\backup_system\backup_system.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\backup_system
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/command_validator.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\validator\command_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\validator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/string_methods/mystring.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\string_methods\mystring.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\string_methods
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command_chain.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\handler_with_command_chain.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/handler_with_command.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\handler_with_command.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_collection.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_add_collection.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_add_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_pool.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_add_pool.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_add_scheme.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_add_scheme.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_get_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_get_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_get_data_between.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_get_data_between.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_collection.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_remove_collection.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_remove_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_pool.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_remove_pool.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_remove_scheme.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_remove_scheme.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/command_handler/command_update_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\command_handler\command_update_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\command_handler
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/containers/data_base.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/data_base.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\containers\data_base.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\containers
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/collection_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\containers\collection_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\containers
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/pool_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\containers\pool_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\containers
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/containers/scheme_data.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\containers\scheme_data.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\containers
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/borders_descriptors_memory.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\allocator\borders_descriptors_memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\allocator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/buddy_system_memory.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\allocator\buddy_system_memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\allocator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/allocator/memory.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\allocator\memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\allocator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory_holder.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\allocator\memory_holder.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\allocator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/memory_simple.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\allocator\memory_simple.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\allocator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/allocator/sorted_list_memory.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\allocator\sorted_list_memory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\allocator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/logger/logger.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\logger\logger.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\logger
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_builder.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\logger\logger_builder.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\logger
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_builder_concrete.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\logger\logger_builder_concrete.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\logger
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_concrete.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\logger\logger_concrete.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\logger
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/logger/logger_holder.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\logger\logger_holder.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\logger
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/date_validator.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\validator\date_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\validator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/digit_validator.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\validator\digit_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\validator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/validator/time_validator.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\validator\time_validator.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\validator
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/comparers/key_comparer.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\comparers\key_comparer.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\comparers
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/comparers/string_comparer.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\comparers\string_comparer.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\comparers
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/flyweight/flyweight_factory.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\flyweight\flyweight_factory.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\flyweight
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/flyweight/flyweight_string.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\flyweight\flyweight_string.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\flyweight
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+build clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.obj: CXX_COMPILER__client_unscanned_Debug C$:/Users/zhura/CLionProjects/kursach/owntype/own_type.cpp || cmake_object_order_depends_target_client
+  DEP_FILE = clients\CMakeFiles\client.dir\__\owntype\own_type.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  OBJECT_FILE_DIR = clients\CMakeFiles\client.dir\__\owntype
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_PDB = clients\client.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target client
+
+
+#############################################
+# Link the executable clients\client.exe
+
+build clients/client.exe: CXX_EXECUTABLE_LINKER__client_Debug clients/CMakeFiles/client.dir/client.cpp.obj clients/CMakeFiles/client.dir/__/backup_system/backup_system.cpp.obj clients/CMakeFiles/client.dir/__/validator/command_validator.cpp.obj clients/CMakeFiles/client.dir/__/string_methods/mystring.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/handler_with_command_chain.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/handler_with_command.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_add_collection.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_add_data.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_add_pool.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_add_scheme.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_get_data.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_get_data_between.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_remove_collection.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_remove_data.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_remove_pool.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_remove_scheme.cpp.obj clients/CMakeFiles/client.dir/__/command_handler/command_update_data.cpp.obj clients/CMakeFiles/client.dir/__/containers/data_base.cpp.obj clients/CMakeFiles/client.dir/__/containers/collection_data.cpp.obj clients/CMakeFiles/client.dir/__/containers/pool_data.cpp.obj clients/CMakeFiles/client.dir/__/containers/scheme_data.cpp.obj clients/CMakeFiles/client.dir/__/allocator/borders_descriptors_memory.cpp.obj clients/CMakeFiles/client.dir/__/allocator/buddy_system_memory.cpp.obj clients/CMakeFiles/client.dir/__/allocator/memory.cpp.obj clients/CMakeFiles/client.dir/__/allocator/memory_holder.cpp.obj clients/CMakeFiles/client.dir/__/allocator/memory_simple.cpp.obj clients/CMakeFiles/client.dir/__/allocator/sorted_list_memory.cpp.obj clients/CMakeFiles/client.dir/__/logger/logger.cpp.obj clients/CMakeFiles/client.dir/__/logger/logger_builder.cpp.obj clients/CMakeFiles/client.dir/__/logger/logger_builder_concrete.cpp.obj clients/CMakeFiles/client.dir/__/logger/logger_concrete.cpp.obj clients/CMakeFiles/client.dir/__/logger/logger_holder.cpp.obj clients/CMakeFiles/client.dir/__/validator/date_validator.cpp.obj clients/CMakeFiles/client.dir/__/validator/digit_validator.cpp.obj clients/CMakeFiles/client.dir/__/validator/time_validator.cpp.obj clients/CMakeFiles/client.dir/__/comparers/key_comparer.cpp.obj clients/CMakeFiles/client.dir/__/comparers/string_comparer.cpp.obj clients/CMakeFiles/client.dir/__/flyweight/flyweight_factory.cpp.obj clients/CMakeFiles/client.dir/__/flyweight/flyweight_string.cpp.obj clients/CMakeFiles/client.dir/__/owntype/own_type.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = clients\CMakeFiles\client.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = clients\CMakeFiles\client.dir\
+  TARGET_FILE = clients\client.exe
+  TARGET_IMPLIB = clients\libclient.dll.a
+  TARGET_PDB = clients\client.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build clients/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zhura\CLionProjects\kursach\cmake-build-debug\clients && "D:\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build clients/edit_cache: phony clients/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build clients/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zhura\CLionProjects\kursach\cmake-build-debug\clients && "D:\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\zhura\CLionProjects\kursach -BC:\Users\zhura\CLionProjects\kursach\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build clients/rebuild_cache: phony clients/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
-build kursach: phony kursach.exe
+build client: phony clients/client.exe
+
+build client.exe: phony clients/client.exe
+
+build server: phony server/server.exe
+
+build server.exe: phony server/server.exe
 
 # =============================================================================
 # Folder targets.
@@ -337,7 +850,21 @@ build kursach: phony kursach.exe
 #############################################
 # Folder: C:/Users/zhura/CLionProjects/kursach/cmake-build-debug
 
-build all: phony kursach.exe
+build all: phony server/all clients/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/zhura/CLionProjects/kursach/cmake-build-debug/clients
+
+build clients/all: phony clients/client.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/zhura/CLionProjects/kursach/cmake-build-debug/server
+
+build server/all: phony server/server.exe
 
 # =============================================================================
 # Built-in targets
@@ -346,14 +873,14 @@ build all: phony kursach.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/zhura/CLionProjects/kursach/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/zhura/CLionProjects/kursach/CMakeLists.txt C$:/Users/zhura/CLionProjects/kursach/clients/CMakeLists.txt C$:/Users/zhura/CLionProjects/kursach/server/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/zhura/CLionProjects/kursach/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake: phony
+build C$:/Users/zhura/CLionProjects/kursach/CMakeLists.txt C$:/Users/zhura/CLionProjects/kursach/clients/CMakeLists.txt C$:/Users/zhura/CLionProjects/kursach/server/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################
